@@ -11,7 +11,7 @@ public class TentacleGrab : MonoBehaviour {
         if (c.tag == "Eatable")
         {
             this.movementScript.target = c.gameObject.transform;
-            this.movementScript.fed = true;
+            this.movementScript.boost = true;
         }
     }
 }

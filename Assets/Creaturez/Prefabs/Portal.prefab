@@ -192,6 +192,8 @@ GameObject:
   - component: {fileID: 33902998465408842}
   - component: {fileID: 64598635827585158}
   - component: {fileID: 23371259688757928}
+  - component: {fileID: 65783187282549948}
+  - component: {fileID: 114400157680675064}
   m_Layer: 0
   m_Name: Portal
   m_TagString: Untagged
@@ -2299,6 +2301,18 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &65783187282549948
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1305420231866008}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.2204466e-16, z: 10.000002}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &95332424134217104
 Animator:
   serializedVersion: 3
@@ -2333,6 +2347,17 @@ MonoBehaviour:
   target: {fileID: 0}
   origin: {fileID: 4335174011093342}
   fed: 0
+--- !u!114 &114400157680675064
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1305420231866008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8e45b91a5d1e09438dc324247df8560, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114716847516501104
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2355,7 +2380,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2
+  m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!137 &137129534167401580
 SkinnedMeshRenderer:
