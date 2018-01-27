@@ -35,4 +35,11 @@ public class JointScript : MonoBehaviour {
     {
         return _anchor.GetComponent<Transform>();
     }
+
+    public void AttachNewJoint(Rigidbody newAnchor)
+    {
+        Destroy(_joint);
+        _anchor = newAnchor;
+        CreateAJoint();
+    }
 }
