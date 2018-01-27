@@ -4,4 +4,7 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/MapboxARScenes/AutomaticWorldSynchronization.unity
+    guid: c60dfd6bb74264e44b3dbf93e9d129c4
