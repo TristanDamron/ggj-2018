@@ -13,7 +13,7 @@ public class TentacleMovement : MonoBehaviour {
     void Awake()
     {
         this.bones = GameObject.FindGameObjectsWithTag("Bone");
-        this.target = GameObject.FindGameObjectWithTag("Eatable").transform;
+        //this.target = GameObject.FindGameObjectWithTag("Eatable").transform;
         this.fed = false;
     }
 
