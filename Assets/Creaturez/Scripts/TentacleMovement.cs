@@ -7,43 +7,46 @@ public class TentacleMovement : MonoBehaviour {
     public float timer;
     public float speed;
     public Transform target;
+    public Transform origin;
+    public bool fed;
 
     void Awake()
     {
         this.bones = GameObject.FindGameObjectsWithTag("Bone");
+        this.target = GameObject.FindGameObjectWithTag("Player").transform;
+        this.fed = false;
     }
 
-    public Vector3 GetControlBone()
+    private Vector3 GetControlBone()
     {
         return this.bones[0].transform.position;
     }
 
-    public void SetControlBone(Vector3 pos)
+    private void SetControlBone(Vector3 pos)
     {
         this.bones[0].transform.position = Vector3.Lerp(GetControlBone(), pos, Time.deltaTime * this.speed);
     }
 
-    public void SetLastBone(Vector3 pos)
+    private void SetLastBone(Vector3 pos)
     {
         this.bones[this.bones.Length - 2].transform.position = Vector3.Lerp(GetLastBone(), pos, Time.deltaTime * this.speed);
     }
 
-    public Vector3 GetLastBone()
+    private Vector3 GetLastBone()
     {
         return this.bones[this.bones.Length - 2].transform.position;
     }
 
     void Update()
     {
-        this.timer += Time.deltaTime;
-
-        SetLastBone(GetControlBone());
-        SetControlBone(new Vector3(this.target.position.x, this.target.position.y, this.target.position.z));
-
-        if (this.timer >= 0.25f)
+        if (!this.fed)
         {
-            
-            this.timer = 0f;
+            SetLastBone(GetControlBone());
+            SetControlBone(this.target.position);
+        } else
+        {
+            SetLastBone(GetControlBone());
+            SetControlBone(this.origin.position);
         }
     }
 }
