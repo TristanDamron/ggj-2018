@@ -8,23 +8,33 @@ public class JointScript : MonoBehaviour {
     private Rigidbody _anchor;
     private SpringJoint _joint;
     private Transform _anchorTransform;
+    private Rigidbody _rb;
 
     private void Start()
     {
         _anchorTransform = _anchor.GetComponent<Transform>();
+        _rb = GetComponent<Rigidbody>();
+        CreateAJoint();
     }
 
     public void Grabbed()
     {
+        if(GetComponent<SpringJoint>())
+        {
+            return;
+        }
+
         CreateAJoint();
     }
 
-    public void Release()
+    public void Release(Vector3 targetPoint)
     {
-        
+        //_rb.constraints = RigidbodyConstraints.None;
+        _anchorTransform.SetParent(null);
+        _anchorTransform.position = targetPoint;
     }
 
-    void DestroyJoint()
+    public void DestroyJoint()
     {
         Destroy(GetComponent<SpringJoint>());
     }
@@ -44,6 +54,8 @@ public class JointScript : MonoBehaviour {
         _joint.damper = 0.3f;
         _joint.tolerance = 0f;
         _joint.enablePreprocessing = true;
+        _rb.constraints = RigidbodyConstraints.FreezeRotation;
+        _anchor.transform.SetParent(null);
 
     }
 
@@ -52,5 +64,13 @@ public class JointScript : MonoBehaviour {
         Destroy(_joint);
         _anchor = newAnchor;
         CreateAJoint();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Tentacles")
+        {
+            //Do Some random shit
+        }
     }
 }

@@ -8,14 +8,14 @@ public class InFrontOfCamera : MonoBehaviour {
 
     float _distance = .5f;
 
-	// Use this for initialization
-	void Start () 
-    {
-    }
-
     public void SetAnchorTransformTarget(Transform target)
     {
-        target.position = transform.forward * _distance;
+        target.position = transform.position + transform.forward * _distance;
         target.SetParent(transform);
+    }
+
+    public Vector3 ReturnVectorPoint()
+    {
+        return transform.position + transform.forward * 2f; 
     }
 }
