@@ -2946,7 +2946,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1349796321432136}
-  m_LocalRotation: {x: -0.36877286, y: 0.62530833, z: 0.5894511, w: 0.35432145}
+  m_LocalRotation: {x: -0.36877283, y: 0.6253083, z: 0.589451, w: 0.35432142}
   m_LocalPosition: {x: -0.008293166, y: 0.015438701, z: 0.0012585861}
   m_LocalScale: {x: 1.0000001, y: 1.0000004, z: 0.99999994}
   m_Children:
@@ -3002,7 +3002,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1014620705297434}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.78}
+  m_LocalPosition: {x: 0, y: -0.522, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 4026530379016648}
@@ -3109,7 +3109,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1958793322373556}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.18, z: 1.467}
+  m_LocalPosition: {x: 2.094, y: 0, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
   - {fileID: 4775004847790614}
@@ -3358,7 +3358,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1233890784575876}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.522, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 4616822145755342}
@@ -3680,7 +3680,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1391178290335174}
-  m_LocalRotation: {x: 0.3687731, y: 0.6253081, z: 0.58945096, w: -0.35432178}
+  m_LocalRotation: {x: 0.36877307, y: 0.62530804, z: 0.5894509, w: -0.35432175}
   m_LocalPosition: {x: 0.008293167, y: 0.015438701, z: 0.0012585782}
   m_LocalScale: {x: 1, y: 0.99999994, z: 0.99999994}
   m_Children:
@@ -3823,8 +3823,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.51, y: 1.32, z: 1.48}
+  m_Center: {x: -0, y: 0, z: 0}
 --- !u!95 &95713982337912864
 Animator:
   serializedVersion: 3

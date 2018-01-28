@@ -12,6 +12,10 @@ public class JointScript : MonoBehaviour {
     private float increment;
     private IEnumerator _routine;
 
+    [SerializeField]
+    private BirdAnimations _animations;
+
+
     private void Start()
     {
         _anchorTransform = _anchor.GetComponent<Transform>();
