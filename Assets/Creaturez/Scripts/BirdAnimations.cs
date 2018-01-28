@@ -7,7 +7,7 @@ public class BirdAnimations : MonoBehaviour {
 	void Update () {
         this.timer += Time.deltaTime;
 
-        if (this.timer >= 10f)
+        if (this.timer >= 5f)
         {
             bool flapping = GetComponent<Animator>().GetBool("flapping");
             GetComponent<Animator>().SetBool("flapping", !flapping);
