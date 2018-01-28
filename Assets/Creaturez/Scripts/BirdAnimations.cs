@@ -2,9 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BirdAnimations : MonoBehaviour {
+public class BirdAnimations : MonoBehaviour 
+{
+
+    Animator _anims;
+
+    void Start()
+    {
+        _anims = GetComponent<Animator>();
+    }
+
+    public void SetAnimation(string animNam)
+    {
+        _anims.Play(animNam);
+    }
+
     private float timer;
 	void Update () {
+        
         this.timer += Time.deltaTime;
 
         if (this.timer >= 5f)
@@ -14,4 +29,6 @@ public class BirdAnimations : MonoBehaviour {
             this.timer = 0f;
         }
 	}
+
+  
 }
