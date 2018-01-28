@@ -4,7 +4,8 @@ using UnityEngine;
 using AlanZucconi.IK;
 
 public class TentacleMovement : MonoBehaviour {
-    
+
+
     public GameObject[] bones;
     public float timer;
     public float speed;
@@ -16,6 +17,8 @@ public class TentacleMovement : MonoBehaviour {
     private Vector3 lerpTo;
     private float boostTimer;
     private float defaultSpeed;
+    private float _targetTime;
+    List<Vector3> _posValues;
 
     void Awake()
     {
@@ -24,11 +27,21 @@ public class TentacleMovement : MonoBehaviour {
         this.boost = false;
         this.patrolling = true;
         this.defaultSpeed = this.speed;
-        this.target = GameObject.Find("Default Transform").transform;
+    }
+
+    private void Start()
+    {
+        _posValues = new List<Vector3>();
+
+        for (int i = 0; i < 20; i++)
+        {
+            _posValues.Add(new Vector3(target.localPosition.x + Random.Range(-5, 5), target.localPosition.y+ Random.Range(-5, 5),0));
+        }
+
     }
 
     //TODO: What if they are both in the collider?
-    void OnTriggerStay (Collider c)
+    void OnTriggerEnter (Collider c)
     {
         if (c.tag == "MainCamera" || c.tag == "Eatable")
         {
@@ -37,14 +50,15 @@ public class TentacleMovement : MonoBehaviour {
         }
     }
 
-    void OnTriggerExit (Collider c)
-    {
-        if (c.tag == "MainCamera" || c.tag == "Eatable")
-        {
-            this.target = GameObject.Find("Default Transform").transform;
-            this.patrolling = true;
-        }
-    }
+
+    //void OnTriggerExit (Collider c)
+    //{
+    //    if (c.tag == "MainCamera" || c.tag == "Eatable")
+    //    {
+    //        this.target = GameObject.Find("Default Transform").transform;
+    //        this.patrolling = true;
+    //    }
+    //}
 
     void Update()
     {
@@ -53,9 +67,10 @@ public class TentacleMovement : MonoBehaviour {
 
         if (this.patrolling)
         {
-            if (this.timer >= 1.5f)
+            if (this.timer >= _targetTime)
             {
-                lerpTo = new Vector3(target.localPosition.x + Random.Range(-10, 10), target.localPosition.y + Random.Range(4, 10), target.localPosition.z);
+                lerpTo = _posValues[Random.Range(0, _posValues.Count)];
+                _targetTime = Random.Range(.1f, 1.2f);
                 this.timer = 0f;
             }
 
