@@ -67,6 +67,14 @@ public class JointScript : MonoBehaviour {
         return _anchorTransform;
     }
 
+    IEnumerator UpdateY()
+    {
+        float ret = 0f;
+        this.increment += Time.deltaTime;
+        ret = 0.5f * Mathf.Sin(Mathf.Clamp01(this.increment) * 2f);
+        yield return ret;
+    }
+
     void CreateAJoint()
     {
         
