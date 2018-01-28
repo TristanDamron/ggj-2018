@@ -55,7 +55,7 @@ public class TentacleMovement : MonoBehaviour {
         {
             if (this.timer >= 1.5f)
             {
-                lerpTo = new Vector3(Random.Range(transform.localPosition.x + 2, transform.localPosition.x + 20), Random.Range(transform.localPosition.y + 4, transform.localPosition.y + 10), target.localPosition.z);
+                lerpTo = new Vector3(target.localPosition.x, target.localPosition.y + 40f, Random.Range(target.localPosition.z - 20, target.localPosition.z + 20));
                 this.timer = 0f;
             }
 

@@ -1,0 +1,180 @@
+fileFormatVersion: 2
+guid: c5a9b20a69de82c498dbdaf3ac8077c7
+timeCreated: 1517147131
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Bone
+    100002: Bone_001
+    100004: Bone_002
+    100006: Bone_004
+    100008: Bone_005
+    100010: Bone_006
+    100012: Bone_008
+    100014: Bone_009
+    100016: Bone_010
+    100018: Bone_012
+    100020: Bone_014
+    100022: Bone_016
+    100024: Bone_017
+    100026: Bone_018
+    100028: Bone_020
+    100030: Bone_022
+    100032: Bone_024
+    100034: Bone_025
+    100036: Bone_026
+    100038: Bone_028
+    100040: Bone_030
+    100042: Bone_032
+    100044: Bone_033
+    100046: Bone_034
+    100048: Bone_036
+    100050: Bone_038
+    100052: Bone_040
+    100054: Bone_041
+    100056: Bone_042
+    100058: Bone_044
+    100060: Bone_046
+    100062: Bone_048
+    100064: Bone_049
+    100066: Bone_050
+    100068: Bone_052
+    100070: Bone_054
+    100072: Bone_056
+    100074: Bone_057
+    100076: Bone_058
+    100078: Bone_060
+    100080: Bone_062
+    100082: //RootNode
+    100084: new_tentacle_mesh
+    100086: Tentacle_Armature
+    400000: Bone
+    400002: Bone_001
+    400004: Bone_002
+    400006: Bone_004
+    400008: Bone_005
+    400010: Bone_006
+    400012: Bone_008
+    400014: Bone_009
+    400016: Bone_010
+    400018: Bone_012
+    400020: Bone_014
+    400022: Bone_016
+    400024: Bone_017
+    400026: Bone_018
+    400028: Bone_020
+    400030: Bone_022
+    400032: Bone_024
+    400034: Bone_025
+    400036: Bone_026
+    400038: Bone_028
+    400040: Bone_030
+    400042: Bone_032
+    400044: Bone_033
+    400046: Bone_034
+    400048: Bone_036
+    400050: Bone_038
+    400052: Bone_040
+    400054: Bone_041
+    400056: Bone_042
+    400058: Bone_044
+    400060: Bone_046
+    400062: Bone_048
+    400064: Bone_049
+    400066: Bone_050
+    400068: Bone_052
+    400070: Bone_054
+    400072: Bone_056
+    400074: Bone_057
+    400076: Bone_058
+    400078: Bone_060
+    400080: Bone_062
+    400082: //RootNode
+    400084: new_tentacle_mesh
+    400086: Tentacle_Armature
+    2100000: tentacle_skin
+    4300000: new_tentacle_mesh
+    7400000: Default Take
+    9500000: //RootNode
+    13700000: new_tentacle_mesh
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
