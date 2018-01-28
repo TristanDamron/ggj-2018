@@ -783,10 +783,11 @@ MonoBehaviour:
   bones: []
   timer: 0
   speed: 0.01
-  target: {fileID: 1363823486}
+  target: {fileID: 0}
   origin: {fileID: 30301658}
   fed: 0
   boost: 0
+  patrolling: 0
 --- !u!114 &1201188201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1603,197 +1604,197 @@ Prefab:
     - target: {fileID: 54396524124695532, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54580141344654608, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54843357035684488, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54547604817346838, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54479750609204194, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54990995717931376, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54359638671517674, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54583304252785806, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54747113601682664, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54824178579408632, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54689187217369868, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54596450571638728, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54648283531311508, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54339722445437250, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54710306766219226, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54268287218312520, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54823883175297678, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54516810482389884, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54958920762568656, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54165025761916878, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54763650243905994, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54507304382520972, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54747981745612934, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54487905673624410, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54430388075908700, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54209798159829108, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54350171786861534, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54951945016713100, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54578462074002304, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54113193424594748, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54227641656607926, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54947790395625674, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54418010842935316, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54894739862174636, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54980381211809388, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54505034821840474, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54340444439369914, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54729298737603114, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 54380392639400560, guid: 74bd020975c664bb7b6ba19bae1a3bee,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 4103195851362392, guid: 74bd020975c664bb7b6ba19bae1a3bee, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2122,11 +2123,6 @@ MonoBehaviour:
   ZeroEuler: {x: 0, y: 0, z: 0}
   SlowdownThreshold: 0.5
   Speed: 1
---- !u!4 &1363823486 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4794951631604522, guid: 93def6b8f8df271448f71db121d86d0e,
-    type: 2}
-  m_PrefabInternal: {fileID: 827630862}
 --- !u!1 &1370505646
 GameObject:
   m_ObjectHideFlags: 0

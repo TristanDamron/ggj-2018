@@ -12,6 +12,7 @@ public class TentacleMovement : MonoBehaviour {
     public Transform origin;
     public bool fed;
     public bool boost;
+    public bool patrolling;
     private float boostTimer;
     private float defaultSpeed;
 
@@ -20,6 +21,7 @@ public class TentacleMovement : MonoBehaviour {
         this.bones = GameObject.FindGameObjectsWithTag("Bone");
         this.fed = false;
         this.boost = false;
+        this.patrolling = true;
         this.defaultSpeed = this.speed;
         this.target = transform;
     }
@@ -30,6 +32,7 @@ public class TentacleMovement : MonoBehaviour {
         if (c.tag == "MainCamera" || c.tag == "Eatable")
         {
             this.target = c.gameObject.transform;
+            this.patrolling = false;
         }
     }
 
@@ -37,13 +40,26 @@ public class TentacleMovement : MonoBehaviour {
     {
         if (c.tag == "MainCamera" || c.tag == "Eatable")
         {
-            this.target = transform;  
+            this.target = transform;
+            this.patrolling = true;
         }
     }
 
     void Update()
     {
         GetComponent<InverseKinematics>().Destination = this.target;
+        this.timer += Time.deltaTime;
+
+        if (this.patrolling)
+        {
+            Vector3 pos = transform.localPosition;
+            if (this.timer >= 4f)
+            {
+                pos = new Vector3(target.localPosition.x + Random.Range(-10, 10), target.localPosition.y + 10f, target.localPosition.z);
+                this.timer = 0f;
+            }
+            target.localPosition = Vector3.Lerp(transform.localPosition, pos, Time.deltaTime * 2f);
+        }
 
         if (this.fed)
         {
