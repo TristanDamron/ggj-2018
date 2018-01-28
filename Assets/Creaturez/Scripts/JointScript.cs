@@ -55,6 +55,7 @@ public class JointScript : MonoBehaviour {
         _joint.tolerance = 0f;
         _joint.enablePreprocessing = true;
         _rb.constraints = RigidbodyConstraints.FreezeRotation;
+        _anchor.transform.SetParent(null);
 
     }
 
