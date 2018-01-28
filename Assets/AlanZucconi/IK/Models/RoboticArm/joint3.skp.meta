@@ -1,0 +1,166 @@
+fileFormatVersion: 2
+guid: ee9e5be652e21234292c570fa6a73ddd
+timeCreated: 1490645553
+licenseType: Pro
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e000000
+  assetHash:
+    serializedVersion: 2
+    Hash: 522c498c88a3596239ce8820931aa61f
+  longitude: -105.242139
+  latitude: 40.018309
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 1.2980359, y: 1.2444693, z: -3.508621}
+      lookAt: {x: -42.970055, y: -16.639977, z: 127.1013}
+      up: {x: -0.041282482, y: 0.9916957, z: 0.12180109}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Group 1
+    100002: Group 2
+    100004: Group 3
+    100006: Group 5
+    100008: Group 7
+    100010: //RootNode
+    100012: Skupina#26
+    100014: Skupina#30
+    100016: Skupina#30 1
+    100018: Skupina#33
+    100020: Skupina#33 1
+    100022: Skupina#34
+    100024: Skupina#34 1
+    100026: Skupina#64
+    100028: Skupina#64 1
+    100030: Skupina#64 2
+    100032: Skupina#84
+    400000: Group 1
+    400002: Group 2
+    400004: Group 3
+    400006: Group 5
+    400008: Group 7
+    400010: //RootNode
+    400012: Skupina#26
+    400014: Skupina#30
+    400016: Skupina#30 1
+    400018: Skupina#33
+    400020: Skupina#33 1
+    400022: Skupina#34
+    400024: Skupina#34 1
+    400026: Skupina#64
+    400028: Skupina#64 1
+    400030: Skupina#64 2
+    400032: Skupina#84
+    2300000: Group 3
+    2300002: Group 5
+    2300004: Group 7
+    2300006: Skupina#26
+    2300008: Skupina#30
+    2300010: Skupina#30 1
+    2300012: Skupina#33
+    2300014: Skupina#33 1
+    2300016: Skupina#34
+    2300018: Skupina#34 1
+    2300020: Skupina#64
+    2300022: Skupina#64 1
+    2300024: Skupina#64 2
+    2300026: Skupina#84
+    3300000: Group 3
+    3300002: Group 5
+    3300004: Group 7
+    3300006: Skupina#26
+    3300008: Skupina#30
+    3300010: Skupina#30 1
+    3300012: Skupina#33
+    3300014: Skupina#33 1
+    3300016: Skupina#34
+    3300018: Skupina#34 1
+    3300020: Skupina#64
+    3300022: Skupina#64 1
+    3300024: Skupina#64 2
+    3300026: Skupina#84
+    4300000: Mesh Group 3
+    4300002: Mesh Group 5
+    4300004: Mesh Group 7
+    4300006: Mesh Skupina#64
+    4300008: Mesh Skupina#34
+    4300010: Mesh Skupina#26
+    4300012: Mesh Skupina#30
+    4300014: Mesh Skupina#33
+    4300016: Mesh Skupina#84
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.254
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 1
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

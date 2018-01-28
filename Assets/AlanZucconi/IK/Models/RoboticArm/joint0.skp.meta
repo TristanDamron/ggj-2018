@@ -1,0 +1,450 @@
+fileFormatVersion: 2
+guid: d997c32e58a008f4f8311f534d84bd34
+timeCreated: 1490645553
+licenseType: Pro
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000068000000690000006a0000006b0000006c0000006d0000006e0000006f000000700000007100000072000000730000007400000075000000760000007700000078000000790000007a0000007b0000007c0000007d0000007e0000007f00000080000000810000008200000083000000
+  assetHash:
+    serializedVersion: 2
+    Hash: 8b727f389f92ff1ad6e48abd1f162038
+  longitude: -105.242139
+  latitude: 40.018309
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 0.9702073, y: 1.1112645, z: -3.131244}
+      lookAt: {x: -37.47708, y: -7.6733027, z: 130.22208}
+      up: {x: -0.01749977, y: 0.9980028, z: 0.06069744}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Group 1
+    100002: Group 105
+    100004: Group 114
+    100006: Group 125
+    100008: Group 127
+    100010: Group 2
+    100012: Group 24
+    100014: Group 25
+    100016: Group 39
+    100018: Group 40
+    100020: Group 42
+    100022: Group 44
+    100024: Group 46
+    100026: Group 47
+    100028: Group 48
+    100030: Group 50
+    100032: Group 59
+    100034: Group 68
+    100036: Group 70
+    100038: Group 79
+    100040: Group 90
+    100042: Group 92
+    100044: Group 96
+    100046: //RootNode
+    100048: Skupina#27
+    100050: Skupina#27 1
+    100052: Skupina#27 2
+    100054: Skupina#27 3
+    100056: Skupina#30
+    100058: Skupina#30 1
+    100060: Skupina#30 10
+    100062: Skupina#30 11
+    100064: Skupina#30 12
+    100066: Skupina#30 13
+    100068: Skupina#30 14
+    100070: Skupina#30 15
+    100072: Skupina#30 16
+    100074: Skupina#30 17
+    100076: Skupina#30 18
+    100078: Skupina#30 19
+    100080: Skupina#30 2
+    100082: Skupina#30 3
+    100084: Skupina#30 4
+    100086: Skupina#30 5
+    100088: Skupina#30 6
+    100090: Skupina#30 7
+    100092: Skupina#30 8
+    100094: Skupina#30 9
+    100096: Skupina#33
+    100098: Skupina#33 1
+    100100: Skupina#33 2
+    100102: Skupina#33 3
+    100104: Skupina#33 4
+    100106: Skupina#33 5
+    100108: Skupina#33 6
+    100110: Skupina#33 7
+    100112: Skupina#34
+    100114: Skupina#34 1
+    100116: Skupina#34 10
+    100118: Skupina#34 11
+    100120: Skupina#34 12
+    100122: Skupina#34 13
+    100124: Skupina#34 14
+    100126: Skupina#34 15
+    100128: Skupina#34 16
+    100130: Skupina#34 17
+    100132: Skupina#34 2
+    100134: Skupina#34 3
+    100136: Skupina#34 4
+    100138: Skupina#34 5
+    100140: Skupina#34 6
+    100142: Skupina#34 7
+    100144: Skupina#34 8
+    100146: Skupina#34 9
+    100148: Skupina#38
+    100150: Skupina#38 1
+    100152: Skupina#64
+    100154: Skupina#64 1
+    100156: Skupina#64 2
+    100158: Skupina#64 3
+    100160: Group 110
+    100162: Group 112
+    100164: Group 27
+    100166: Group 29
+    100168: Group 31
+    100170: Group 32
+    100172: Group 33
+    100174: Group 35
+    100176: Group 53
+    100178: Group 55
+    100180: Group 64
+    100182: Group 75
+    100184: Group 77
+    100186: Group 81
+    100188: Group 99
+    400000: Group 1
+    400002: Group 105
+    400004: Group 114
+    400006: Group 125
+    400008: Group 127
+    400010: Group 2
+    400012: Group 24
+    400014: Group 25
+    400016: Group 39
+    400018: Group 40
+    400020: Group 42
+    400022: Group 44
+    400024: Group 46
+    400026: Group 47
+    400028: Group 48
+    400030: Group 50
+    400032: Group 59
+    400034: Group 68
+    400036: Group 70
+    400038: Group 79
+    400040: Group 90
+    400042: Group 92
+    400044: Group 96
+    400046: //RootNode
+    400048: Skupina#27
+    400050: Skupina#27 1
+    400052: Skupina#27 2
+    400054: Skupina#27 3
+    400056: Skupina#30
+    400058: Skupina#30 1
+    400060: Skupina#30 10
+    400062: Skupina#30 11
+    400064: Skupina#30 12
+    400066: Skupina#30 13
+    400068: Skupina#30 14
+    400070: Skupina#30 15
+    400072: Skupina#30 16
+    400074: Skupina#30 17
+    400076: Skupina#30 18
+    400078: Skupina#30 19
+    400080: Skupina#30 2
+    400082: Skupina#30 3
+    400084: Skupina#30 4
+    400086: Skupina#30 5
+    400088: Skupina#30 6
+    400090: Skupina#30 7
+    400092: Skupina#30 8
+    400094: Skupina#30 9
+    400096: Skupina#33
+    400098: Skupina#33 1
+    400100: Skupina#33 2
+    400102: Skupina#33 3
+    400104: Skupina#33 4
+    400106: Skupina#33 5
+    400108: Skupina#33 6
+    400110: Skupina#33 7
+    400112: Skupina#34
+    400114: Skupina#34 1
+    400116: Skupina#34 10
+    400118: Skupina#34 11
+    400120: Skupina#34 12
+    400122: Skupina#34 13
+    400124: Skupina#34 14
+    400126: Skupina#34 15
+    400128: Skupina#34 16
+    400130: Skupina#34 17
+    400132: Skupina#34 2
+    400134: Skupina#34 3
+    400136: Skupina#34 4
+    400138: Skupina#34 5
+    400140: Skupina#34 6
+    400142: Skupina#34 7
+    400144: Skupina#34 8
+    400146: Skupina#34 9
+    400148: Skupina#38
+    400150: Skupina#38 1
+    400152: Skupina#64
+    400154: Skupina#64 1
+    400156: Skupina#64 2
+    400158: Skupina#64 3
+    400160: Group 110
+    400162: Group 112
+    400164: Group 27
+    400166: Group 29
+    400168: Group 31
+    400170: Group 32
+    400172: Group 33
+    400174: Group 35
+    400176: Group 53
+    400178: Group 55
+    400180: Group 64
+    400182: Group 75
+    400184: Group 77
+    400186: Group 81
+    400188: Group 99
+    2300000: Group 125
+    2300002: Group 127
+    2300004: Group 2
+    2300006: Group 25
+    2300008: Group 40
+    2300010: Group 42
+    2300012: Group 44
+    2300014: Group 48
+    2300016: Group 68
+    2300018: Group 90
+    2300020: Group 92
+    2300022: Skupina#27
+    2300024: Skupina#27 1
+    2300026: Skupina#27 2
+    2300028: Skupina#27 3
+    2300030: Skupina#30
+    2300032: Skupina#30 1
+    2300034: Skupina#30 10
+    2300036: Skupina#30 11
+    2300038: Skupina#30 12
+    2300040: Skupina#30 13
+    2300042: Skupina#30 14
+    2300044: Skupina#30 15
+    2300046: Skupina#30 16
+    2300048: Skupina#30 17
+    2300050: Skupina#30 18
+    2300052: Skupina#30 19
+    2300054: Skupina#30 2
+    2300056: Skupina#30 3
+    2300058: Skupina#30 4
+    2300060: Skupina#30 5
+    2300062: Skupina#30 6
+    2300064: Skupina#30 7
+    2300066: Skupina#30 8
+    2300068: Skupina#30 9
+    2300070: Skupina#33
+    2300072: Skupina#33 1
+    2300074: Skupina#33 2
+    2300076: Skupina#33 3
+    2300078: Skupina#33 4
+    2300080: Skupina#33 5
+    2300082: Skupina#33 6
+    2300084: Skupina#33 7
+    2300086: Skupina#34
+    2300088: Skupina#34 1
+    2300090: Skupina#34 10
+    2300092: Skupina#34 11
+    2300094: Skupina#34 12
+    2300096: Skupina#34 13
+    2300098: Skupina#34 14
+    2300100: Skupina#34 15
+    2300102: Skupina#34 16
+    2300104: Skupina#34 17
+    2300106: Skupina#34 2
+    2300108: Skupina#34 3
+    2300110: Skupina#34 4
+    2300112: Skupina#34 5
+    2300114: Skupina#34 6
+    2300116: Skupina#34 7
+    2300118: Skupina#34 8
+    2300120: Skupina#34 9
+    2300122: Skupina#38
+    2300124: Skupina#38 1
+    2300126: Skupina#64
+    2300128: Skupina#64 1
+    2300130: Skupina#64 2
+    2300132: Skupina#64 3
+    2300134: Group 110
+    2300136: Group 112
+    2300138: Group 27
+    2300140: Group 29
+    2300142: Group 33
+    2300144: Group 53
+    2300146: Group 75
+    2300148: Group 77
+    3300000: Group 125
+    3300002: Group 127
+    3300004: Group 2
+    3300006: Group 25
+    3300008: Group 40
+    3300010: Group 42
+    3300012: Group 44
+    3300014: Group 48
+    3300016: Group 68
+    3300018: Group 90
+    3300020: Group 92
+    3300022: Skupina#27
+    3300024: Skupina#27 1
+    3300026: Skupina#27 2
+    3300028: Skupina#27 3
+    3300030: Skupina#30
+    3300032: Skupina#30 1
+    3300034: Skupina#30 10
+    3300036: Skupina#30 11
+    3300038: Skupina#30 12
+    3300040: Skupina#30 13
+    3300042: Skupina#30 14
+    3300044: Skupina#30 15
+    3300046: Skupina#30 16
+    3300048: Skupina#30 17
+    3300050: Skupina#30 18
+    3300052: Skupina#30 19
+    3300054: Skupina#30 2
+    3300056: Skupina#30 3
+    3300058: Skupina#30 4
+    3300060: Skupina#30 5
+    3300062: Skupina#30 6
+    3300064: Skupina#30 7
+    3300066: Skupina#30 8
+    3300068: Skupina#30 9
+    3300070: Skupina#33
+    3300072: Skupina#33 1
+    3300074: Skupina#33 2
+    3300076: Skupina#33 3
+    3300078: Skupina#33 4
+    3300080: Skupina#33 5
+    3300082: Skupina#33 6
+    3300084: Skupina#33 7
+    3300086: Skupina#34
+    3300088: Skupina#34 1
+    3300090: Skupina#34 10
+    3300092: Skupina#34 11
+    3300094: Skupina#34 12
+    3300096: Skupina#34 13
+    3300098: Skupina#34 14
+    3300100: Skupina#34 15
+    3300102: Skupina#34 16
+    3300104: Skupina#34 17
+    3300106: Skupina#34 2
+    3300108: Skupina#34 3
+    3300110: Skupina#34 4
+    3300112: Skupina#34 5
+    3300114: Skupina#34 6
+    3300116: Skupina#34 7
+    3300118: Skupina#34 8
+    3300120: Skupina#34 9
+    3300122: Skupina#38
+    3300124: Skupina#38 1
+    3300126: Skupina#64
+    3300128: Skupina#64 1
+    3300130: Skupina#64 2
+    3300132: Skupina#64 3
+    3300134: Group 110
+    3300136: Group 112
+    3300138: Group 27
+    3300140: Group 29
+    3300142: Group 33
+    3300144: Group 53
+    3300146: Group 75
+    3300148: Group 77
+    4300000: Mesh Group 2
+    4300002: Mesh Skupina#27
+    4300004: Mesh Skupina#34
+    4300006: Mesh Skupina#64
+    4300008: Mesh Group 25
+    4300010: Mesh Group 40
+    4300012: Mesh Group 42
+    4300014: Mesh Skupina#30
+    4300016: Mesh Skupina#33
+    4300018: Mesh Skupina#38
+    4300020: Mesh Group 90
+    4300022: Mesh Group 92
+    4300024: Mesh Group 27
+    4300026: Mesh Group 75
+    4300028: Mesh Group 77
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.254
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 1
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

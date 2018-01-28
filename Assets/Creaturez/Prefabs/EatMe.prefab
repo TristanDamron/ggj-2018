@@ -213,7 +213,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 10
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -257,8 +257,8 @@ SpringJoint:
   m_Damper: 0.3
   m_MinDistance: 0
   m_MaxDistance: 0
-  m_Tolerance: 1.42
-  m_BreakForce: 0.001
+  m_Tolerance: 1.00000005e-20
+  m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1

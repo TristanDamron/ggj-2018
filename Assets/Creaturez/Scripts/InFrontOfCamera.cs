@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class InFrontOfCamera : MonoBehaviour {
 
-
-    [SerializeField]
-    GameObject _cube;
-
-    public JointScript _script;
     Transform _targetTransform;
 
     float _distance = .5f;
@@ -16,14 +11,11 @@ public class InFrontOfCamera : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
     {
-        Instantiate(_cube, transform.position + transform.forward * _distance, transform.rotation);
-        _script.Grabbed();
-        _targetTransform = _script.ReturnAnchorTransform();
     }
-	
-	// Update is called once per frame
-	void Update () {
-        _targetTransform.transform.position = transform.position + transform.forward * _distance;
-        _targetTransform.LookAt(transform);
-	}
+
+    public void SetAnchorTransformTarget(Transform target)
+    {
+        target.position = transform.forward * _distance;
+        target.SetParent(transform);
+    }
 }

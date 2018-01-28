@@ -1,0 +1,162 @@
+fileFormatVersion: 2
+guid: d732d41461787bf4fa84bd719c82103b
+timeCreated: 1490645553
+licenseType: Pro
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 
+  assetHash:
+    serializedVersion: 2
+    Hash: a34f88e2e4e33d9329c2c5cf414b4ad3
+  longitude: -105.242139
+  latitude: 40.018309
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 0.3485159, y: 0.25696778, z: -0.3250648}
+      lookAt: {x: -9.263038, y: -3.4804773, z: 9.0041485}
+      up: {x: -0.19285311, y: 0.96320736, z: 0.18718803}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Group 1
+    100002: Group 2
+    100004: Group 4
+    100006: //RootNode
+    100008: Skupina#26
+    100010: Skupina#30
+    100012: Skupina#33
+    100014: Skupina#33 1
+    100016: Skupina#33 2
+    100018: Skupina#64
+    100020: Skupina#64 1
+    100022: Skupina#64 2
+    100024: Skupina#64 3
+    100026: Skupina#64 4
+    100028: Skupina#64 5
+    100030: Skupina#74
+    400000: Group 1
+    400002: Group 2
+    400004: Group 4
+    400006: //RootNode
+    400008: Skupina#26
+    400010: Skupina#30
+    400012: Skupina#33
+    400014: Skupina#33 1
+    400016: Skupina#33 2
+    400018: Skupina#64
+    400020: Skupina#64 1
+    400022: Skupina#64 2
+    400024: Skupina#64 3
+    400026: Skupina#64 4
+    400028: Skupina#64 5
+    400030: Skupina#74
+    2300000: Group 2
+    2300002: Group 4
+    2300004: Skupina#26
+    2300006: Skupina#30
+    2300008: Skupina#33
+    2300010: Skupina#33 1
+    2300012: Skupina#33 2
+    2300014: Skupina#64
+    2300016: Skupina#64 1
+    2300018: Skupina#64 2
+    2300020: Skupina#64 3
+    2300022: Skupina#64 4
+    2300024: Skupina#64 5
+    2300026: Skupina#74
+    3300000: Group 2
+    3300002: Group 4
+    3300004: Skupina#26
+    3300006: Skupina#30
+    3300008: Skupina#33
+    3300010: Skupina#33 1
+    3300012: Skupina#33 2
+    3300014: Skupina#64
+    3300016: Skupina#64 1
+    3300018: Skupina#64 2
+    3300020: Skupina#64 3
+    3300022: Skupina#64 4
+    3300024: Skupina#64 5
+    3300026: Skupina#74
+    4300000: Mesh Group 2
+    4300002: Mesh Group 4
+    4300004: Mesh Skupina#30
+    4300006: Mesh Skupina#64
+    4300008: Mesh Skupina#74
+    4300010: Mesh Skupina#33
+    4300012: Mesh Skupina#26
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.254
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 1
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

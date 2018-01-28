@@ -7,16 +7,31 @@ public class JointScript : MonoBehaviour {
     [SerializeField]
     private Rigidbody _anchor;
     private SpringJoint _joint;
+    private Transform _anchorTransform;
 
+    private void Start()
+    {
+        _anchorTransform = _anchor.GetComponent<Transform>();
+    }
 
     public void Grabbed()
     {
         CreateAJoint();
     }
 
+    public void Release()
+    {
+        
+    }
+
     void DestroyJoint()
     {
         Destroy(GetComponent<SpringJoint>());
+    }
+
+    public Transform ReturnAnchorTransform()
+    {
+        return _anchorTransform;
     }
 
     void CreateAJoint()
@@ -29,11 +44,7 @@ public class JointScript : MonoBehaviour {
         _joint.damper = 0.3f;
         _joint.tolerance = 0f;
         _joint.enablePreprocessing = true;
-    }
 
-    public Transform ReturnAnchorTransform()
-    {
-        return _anchor.GetComponent<Transform>();
     }
 
     public void AttachNewJoint(Rigidbody newAnchor)

@@ -1,0 +1,1477 @@
+fileFormatVersion: 2
+guid: f55031a7a7e84d3488c6b09d1fbf48e3
+timeCreated: 1490638228
+licenseType: Pro
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000068000000690000006a0000006b0000006c0000006d0000006e0000006f000000700000007100000072000000730000007400000075000000760000007700000078000000790000007a0000007b0000007c0000007d0000007e0000007f000000800000008100000082000000830000008400000085000000860000008700000088000000890000008a0000008b0000008c0000008d0000008e0000008f000000900000009100000092000000930000009400000095000000960000009700000098000000990000009a0000009b0000009c0000009d0000009e0000009f000000a0000000a1000000a2000000a3000000a4000000a5000000a6000000a7000000a8000000a9000000aa000000ab000000ac000000ad000000ae000000af000000b0000000b1000000b2000000b3000000b4000000b5000000b6000000b7000000b8000000b9000000ba000000bb000000bc000000bd000000be000000bf000000c0000000c1000000c2000000c3000000c4000000c5000000c6000000c7000000c8000000c9000000ca000000cb000000cc000000cd000000ce000000cf000000d0000000d1000000d2000000d3000000d4000000d5000000d6000000d7000000d8000000d9000000da000000db000000dc000000dd000000de000000df000000e0000000e1000000e2000000e3000000e4000000e5000000e6000000e7000000e8000000e9000000ea000000eb000000ec000000ed000000ee000000ef000000f0000000f1000000f2000000f3000000f4000000f5000000f6000000f7000000f8000000f9000000fa000000fb000000fc000000fd000000fe000000ff000000000100000101000002010000030100000401000005010000060100000701000008010000090100000a0100000b0100000c0100000d0100000e0100000f010000100100001101000012010000130100001401000015010000160100001701000018010000190100001a0100001b0100001c0100001d0100001e0100001f010000200100002101000022010000230100002401000025010000260100002701000028010000290100002a0100002b0100002c0100002d0100002e0100002f010000300100003101000032010000330100003401000035010000360100003701000038010000390100003a0100003b0100003c0100003d0100003e0100003f010000400100004101000042010000430100004401000045010000460100004701000048010000490100004a0100004b0100004c0100004d0100004e0100004f010000500100005101000052010000530100005401000055010000560100005701000058010000590100005a0100005b0100005c0100005d0100005e0100005f010000600100006101000062010000630100006401000065010000660100006701000068010000690100006a0100006b0100006c0100006d0100006e0100006f010000700100007101000072010000730100007401000075010000760100007701000078010000790100007a0100007b0100007c0100007d0100007e0100007f010000800100008101000082010000830100008401000085010000860100008701000088010000890100008a0100008b0100008c0100008d0100008e0100008f010000900100009101000092010000930100009401000095010000960100009701000098010000990100009a0100009b0100009c0100009d0100009e0100009f010000a0010000a1010000a2010000a3010000a4010000a5010000a6010000a7010000a8010000a9010000aa010000ab010000ac010000ad010000ae010000af010000b0010000b1010000b2010000b3010000b4010000b5010000b6010000b7010000b8010000b9010000ba010000bb010000bc010000bd010000be010000bf010000c0010000c1010000c2010000c3010000c4010000c5010000c6010000c7010000c8010000c9010000ca010000cb010000cc010000cd010000ce010000cf010000d0010000d1010000d2010000d3010000d4010000d5010000d6010000d7010000d8010000d9010000da010000db010000dc010000dd010000de010000df010000e0010000e1010000e2010000e3010000e4010000e5010000e6010000e7010000e8010000e9010000ea010000eb010000ec010000ed010000ee010000ef010000f0010000f1010000f2010000f3010000f4010000
+  assetHash:
+    serializedVersion: 2
+    Hash: 9d24c400196c694aab6dd44eda47221d
+  longitude: -105.242139
+  latitude: 40.018309
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 3.6039577, y: 2.1549935, z: -2.9631493}
+      lookAt: {x: -95.55733, y: -46.183537, z: 81.706184}
+      up: {x: -0.2643482, y: 0.93764216, z: 0.22571497}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: chamfer
+    100004: chamfer 1
+    100006: cylinder
+    100008: cylinder 1
+    100010: cylinder 2
+    100012: cylinder 3
+    100014: Group 11
+    100016: Group 13
+    100018: Group 17
+    100020: Group 2
+    100022: Group 21
+    100024: Group 25
+    100026: Group 27
+    100028: Group 29
+    100030: Group 31
+    100032: Group 33
+    100034: Group 35
+    100036: Group 39
+    100038: Group 45
+    100040: Group 49
+    100042: Group 5
+    100044: Group 55
+    100046: Group 59
+    100048: Group 63
+    100050: Group 67
+    100052: Group 7
+    100054: Group 70
+    100056: Group 73
+    100058: Group 75
+    100060: Group 77
+    100062: Group 79
+    100064: Group 81
+    100066: Group 91
+    100068: Group 93
+    100070: Group 95
+    100072: hinge
+    100074: hinge 1
+    100076: hinge 2
+    100078: hinge 3
+    100080: hinge 4
+    100082: hinge 5
+    100084: hinge 6
+    100086: hinge 7
+    100088: hinge 8
+    100090: hinge 9
+    100092: hinge10512
+    100094: hinge10530
+    100096: hinge11064
+    100098: hinge11082
+    100100: hinge11890
+    100102: hinge4898
+    100104: hinge5014
+    100106: hinge5031
+    100108: hinge6906
+    100110: hinge6923
+    100112: servo
+    100114: servo 1
+    100116: servo 2
+    100118: servo 3
+    100120: servo 4
+    100122: servo 5
+    100124: servo 6
+    100126: Group 1
+    100128: Group 15
+    100130: Group 19
+    100132: Group 24
+    100134: Group 26
+    100136: Group 30
+    100138: Group 32
+    100140: Group 36
+    100142: Group 40
+    100144: Group 44
+    100146: Group 46
+    100148: Group 48
+    100150: Group 50
+    100152: Group 52
+    100154: Group 54
+    100156: Group 58
+    100158: Group 64
+    100160: Group 68
+    100162: Group 74
+    100164: Group 78
+    100166: Group 82
+    100168: Group 86
+    100170: Group 89
+    100172: Group 92
+    100174: Group 94
+    100176: Group 96
+    100178: Group 98
+    100180: Group 125
+    100182: Group 128
+    100184: Group 130
+    100186: Group 176
+    100188: Group 177
+    100190: Group 191
+    100192: Group 192
+    100194: Group 194
+    100196: Group 196
+    100198: Group 198
+    100200: Group 199
+    100202: Group 20
+    100204: Group 200
+    100206: Group 202
+    100208: Group 211
+    100210: Group 22
+    100212: Group 220
+    100214: Group 222
+    100216: Group 231
+    100218: Group 242
+    100220: Group 244
+    100222: Group 248
+    100224: Group 257
+    100226: Group 266
+    100228: Group 277
+    100230: Group 279
+    100232: Group 299
+    100234: Group 300
+    100236: Group 302
+    100238: Group 328
+    100240: Group 329
+    100242: Group 330
+    100244: Group 332
+    100246: Group 334
+    100248: Group 358
+    100250: Group 359
+    100252: Group 361
+    100254: Group 363
+    100256: Group 364
+    100258: Group 366
+    100260: Group 368
+    100262: Group 390
+    100264: Group 391
+    100266: Group 393
+    100268: Group 400
+    100270: Group 401
+    100272: Group 403
+    100274: Group 410
+    100276: Group 411
+    100278: Group 413
+    100280: Group 415
+    100282: Group 416
+    100284: Group 417
+    100286: Group 419
+    100288: Group 42
+    100290: Group 425
+    100292: Group 426
+    100294: Group 427
+    100296: Group 429
+    100298: Group 435
+    100300: Group 436
+    100302: Group 437
+    100304: Group 451
+    100306: Group 456
+    100308: Group 457
+    100310: Group 459
+    100312: Group 474
+    100314: Group 475
+    100316: Group 497
+    100318: Group 51
+    100320: Group 62
+    100322: Group 72
+    100324: R6S
+    100326: Skupina#101
+    100328: Skupina#104
+    100330: Skupina#25
+    100332: Skupina#26
+    100334: Skupina#26 1
+    100336: Skupina#27
+    100338: Skupina#27 1
+    100340: Skupina#27 10
+    100342: Skupina#27 11
+    100344: Skupina#27 2
+    100346: Skupina#27 3
+    100348: Skupina#27 4
+    100350: Skupina#27 5
+    100352: Skupina#27 6
+    100354: Skupina#27 7
+    100356: Skupina#27 8
+    100358: Skupina#27 9
+    100360: Skupina#28
+    100362: Skupina#28 1
+    100364: Skupina#28 10
+    100366: Skupina#28 11
+    100368: Skupina#28 12
+    100370: Skupina#28 13
+    100372: Skupina#28 2
+    100374: Skupina#28 3
+    100376: Skupina#28 4
+    100378: Skupina#28 5
+    100380: Skupina#28 6
+    100382: Skupina#28 7
+    100384: Skupina#28 8
+    100386: Skupina#28 9
+    100388: Skupina#29
+    100390: Skupina#29 1
+    100392: Skupina#29 2
+    100394: Skupina#30
+    100396: Skupina#30 1
+    100398: Skupina#30 10
+    100400: Skupina#30 11
+    100402: Skupina#30 12
+    100404: Skupina#30 13
+    100406: Skupina#30 14
+    100408: Skupina#30 15
+    100410: Skupina#30 16
+    100412: Skupina#30 17
+    100414: Skupina#30 18
+    100416: Skupina#30 19
+    100418: Skupina#30 2
+    100420: Skupina#30 20
+    100422: Skupina#30 21
+    100424: Skupina#30 22
+    100426: Skupina#30 23
+    100428: Skupina#30 24
+    100430: Skupina#30 25
+    100432: Skupina#30 26
+    100434: Skupina#30 27
+    100436: Skupina#30 28
+    100438: Skupina#30 29
+    100440: Skupina#30 3
+    100442: Skupina#30 30
+    100444: Skupina#30 31
+    100446: Skupina#30 32
+    100448: Skupina#30 33
+    100450: Skupina#30 34
+    100452: Skupina#30 35
+    100454: Skupina#30 36
+    100456: Skupina#30 37
+    100458: Skupina#30 38
+    100460: Skupina#30 4
+    100462: Skupina#30 5
+    100464: Skupina#30 6
+    100466: Skupina#30 7
+    100468: Skupina#30 8
+    100470: Skupina#30 9
+    100472: Skupina#32
+    100474: Skupina#32 1
+    100476: Skupina#32 2
+    100478: Skupina#32 3
+    100480: Skupina#33
+    100482: Skupina#33 1
+    100484: Skupina#33 10
+    100486: Skupina#33 11
+    100488: Skupina#33 12
+    100490: Skupina#33 13
+    100492: Skupina#33 14
+    100494: Skupina#33 15
+    100496: Skupina#33 16
+    100498: Skupina#33 17
+    100500: Skupina#33 18
+    100502: Skupina#33 19
+    100504: Skupina#33 2
+    100506: Skupina#33 20
+    100508: Skupina#33 21
+    100510: Skupina#33 22
+    100512: Skupina#33 23
+    100514: Skupina#33 24
+    100516: Skupina#33 25
+    100518: Skupina#33 26
+    100520: Skupina#33 27
+    100522: Skupina#33 28
+    100524: Skupina#33 29
+    100526: Skupina#33 3
+    100528: Skupina#33 30
+    100530: Skupina#33 31
+    100532: Skupina#33 4
+    100534: Skupina#33 5
+    100536: Skupina#33 6
+    100538: Skupina#33 7
+    100540: Skupina#33 8
+    100542: Skupina#33 9
+    100544: Skupina#34
+    100546: Skupina#34 1
+    100548: Skupina#34 10
+    100550: Skupina#34 11
+    100552: Skupina#34 12
+    100554: Skupina#34 13
+    100556: Skupina#34 14
+    100558: Skupina#34 15
+    100560: Skupina#34 16
+    100562: Skupina#34 17
+    100564: Skupina#34 18
+    100566: Skupina#34 19
+    100568: Skupina#34 2
+    100570: Skupina#34 20
+    100572: Skupina#34 21
+    100574: Skupina#34 22
+    100576: Skupina#34 23
+    100578: Skupina#34 24
+    100580: Skupina#34 25
+    100582: Skupina#34 26
+    100584: Skupina#34 27
+    100586: Skupina#34 28
+    100588: Skupina#34 29
+    100590: Skupina#34 3
+    100592: Skupina#34 30
+    100594: Skupina#34 31
+    100596: Skupina#34 32
+    100598: Skupina#34 33
+    100600: Skupina#34 34
+    100602: Skupina#34 35
+    100604: Skupina#34 36
+    100606: Skupina#34 37
+    100608: Skupina#34 38
+    100610: Skupina#34 39
+    100612: Skupina#34 4
+    100614: Skupina#34 40
+    100616: Skupina#34 41
+    100618: Skupina#34 42
+    100620: Skupina#34 43
+    100622: Skupina#34 44
+    100624: Skupina#34 5
+    100626: Skupina#34 6
+    100628: Skupina#34 7
+    100630: Skupina#34 8
+    100632: Skupina#34 9
+    100634: Skupina#38
+    100636: Skupina#38 1
+    100638: Skupina#38 2
+    100640: Skupina#38 3
+    100642: Skupina#38 4
+    100644: Skupina#64
+    100646: Skupina#64 1
+    100648: Skupina#64 10
+    100650: Skupina#64 11
+    100652: Skupina#64 12
+    100654: Skupina#64 13
+    100656: Skupina#64 14
+    100658: Skupina#64 15
+    100660: Skupina#64 16
+    100662: Skupina#64 17
+    100664: Skupina#64 18
+    100666: Skupina#64 19
+    100668: Skupina#64 2
+    100670: Skupina#64 20
+    100672: Skupina#64 3
+    100674: Skupina#64 4
+    100676: Skupina#64 5
+    100678: Skupina#64 6
+    100680: Skupina#64 7
+    100682: Skupina#64 8
+    100684: Skupina#64 9
+    100686: Skupina#74
+    100688: Skupina#74 1
+    100690: Skupina#84
+    100692: Skupina#84 1
+    100694: Skupina#86
+    100696: Skupina#87
+    100698: Skupina#97
+    100700: Skupina#98
+    100702: "z\xE1kladna"
+    400000: //RootNode
+    400002: chamfer
+    400004: chamfer 1
+    400006: cylinder
+    400008: cylinder 1
+    400010: cylinder 2
+    400012: cylinder 3
+    400014: Group 11
+    400016: Group 13
+    400018: Group 17
+    400020: Group 2
+    400022: Group 21
+    400024: Group 25
+    400026: Group 27
+    400028: Group 29
+    400030: Group 31
+    400032: Group 33
+    400034: Group 35
+    400036: Group 39
+    400038: Group 45
+    400040: Group 49
+    400042: Group 5
+    400044: Group 55
+    400046: Group 59
+    400048: Group 63
+    400050: Group 67
+    400052: Group 7
+    400054: Group 70
+    400056: Group 73
+    400058: Group 75
+    400060: Group 77
+    400062: Group 79
+    400064: Group 81
+    400066: Group 91
+    400068: Group 93
+    400070: Group 95
+    400072: hinge
+    400074: hinge 1
+    400076: hinge 2
+    400078: hinge 3
+    400080: hinge 4
+    400082: hinge 5
+    400084: hinge 6
+    400086: hinge 7
+    400088: hinge 8
+    400090: hinge 9
+    400092: hinge10512
+    400094: hinge10530
+    400096: hinge11064
+    400098: hinge11082
+    400100: hinge11890
+    400102: hinge4898
+    400104: hinge5014
+    400106: hinge5031
+    400108: hinge6906
+    400110: hinge6923
+    400112: servo
+    400114: servo 1
+    400116: servo 2
+    400118: servo 3
+    400120: servo 4
+    400122: servo 5
+    400124: servo 6
+    400126: Group 1
+    400128: Group 15
+    400130: Group 19
+    400132: Group 24
+    400134: Group 26
+    400136: Group 30
+    400138: Group 32
+    400140: Group 36
+    400142: Group 40
+    400144: Group 44
+    400146: Group 46
+    400148: Group 48
+    400150: Group 50
+    400152: Group 52
+    400154: Group 54
+    400156: Group 58
+    400158: Group 64
+    400160: Group 68
+    400162: Group 74
+    400164: Group 78
+    400166: Group 82
+    400168: Group 86
+    400170: Group 89
+    400172: Group 92
+    400174: Group 94
+    400176: Group 96
+    400178: Group 98
+    400180: Group 125
+    400182: Group 128
+    400184: Group 130
+    400186: Group 176
+    400188: Group 177
+    400190: Group 191
+    400192: Group 192
+    400194: Group 194
+    400196: Group 196
+    400198: Group 198
+    400200: Group 199
+    400202: Group 20
+    400204: Group 200
+    400206: Group 202
+    400208: Group 211
+    400210: Group 22
+    400212: Group 220
+    400214: Group 222
+    400216: Group 231
+    400218: Group 242
+    400220: Group 244
+    400222: Group 248
+    400224: Group 257
+    400226: Group 266
+    400228: Group 277
+    400230: Group 279
+    400232: Group 299
+    400234: Group 300
+    400236: Group 302
+    400238: Group 328
+    400240: Group 329
+    400242: Group 330
+    400244: Group 332
+    400246: Group 334
+    400248: Group 358
+    400250: Group 359
+    400252: Group 361
+    400254: Group 363
+    400256: Group 364
+    400258: Group 366
+    400260: Group 368
+    400262: Group 390
+    400264: Group 391
+    400266: Group 393
+    400268: Group 400
+    400270: Group 401
+    400272: Group 403
+    400274: Group 410
+    400276: Group 411
+    400278: Group 413
+    400280: Group 415
+    400282: Group 416
+    400284: Group 417
+    400286: Group 419
+    400288: Group 42
+    400290: Group 425
+    400292: Group 426
+    400294: Group 427
+    400296: Group 429
+    400298: Group 435
+    400300: Group 436
+    400302: Group 437
+    400304: Group 451
+    400306: Group 456
+    400308: Group 457
+    400310: Group 459
+    400312: Group 474
+    400314: Group 475
+    400316: Group 497
+    400318: Group 51
+    400320: Group 62
+    400322: Group 72
+    400324: R6S
+    400326: Skupina#101
+    400328: Skupina#104
+    400330: Skupina#25
+    400332: Skupina#26
+    400334: Skupina#26 1
+    400336: Skupina#27
+    400338: Skupina#27 1
+    400340: Skupina#27 10
+    400342: Skupina#27 11
+    400344: Skupina#27 2
+    400346: Skupina#27 3
+    400348: Skupina#27 4
+    400350: Skupina#27 5
+    400352: Skupina#27 6
+    400354: Skupina#27 7
+    400356: Skupina#27 8
+    400358: Skupina#27 9
+    400360: Skupina#28
+    400362: Skupina#28 1
+    400364: Skupina#28 10
+    400366: Skupina#28 11
+    400368: Skupina#28 12
+    400370: Skupina#28 13
+    400372: Skupina#28 2
+    400374: Skupina#28 3
+    400376: Skupina#28 4
+    400378: Skupina#28 5
+    400380: Skupina#28 6
+    400382: Skupina#28 7
+    400384: Skupina#28 8
+    400386: Skupina#28 9
+    400388: Skupina#29
+    400390: Skupina#29 1
+    400392: Skupina#29 2
+    400394: Skupina#30
+    400396: Skupina#30 1
+    400398: Skupina#30 10
+    400400: Skupina#30 11
+    400402: Skupina#30 12
+    400404: Skupina#30 13
+    400406: Skupina#30 14
+    400408: Skupina#30 15
+    400410: Skupina#30 16
+    400412: Skupina#30 17
+    400414: Skupina#30 18
+    400416: Skupina#30 19
+    400418: Skupina#30 2
+    400420: Skupina#30 20
+    400422: Skupina#30 21
+    400424: Skupina#30 22
+    400426: Skupina#30 23
+    400428: Skupina#30 24
+    400430: Skupina#30 25
+    400432: Skupina#30 26
+    400434: Skupina#30 27
+    400436: Skupina#30 28
+    400438: Skupina#30 29
+    400440: Skupina#30 3
+    400442: Skupina#30 30
+    400444: Skupina#30 31
+    400446: Skupina#30 32
+    400448: Skupina#30 33
+    400450: Skupina#30 34
+    400452: Skupina#30 35
+    400454: Skupina#30 36
+    400456: Skupina#30 37
+    400458: Skupina#30 38
+    400460: Skupina#30 4
+    400462: Skupina#30 5
+    400464: Skupina#30 6
+    400466: Skupina#30 7
+    400468: Skupina#30 8
+    400470: Skupina#30 9
+    400472: Skupina#32
+    400474: Skupina#32 1
+    400476: Skupina#32 2
+    400478: Skupina#32 3
+    400480: Skupina#33
+    400482: Skupina#33 1
+    400484: Skupina#33 10
+    400486: Skupina#33 11
+    400488: Skupina#33 12
+    400490: Skupina#33 13
+    400492: Skupina#33 14
+    400494: Skupina#33 15
+    400496: Skupina#33 16
+    400498: Skupina#33 17
+    400500: Skupina#33 18
+    400502: Skupina#33 19
+    400504: Skupina#33 2
+    400506: Skupina#33 20
+    400508: Skupina#33 21
+    400510: Skupina#33 22
+    400512: Skupina#33 23
+    400514: Skupina#33 24
+    400516: Skupina#33 25
+    400518: Skupina#33 26
+    400520: Skupina#33 27
+    400522: Skupina#33 28
+    400524: Skupina#33 29
+    400526: Skupina#33 3
+    400528: Skupina#33 30
+    400530: Skupina#33 31
+    400532: Skupina#33 4
+    400534: Skupina#33 5
+    400536: Skupina#33 6
+    400538: Skupina#33 7
+    400540: Skupina#33 8
+    400542: Skupina#33 9
+    400544: Skupina#34
+    400546: Skupina#34 1
+    400548: Skupina#34 10
+    400550: Skupina#34 11
+    400552: Skupina#34 12
+    400554: Skupina#34 13
+    400556: Skupina#34 14
+    400558: Skupina#34 15
+    400560: Skupina#34 16
+    400562: Skupina#34 17
+    400564: Skupina#34 18
+    400566: Skupina#34 19
+    400568: Skupina#34 2
+    400570: Skupina#34 20
+    400572: Skupina#34 21
+    400574: Skupina#34 22
+    400576: Skupina#34 23
+    400578: Skupina#34 24
+    400580: Skupina#34 25
+    400582: Skupina#34 26
+    400584: Skupina#34 27
+    400586: Skupina#34 28
+    400588: Skupina#34 29
+    400590: Skupina#34 3
+    400592: Skupina#34 30
+    400594: Skupina#34 31
+    400596: Skupina#34 32
+    400598: Skupina#34 33
+    400600: Skupina#34 34
+    400602: Skupina#34 35
+    400604: Skupina#34 36
+    400606: Skupina#34 37
+    400608: Skupina#34 38
+    400610: Skupina#34 39
+    400612: Skupina#34 4
+    400614: Skupina#34 40
+    400616: Skupina#34 41
+    400618: Skupina#34 42
+    400620: Skupina#34 43
+    400622: Skupina#34 44
+    400624: Skupina#34 5
+    400626: Skupina#34 6
+    400628: Skupina#34 7
+    400630: Skupina#34 8
+    400632: Skupina#34 9
+    400634: Skupina#38
+    400636: Skupina#38 1
+    400638: Skupina#38 2
+    400640: Skupina#38 3
+    400642: Skupina#38 4
+    400644: Skupina#64
+    400646: Skupina#64 1
+    400648: Skupina#64 10
+    400650: Skupina#64 11
+    400652: Skupina#64 12
+    400654: Skupina#64 13
+    400656: Skupina#64 14
+    400658: Skupina#64 15
+    400660: Skupina#64 16
+    400662: Skupina#64 17
+    400664: Skupina#64 18
+    400666: Skupina#64 19
+    400668: Skupina#64 2
+    400670: Skupina#64 20
+    400672: Skupina#64 3
+    400674: Skupina#64 4
+    400676: Skupina#64 5
+    400678: Skupina#64 6
+    400680: Skupina#64 7
+    400682: Skupina#64 8
+    400684: Skupina#64 9
+    400686: Skupina#74
+    400688: Skupina#74 1
+    400690: Skupina#84
+    400692: Skupina#84 1
+    400694: Skupina#86
+    400696: Skupina#87
+    400698: Skupina#97
+    400700: Skupina#98
+    400702: "z\xE1kladna"
+    2300000: //RootNode
+    2300002: cylinder
+    2300004: cylinder 1
+    2300006: cylinder 2
+    2300008: cylinder 3
+    2300010: Group 11
+    2300012: Group 13
+    2300014: Group 17
+    2300016: Group 21
+    2300018: Group 25
+    2300020: Group 27
+    2300022: Group 29
+    2300024: Group 31
+    2300026: Group 33
+    2300028: Group 35
+    2300030: Group 39
+    2300032: Group 45
+    2300034: Group 49
+    2300036: Group 5
+    2300038: Group 55
+    2300040: Group 59
+    2300042: Group 63
+    2300044: Group 67
+    2300046: Group 7
+    2300048: Group 70
+    2300050: Group 73
+    2300052: Group 75
+    2300054: Group 77
+    2300056: Group 79
+    2300058: Group 81
+    2300060: Group 91
+    2300062: Group 93
+    2300064: Group 95
+    2300066: servo
+    2300068: servo 1
+    2300070: servo 2
+    2300072: servo 3
+    2300074: servo 4
+    2300076: servo 5
+    2300078: servo 6
+    2300080: Group 1
+    2300082: Group 15
+    2300084: Group 19
+    2300086: Group 24
+    2300088: Group 26
+    2300090: Group 30
+    2300092: Group 32
+    2300094: Group 36
+    2300096: Group 40
+    2300098: Group 44
+    2300100: Group 46
+    2300102: Group 48
+    2300104: Group 50
+    2300106: Group 52
+    2300108: Group 54
+    2300110: Group 58
+    2300112: Group 64
+    2300114: Group 68
+    2300116: Group 74
+    2300118: Group 78
+    2300120: Group 82
+    2300122: Group 86
+    2300124: Group 89
+    2300126: Group 92
+    2300128: Group 94
+    2300130: Group 96
+    2300132: Group 98
+    2300134: Group 128
+    2300136: Group 130
+    2300138: Group 177
+    2300140: Group 192
+    2300142: Group 194
+    2300144: Group 196
+    2300146: Group 20
+    2300148: Group 200
+    2300150: Group 22
+    2300152: Group 220
+    2300154: Group 242
+    2300156: Group 244
+    2300158: Group 277
+    2300160: Group 279
+    2300162: Group 300
+    2300164: Group 302
+    2300166: Group 330
+    2300168: Group 332
+    2300170: Group 334
+    2300172: Group 359
+    2300174: Group 361
+    2300176: Group 364
+    2300178: Group 366
+    2300180: Group 368
+    2300182: Group 391
+    2300184: Group 401
+    2300186: Group 411
+    2300188: Group 413
+    2300190: Group 417
+    2300192: Group 419
+    2300194: Group 427
+    2300196: Group 429
+    2300198: Group 437
+    2300200: Group 457
+    2300202: Group 475
+    2300204: Group 497
+    2300206: Group 62
+    2300208: Group 72
+    2300210: R6S
+    2300212: Skupina#101
+    2300214: Skupina#104
+    2300216: Skupina#25
+    2300218: Skupina#26
+    2300220: Skupina#26 1
+    2300222: Skupina#27
+    2300224: Skupina#27 1
+    2300226: Skupina#27 10
+    2300228: Skupina#27 11
+    2300230: Skupina#27 2
+    2300232: Skupina#27 3
+    2300234: Skupina#27 4
+    2300236: Skupina#27 5
+    2300238: Skupina#27 6
+    2300240: Skupina#27 7
+    2300242: Skupina#27 8
+    2300244: Skupina#27 9
+    2300246: Skupina#28
+    2300248: Skupina#28 1
+    2300250: Skupina#28 10
+    2300252: Skupina#28 11
+    2300254: Skupina#28 12
+    2300256: Skupina#28 13
+    2300258: Skupina#28 2
+    2300260: Skupina#28 3
+    2300262: Skupina#28 4
+    2300264: Skupina#28 5
+    2300266: Skupina#28 6
+    2300268: Skupina#28 7
+    2300270: Skupina#28 8
+    2300272: Skupina#28 9
+    2300274: Skupina#29
+    2300276: Skupina#29 1
+    2300278: Skupina#29 2
+    2300280: Skupina#30
+    2300282: Skupina#30 1
+    2300284: Skupina#30 10
+    2300286: Skupina#30 11
+    2300288: Skupina#30 12
+    2300290: Skupina#30 13
+    2300292: Skupina#30 14
+    2300294: Skupina#30 15
+    2300296: Skupina#30 16
+    2300298: Skupina#30 17
+    2300300: Skupina#30 18
+    2300302: Skupina#30 19
+    2300304: Skupina#30 2
+    2300306: Skupina#30 20
+    2300308: Skupina#30 21
+    2300310: Skupina#30 22
+    2300312: Skupina#30 23
+    2300314: Skupina#30 24
+    2300316: Skupina#30 25
+    2300318: Skupina#30 26
+    2300320: Skupina#30 27
+    2300322: Skupina#30 28
+    2300324: Skupina#30 29
+    2300326: Skupina#30 3
+    2300328: Skupina#30 30
+    2300330: Skupina#30 31
+    2300332: Skupina#30 32
+    2300334: Skupina#30 33
+    2300336: Skupina#30 34
+    2300338: Skupina#30 35
+    2300340: Skupina#30 36
+    2300342: Skupina#30 37
+    2300344: Skupina#30 38
+    2300346: Skupina#30 4
+    2300348: Skupina#30 5
+    2300350: Skupina#30 6
+    2300352: Skupina#30 7
+    2300354: Skupina#30 8
+    2300356: Skupina#30 9
+    2300358: Skupina#32
+    2300360: Skupina#32 1
+    2300362: Skupina#32 2
+    2300364: Skupina#32 3
+    2300366: Skupina#33
+    2300368: Skupina#33 1
+    2300370: Skupina#33 10
+    2300372: Skupina#33 11
+    2300374: Skupina#33 12
+    2300376: Skupina#33 13
+    2300378: Skupina#33 14
+    2300380: Skupina#33 15
+    2300382: Skupina#33 16
+    2300384: Skupina#33 17
+    2300386: Skupina#33 18
+    2300388: Skupina#33 19
+    2300390: Skupina#33 2
+    2300392: Skupina#33 20
+    2300394: Skupina#33 21
+    2300396: Skupina#33 22
+    2300398: Skupina#33 23
+    2300400: Skupina#33 24
+    2300402: Skupina#33 25
+    2300404: Skupina#33 26
+    2300406: Skupina#33 27
+    2300408: Skupina#33 28
+    2300410: Skupina#33 29
+    2300412: Skupina#33 3
+    2300414: Skupina#33 30
+    2300416: Skupina#33 31
+    2300418: Skupina#33 4
+    2300420: Skupina#33 5
+    2300422: Skupina#33 6
+    2300424: Skupina#33 7
+    2300426: Skupina#33 8
+    2300428: Skupina#33 9
+    2300430: Skupina#34
+    2300432: Skupina#34 1
+    2300434: Skupina#34 10
+    2300436: Skupina#34 11
+    2300438: Skupina#34 12
+    2300440: Skupina#34 13
+    2300442: Skupina#34 14
+    2300444: Skupina#34 15
+    2300446: Skupina#34 16
+    2300448: Skupina#34 17
+    2300450: Skupina#34 18
+    2300452: Skupina#34 19
+    2300454: Skupina#34 2
+    2300456: Skupina#34 20
+    2300458: Skupina#34 21
+    2300460: Skupina#34 22
+    2300462: Skupina#34 23
+    2300464: Skupina#34 24
+    2300466: Skupina#34 25
+    2300468: Skupina#34 26
+    2300470: Skupina#34 27
+    2300472: Skupina#34 28
+    2300474: Skupina#34 29
+    2300476: Skupina#34 3
+    2300478: Skupina#34 30
+    2300480: Skupina#34 31
+    2300482: Skupina#34 32
+    2300484: Skupina#34 33
+    2300486: Skupina#34 34
+    2300488: Skupina#34 35
+    2300490: Skupina#34 36
+    2300492: Skupina#34 37
+    2300494: Skupina#34 38
+    2300496: Skupina#34 39
+    2300498: Skupina#34 4
+    2300500: Skupina#34 40
+    2300502: Skupina#34 41
+    2300504: Skupina#34 42
+    2300506: Skupina#34 43
+    2300508: Skupina#34 44
+    2300510: Skupina#34 5
+    2300512: Skupina#34 6
+    2300514: Skupina#34 7
+    2300516: Skupina#34 8
+    2300518: Skupina#34 9
+    2300520: Skupina#38
+    2300522: Skupina#38 1
+    2300524: Skupina#38 2
+    2300526: Skupina#38 3
+    2300528: Skupina#38 4
+    2300530: Skupina#64
+    2300532: Skupina#64 1
+    2300534: Skupina#64 10
+    2300536: Skupina#64 11
+    2300538: Skupina#64 12
+    2300540: Skupina#64 13
+    2300542: Skupina#64 14
+    2300544: Skupina#64 15
+    2300546: Skupina#64 16
+    2300548: Skupina#64 17
+    2300550: Skupina#64 18
+    2300552: Skupina#64 19
+    2300554: Skupina#64 2
+    2300556: Skupina#64 20
+    2300558: Skupina#64 3
+    2300560: Skupina#64 4
+    2300562: Skupina#64 5
+    2300564: Skupina#64 6
+    2300566: Skupina#64 7
+    2300568: Skupina#64 8
+    2300570: Skupina#64 9
+    2300572: Skupina#74
+    2300574: Skupina#74 1
+    2300576: Skupina#84
+    2300578: Skupina#84 1
+    2300580: Skupina#86
+    2300582: Skupina#87
+    2300584: Skupina#97
+    2300586: Skupina#98
+    2300588: "z\xE1kladna"
+    3300000: //RootNode
+    3300002: cylinder
+    3300004: cylinder 1
+    3300006: cylinder 2
+    3300008: cylinder 3
+    3300010: Group 11
+    3300012: Group 13
+    3300014: Group 17
+    3300016: Group 21
+    3300018: Group 25
+    3300020: Group 27
+    3300022: Group 29
+    3300024: Group 31
+    3300026: Group 33
+    3300028: Group 35
+    3300030: Group 39
+    3300032: Group 45
+    3300034: Group 49
+    3300036: Group 5
+    3300038: Group 55
+    3300040: Group 59
+    3300042: Group 63
+    3300044: Group 67
+    3300046: Group 7
+    3300048: Group 70
+    3300050: Group 73
+    3300052: Group 75
+    3300054: Group 77
+    3300056: Group 79
+    3300058: Group 81
+    3300060: Group 91
+    3300062: Group 93
+    3300064: Group 95
+    3300066: servo
+    3300068: servo 1
+    3300070: servo 2
+    3300072: servo 3
+    3300074: servo 4
+    3300076: servo 5
+    3300078: servo 6
+    3300080: Group 1
+    3300082: Group 15
+    3300084: Group 19
+    3300086: Group 24
+    3300088: Group 26
+    3300090: Group 30
+    3300092: Group 32
+    3300094: Group 36
+    3300096: Group 40
+    3300098: Group 44
+    3300100: Group 46
+    3300102: Group 48
+    3300104: Group 50
+    3300106: Group 52
+    3300108: Group 54
+    3300110: Group 58
+    3300112: Group 64
+    3300114: Group 68
+    3300116: Group 74
+    3300118: Group 78
+    3300120: Group 82
+    3300122: Group 86
+    3300124: Group 89
+    3300126: Group 92
+    3300128: Group 94
+    3300130: Group 96
+    3300132: Group 98
+    3300134: Group 128
+    3300136: Group 130
+    3300138: Group 177
+    3300140: Group 192
+    3300142: Group 194
+    3300144: Group 196
+    3300146: Group 20
+    3300148: Group 200
+    3300150: Group 22
+    3300152: Group 220
+    3300154: Group 242
+    3300156: Group 244
+    3300158: Group 277
+    3300160: Group 279
+    3300162: Group 300
+    3300164: Group 302
+    3300166: Group 330
+    3300168: Group 332
+    3300170: Group 334
+    3300172: Group 359
+    3300174: Group 361
+    3300176: Group 364
+    3300178: Group 366
+    3300180: Group 368
+    3300182: Group 391
+    3300184: Group 401
+    3300186: Group 411
+    3300188: Group 413
+    3300190: Group 417
+    3300192: Group 419
+    3300194: Group 427
+    3300196: Group 429
+    3300198: Group 437
+    3300200: Group 457
+    3300202: Group 475
+    3300204: Group 497
+    3300206: Group 62
+    3300208: Group 72
+    3300210: R6S
+    3300212: Skupina#101
+    3300214: Skupina#104
+    3300216: Skupina#25
+    3300218: Skupina#26
+    3300220: Skupina#26 1
+    3300222: Skupina#27
+    3300224: Skupina#27 1
+    3300226: Skupina#27 10
+    3300228: Skupina#27 11
+    3300230: Skupina#27 2
+    3300232: Skupina#27 3
+    3300234: Skupina#27 4
+    3300236: Skupina#27 5
+    3300238: Skupina#27 6
+    3300240: Skupina#27 7
+    3300242: Skupina#27 8
+    3300244: Skupina#27 9
+    3300246: Skupina#28
+    3300248: Skupina#28 1
+    3300250: Skupina#28 10
+    3300252: Skupina#28 11
+    3300254: Skupina#28 12
+    3300256: Skupina#28 13
+    3300258: Skupina#28 2
+    3300260: Skupina#28 3
+    3300262: Skupina#28 4
+    3300264: Skupina#28 5
+    3300266: Skupina#28 6
+    3300268: Skupina#28 7
+    3300270: Skupina#28 8
+    3300272: Skupina#28 9
+    3300274: Skupina#29
+    3300276: Skupina#29 1
+    3300278: Skupina#29 2
+    3300280: Skupina#30
+    3300282: Skupina#30 1
+    3300284: Skupina#30 10
+    3300286: Skupina#30 11
+    3300288: Skupina#30 12
+    3300290: Skupina#30 13
+    3300292: Skupina#30 14
+    3300294: Skupina#30 15
+    3300296: Skupina#30 16
+    3300298: Skupina#30 17
+    3300300: Skupina#30 18
+    3300302: Skupina#30 19
+    3300304: Skupina#30 2
+    3300306: Skupina#30 20
+    3300308: Skupina#30 21
+    3300310: Skupina#30 22
+    3300312: Skupina#30 23
+    3300314: Skupina#30 24
+    3300316: Skupina#30 25
+    3300318: Skupina#30 26
+    3300320: Skupina#30 27
+    3300322: Skupina#30 28
+    3300324: Skupina#30 29
+    3300326: Skupina#30 3
+    3300328: Skupina#30 30
+    3300330: Skupina#30 31
+    3300332: Skupina#30 32
+    3300334: Skupina#30 33
+    3300336: Skupina#30 34
+    3300338: Skupina#30 35
+    3300340: Skupina#30 36
+    3300342: Skupina#30 37
+    3300344: Skupina#30 38
+    3300346: Skupina#30 4
+    3300348: Skupina#30 5
+    3300350: Skupina#30 6
+    3300352: Skupina#30 7
+    3300354: Skupina#30 8
+    3300356: Skupina#30 9
+    3300358: Skupina#32
+    3300360: Skupina#32 1
+    3300362: Skupina#32 2
+    3300364: Skupina#32 3
+    3300366: Skupina#33
+    3300368: Skupina#33 1
+    3300370: Skupina#33 10
+    3300372: Skupina#33 11
+    3300374: Skupina#33 12
+    3300376: Skupina#33 13
+    3300378: Skupina#33 14
+    3300380: Skupina#33 15
+    3300382: Skupina#33 16
+    3300384: Skupina#33 17
+    3300386: Skupina#33 18
+    3300388: Skupina#33 19
+    3300390: Skupina#33 2
+    3300392: Skupina#33 20
+    3300394: Skupina#33 21
+    3300396: Skupina#33 22
+    3300398: Skupina#33 23
+    3300400: Skupina#33 24
+    3300402: Skupina#33 25
+    3300404: Skupina#33 26
+    3300406: Skupina#33 27
+    3300408: Skupina#33 28
+    3300410: Skupina#33 29
+    3300412: Skupina#33 3
+    3300414: Skupina#33 30
+    3300416: Skupina#33 31
+    3300418: Skupina#33 4
+    3300420: Skupina#33 5
+    3300422: Skupina#33 6
+    3300424: Skupina#33 7
+    3300426: Skupina#33 8
+    3300428: Skupina#33 9
+    3300430: Skupina#34
+    3300432: Skupina#34 1
+    3300434: Skupina#34 10
+    3300436: Skupina#34 11
+    3300438: Skupina#34 12
+    3300440: Skupina#34 13
+    3300442: Skupina#34 14
+    3300444: Skupina#34 15
+    3300446: Skupina#34 16
+    3300448: Skupina#34 17
+    3300450: Skupina#34 18
+    3300452: Skupina#34 19
+    3300454: Skupina#34 2
+    3300456: Skupina#34 20
+    3300458: Skupina#34 21
+    3300460: Skupina#34 22
+    3300462: Skupina#34 23
+    3300464: Skupina#34 24
+    3300466: Skupina#34 25
+    3300468: Skupina#34 26
+    3300470: Skupina#34 27
+    3300472: Skupina#34 28
+    3300474: Skupina#34 29
+    3300476: Skupina#34 3
+    3300478: Skupina#34 30
+    3300480: Skupina#34 31
+    3300482: Skupina#34 32
+    3300484: Skupina#34 33
+    3300486: Skupina#34 34
+    3300488: Skupina#34 35
+    3300490: Skupina#34 36
+    3300492: Skupina#34 37
+    3300494: Skupina#34 38
+    3300496: Skupina#34 39
+    3300498: Skupina#34 4
+    3300500: Skupina#34 40
+    3300502: Skupina#34 41
+    3300504: Skupina#34 42
+    3300506: Skupina#34 43
+    3300508: Skupina#34 44
+    3300510: Skupina#34 5
+    3300512: Skupina#34 6
+    3300514: Skupina#34 7
+    3300516: Skupina#34 8
+    3300518: Skupina#34 9
+    3300520: Skupina#38
+    3300522: Skupina#38 1
+    3300524: Skupina#38 2
+    3300526: Skupina#38 3
+    3300528: Skupina#38 4
+    3300530: Skupina#64
+    3300532: Skupina#64 1
+    3300534: Skupina#64 10
+    3300536: Skupina#64 11
+    3300538: Skupina#64 12
+    3300540: Skupina#64 13
+    3300542: Skupina#64 14
+    3300544: Skupina#64 15
+    3300546: Skupina#64 16
+    3300548: Skupina#64 17
+    3300550: Skupina#64 18
+    3300552: Skupina#64 19
+    3300554: Skupina#64 2
+    3300556: Skupina#64 20
+    3300558: Skupina#64 3
+    3300560: Skupina#64 4
+    3300562: Skupina#64 5
+    3300564: Skupina#64 6
+    3300566: Skupina#64 7
+    3300568: Skupina#64 8
+    3300570: Skupina#64 9
+    3300572: Skupina#74
+    3300574: Skupina#74 1
+    3300576: Skupina#84
+    3300578: Skupina#84 1
+    3300580: Skupina#86
+    3300582: Skupina#87
+    3300584: Skupina#97
+    3300586: Skupina#98
+    3300588: "z\xE1kladna"
+    4300000: Mesh arm
+    4300002: Mesh cylinder
+    4300004: Mesh Group 5
+    4300006: Mesh Group 7
+    4300008: Mesh Group 11
+    4300010: Mesh Group 13
+    4300012: Mesh Group 27
+    4300014: Mesh Group 29
+    4300016: Mesh Group 31
+    4300018: Mesh Group 33
+    4300020: Mesh Group 35
+    4300022: Mesh cylinder
+    4300024: Mesh cylinder
+    4300026: Mesh cylinder
+    4300028: Mesh Group 63
+    4300030: Mesh Group 70
+    4300032: Mesh Group 75
+    4300034: Mesh Group 77
+    4300036: Mesh Group 79
+    4300038: Mesh Group 81
+    4300040: Mesh servo
+    4300042: Mesh Group 91
+    4300044: Mesh Group 93
+    4300046: Mesh Group 95
+    4300048: Mesh Group 1
+    4300050: Mesh Group 15
+    4300052: Mesh Group 19
+    4300054: Mesh Group 24
+    4300056: Mesh Group 26
+    4300058: Mesh Group 30
+    4300060: Mesh Group 32
+    4300062: Mesh Group 46
+    4300064: Mesh Group 48
+    4300066: Mesh Group 50
+    4300068: Mesh Group 52
+    4300070: Mesh Group 54
+    4300072: Mesh Group 82
+    4300074: Mesh Group 89
+    4300076: Mesh Group 94
+    4300078: Mesh Group 96
+    4300080: Mesh Group 98
+    4300082: Mesh Skupina#34
+    4300084: Mesh Skupina#33
+    4300086: Mesh Group 20
+    4300088: Mesh Group 22
+    4300090: Mesh Skupina#28
+    4300092: Mesh Skupina#38
+    4300094: Mesh Group 62
+    4300096: Mesh Group 64
+    4300098: Mesh Skupina#64
+    4300100: Mesh Skupina#30
+    4300102: Mesh Skupina#74
+    4300104: Mesh Skupina#32
+    4300106: "Mesh z\xE1kladna"
+    4300108: Mesh Skupina#27
+    4300110: Mesh Skupina#29
+    4300112: Mesh Skupina#25
+    4300114: Mesh Group 177
+    4300116: Mesh Group 192
+    4300118: Mesh Group 194
+    4300120: Mesh Group 300
+    4300122: Mesh Group 302
+    4300124: Mesh Skupina#26
+    4300126: Mesh Group 330
+    4300128: Mesh Group 332
+    4300130: Mesh Group 334
+    4300132: Mesh Skupina#84
+    4300134: Mesh Group 359
+    4300136: Mesh Group 361
+    4300138: Mesh Group 364
+    4300140: Mesh Group 368
+    4300142: Mesh Skupina#87
+    4300144: Mesh Skupina#86
+    4300146: Mesh Group 391
+    4300148: Mesh Skupina#97
+    4300150: Mesh Skupina#98
+    4300152: Mesh Group 401
+    4300154: Mesh Skupina#104
+    4300156: Mesh Group 411
+    4300158: Mesh Group 413
+    4300160: Mesh Group 417
+    4300162: Mesh Group 419
+    4300164: Mesh Group 437
+    4300166: Mesh Group 457
+    4300168: Mesh Skupina#101
+    4300170: Mesh Group 475
+    4300172: Mesh Group 497
+    4300174: Mesh R6S
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.254
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 1
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
