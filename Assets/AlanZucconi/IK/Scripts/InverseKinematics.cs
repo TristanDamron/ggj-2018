@@ -133,8 +133,8 @@ namespace AlanZucconi.IK
         void Update()
         {
             // Do we have to approach the target?
-            //Vector3 direction = (Destination.position - Effector.transform.position).normalized;
-            Vector3 direction = (Destination.position - transform.position).normalized;
+            Vector3 direction = (Destination.localPosition - Effector.transform.localPosition).normalized;
+            //Vector3 direction = (Destination.localPosition - transform.local).normalized;
             target = Destination.position - direction * DistanceFromDestination;
             //if (Vector3.Distance(Effector.position, target) > Threshold)
             if (ErrorFunction(target, Solution) > StopThreshold)
@@ -218,7 +218,7 @@ namespace AlanZucconi.IK
          * given a solution. */
         public PositionRotation ForwardKinematics(float[] Solution)
         {
-            Vector3 prevPoint = Joints[0].transform.position;
+            Vector3 prevPoint = Joints[0].transform.localPosition;
             //Quaternion rotation = Quaternion.identity;
 
             // Takes object initial rotation into account

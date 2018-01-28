@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using AlanZucconi.IK;
 
-public class TentacleMovement : MonoBehaviour {
+public class TentacleMovement : MonoBehaviour
+{
 
 
     public GameObject[] bones;
@@ -14,19 +15,25 @@ public class TentacleMovement : MonoBehaviour {
     public bool fed;
     public bool boost;
     public bool patrolling;
+    public bool spawning;
     private Vector3 lerpTo;
-    private float boostTimer;
+    private Quaternion rot;
+    public float boostTimer;
+    public RobotJoint[] joints;
     private float defaultSpeed;
-    private float _targetTime;
+    public float _targetTime;
     List<Vector3> _posValues;
 
     void Awake()
     {
-        this.bones = GameObject.FindGameObjectsWithTag("Bone");
+        this.target = transform;
         this.fed = false;
         this.boost = false;
-        this.patrolling = true;
+        this.patrolling = false;
+        this.spawning = true;
         this.defaultSpeed = this.speed;
+        this.joints = GetComponent<InverseKinematics>().Joints;
+        _targetTime = Random.Range(.1f, 1.2f);
     }
 
     private void Start()
@@ -35,15 +42,14 @@ public class TentacleMovement : MonoBehaviour {
 
         for (int i = 0; i < 20; i++)
         {
-            _posValues.Add(new Vector3(target.localPosition.x + Random.Range(-5, 5), target.localPosition.y+ Random.Range(-5, 5),0));
+            _posValues.Add(new Vector3(target.localPosition.x, target.localPosition.y + Random.Range(-5, 30), target.localPosition.z));
         }
 
     }
 
-    //TODO: What if they are both in the collider?
-    void OnTriggerEnter (Collider c)
+    void OnTriggerEnter(Collider c)
     {
-        if (c.tag == "MainCamera" || c.tag == "Eatable")
+        if (c.tag == "Eatable")
         {
             this.target = c.gameObject.transform;
             this.patrolling = false;
@@ -65,38 +71,16 @@ public class TentacleMovement : MonoBehaviour {
         GetComponent<InverseKinematics>().Destination = this.target;
         this.timer += Time.deltaTime;
 
-        if (this.patrolling)
+        if (this.spawning)
         {
-            if (this.timer >= _targetTime)
-            {
-                
-                lerpTo = _posValues[Random.Range(0, _posValues.Count)];
-                _targetTime = Random.Range(.1f, 1.2f);
+            Quaternion rot = Quaternion.Euler(this.joints[0].transform.localPosition.x + Random.Range(-90f, 90f), 0f, this.joints[0].transform.localPosition.z);
 
-                //lerpTo = new Vector3(Random.Range(transform.localPosition.x + 2, transform.localPosition.x + 20), Random.Range(transform.localPosition.y + 4, transform.localPosition.y + 10), target.localPosition.z);
-                this.timer = 0f;
+            for (int i = 0; i < this.joints.Length; i++)
+            {
+                Quaternion slerp = Quaternion.Slerp(this.joints[i].transform.rotation, rot, Time.deltaTime / this.speed);
+                this.joints[i].transform.rotation = slerp;
             }
 
-            target.localPosition = Vector3.Lerp(target.localPosition, lerpTo, Time.deltaTime * 2f);
-        }
-
-        if (this.fed)
-        {
-            this.target = this.origin.transform;
-        }
-
-        if (this.boost)
-        {
-            this.speed = this.speed + 0.5f;
-            this.boostTimer += Time.deltaTime;
-        }
-
-        if (this.boostTimer >= 0.5f)
-        {
-            this.boost = false;
-            this.boostTimer = 0f;
-            this.speed = this.defaultSpeed;
-            this.fed = true;
         }
     }
 }
