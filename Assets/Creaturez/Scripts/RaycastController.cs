@@ -20,7 +20,7 @@ public class RaycastController
 
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, 10, _layer))
+        if (Physics.Raycast(ray, out hit, 5, _layer))
         {
                 Debug.Log("Tentacles!");
                 _hitVectorPoint = hit.point;

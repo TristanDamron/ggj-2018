@@ -10,6 +10,7 @@ public class JointScript : MonoBehaviour {
     private Transform _anchorTransform;
     private Rigidbody _rb;
     private float increment;
+    private IEnumerator _routine;
 
     private void Start()
     {
@@ -30,14 +31,30 @@ public class JointScript : MonoBehaviour {
 
     public void Release(Vector3 targetPoint)
     {
-        
-        Debug.Log("This is getting called");
         _anchorTransform.SetParent(null);
-        //_rb.constraints = RigidbodyConstraints.None;
-        Vector3 moveLerp = Vector3.Lerp(transform.position, targetPoint, Time.deltaTime * 2f);
-        this.increment += Time.deltaTime;
-        moveLerp.y = 0.5f * Mathf.Sin(Mathf.Clamp01(this.increment) * 2f);
-        _anchorTransform.position = moveLerp;
+
+        if(_routine != null)
+        {
+            StopCoroutine(_routine);
+        }
+
+        _routine = UpdateY(targetPoint);
+        StartCoroutine(_routine);
+    }
+
+    IEnumerator UpdateY(Vector3 target)
+    {
+        this.increment = 0f;
+
+        while (this.increment < 2.5f)
+        {
+            Vector3 moveLerp = Vector3.Lerp(transform.position, target, Time.deltaTime * 2f);
+            this.increment += Time.deltaTime;
+            moveLerp.y = 0.5f * Mathf.Sin(Mathf.Clamp01(this.increment) * 5f);
+            _anchorTransform.position = moveLerp;
+
+            yield return new WaitForSeconds(0);
+        }
     }
 
     public void DestroyJoint()

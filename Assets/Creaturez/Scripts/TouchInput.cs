@@ -33,7 +33,7 @@ public class TouchInput : MonoBehaviour {
             Ray ray = _cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hitInfo;
 
-            if(Physics.Raycast(ray,out hitInfo,10f,_layer))
+            if(Physics.Raycast(ray,out hitInfo,3f,_layer))
             {
                 
                 if (hitInfo.collider.GetComponent<JointScript>() != null)
@@ -85,7 +85,7 @@ public class TouchInput : MonoBehaviour {
             Ray ray = _cam.ScreenPointToRay(Input.GetTouch(0).position);
             RaycastHit hit;
 
-            if(Physics.Raycast(ray,out hit,10,_layer))
+            if(Physics.Raycast(ray,out hit,3,_layer))
             {
                 if(hit.collider.GetComponent<JointScript>() != null)
                 {
