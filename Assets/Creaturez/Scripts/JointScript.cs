@@ -40,7 +40,6 @@ public class JointScript : MonoBehaviour {
     {
         Destroy(_joint);
         _anchor = newAnchor;
-        Debug.Log(_anchor.name);
         CreateAJoint();
     }
 }
