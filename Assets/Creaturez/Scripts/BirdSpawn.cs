@@ -10,7 +10,7 @@ public class BirdSpawn : MonoBehaviour {
     {
         this.timer += Time.deltaTime;
 
-        if (this.timer >= 30f)
+        if (this.timer >= 10f)
         {
             Instantiate(this.bird, new Vector3(transform.localPosition.x + Random.Range(-0.25f, 0.25f), transform.localPosition.y, transform.localPosition.z + Random.Range(-0.25f, 0.25f)), transform.rotation);
             this.timer = 0f;
