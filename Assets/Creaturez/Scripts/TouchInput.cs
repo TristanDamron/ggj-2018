@@ -26,6 +26,7 @@ public class TouchInput : MonoBehaviour {
     // Update is called once per frame
     void Update () {
 
+#if UNITY_EDITOR
 
         if(Input.GetMouseButtonDown(0))
         {
@@ -39,6 +40,7 @@ public class TouchInput : MonoBehaviour {
                 {
                     _cacheJointScript = hitInfo.collider.GetComponent<JointScript>();
                     hitTarget = true;
+                    holding = true;
                 }
             }
 
@@ -48,6 +50,33 @@ public class TouchInput : MonoBehaviour {
                     _camScript.SetAnchorTransformTarget(_cacheJointScript.ReturnAnchorTransform());
             }
          }
+
+        if(Input.GetMouseButtonUp(0))
+        {
+            hitTarget = false;
+        }
+
+        if (holding)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Debug.Log("Swiped UP");
+
+                if (_raycastController.IsHit())
+                {
+                    _cacheJointScript.Release(_raycastController.ReturnHitVectorPoint());
+                }
+                else
+                {
+                    _cacheJointScript.Release(_camScript.ReturnVectorPoint());
+                }
+
+                holding = false;
+                _cacheJointScript = null;
+            }
+        }
+
+#endif
 
         if (Input.touchCount > 0)
         {
@@ -62,26 +91,8 @@ public class TouchInput : MonoBehaviour {
                 {
                     _cacheJointScript = hit.collider.GetComponent<JointScript>();
                     hitTarget = true;
+                    holding = true;
                 }
-            }
-
-            if(holding)
-            {
-                if (SwipeManager.IsSwipingUp() || SwipeManager.IsSwipingUpLeft() || SwipeManager.IsSwipingRight())
-                {
-                    
-                    if(_raycastController.IsHit())
-                    {                   
-                        _cacheJointScript.Release(_raycastController.ReturnHitVectorPoint());
-                    } 
-                    else
-                    {
-                        _cacheJointScript.Release(_camScript.ReturnVectorPoint());
-                    }
-
-                    holding = false;
-                }
-
             }
 
             if(hitTarget)
@@ -90,19 +101,35 @@ public class TouchInput : MonoBehaviour {
                 {
                     _cacheJointScript.Grabbed();
                     _camScript.SetAnchorTransformTarget(_cacheJointScript.ReturnAnchorTransform());
-                    holding = true;
                 }
             }
 
             if(touch.phase == TouchPhase.Ended)
             {
                 hitTarget = false;
+            }
 
-                if(!holding)
+            if (holding)
+            {
+                if (SwipeManager.IsSwipingUp() || SwipeManager.IsSwipingUpLeft() || SwipeManager.IsSwipingUpRight())
                 {
+                    Debug.Log("Swiped UP");
+
+                    if (_raycastController.IsHit())
+                    {
+                        _cacheJointScript.Release(_raycastController.ReturnHitVectorPoint());
+                    }
+                    else
+                    {
+                        _cacheJointScript.Release(_camScript.ReturnVectorPoint());
+                    }
+
+                    holding = false;
                     _cacheJointScript = null;
                 }
+
             }
+
 
         }
 	}

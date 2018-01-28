@@ -30,13 +30,13 @@ public class JointScript : MonoBehaviour {
 
     public void Release(Vector3 targetPoint)
     {
+        
+        Debug.Log("This is getting called");
+        _anchorTransform.SetParent(null);
         //_rb.constraints = RigidbodyConstraints.None;
         Vector3 moveLerp = Vector3.Lerp(transform.position, targetPoint, Time.deltaTime * 2f);
-
         this.increment += Time.deltaTime;
         moveLerp.y = 0.5f * Mathf.Sin(Mathf.Clamp01(this.increment) * 2f);
-
-        _anchorTransform.SetParent(null);
         _anchorTransform.position = moveLerp;
     }
 

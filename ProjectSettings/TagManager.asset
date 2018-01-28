@@ -7,6 +7,7 @@ TagManager:
   - Bone
   - Interactive
   - Eatable
+  - Tentacle
   layers:
   - Default
   - TransparentFX
