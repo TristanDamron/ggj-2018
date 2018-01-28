@@ -16,6 +16,6 @@ public class InFrontOfCamera : MonoBehaviour {
 
     public Vector3 ReturnVectorPoint()
     {
-        return transform.position + transform.forward * 2f; 
+        return transform.position + transform.forward * 5f; 
     }
 }
