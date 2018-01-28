@@ -13,6 +13,7 @@ public class TentacleMovement : MonoBehaviour {
     public bool fed;
     public bool boost;
     public bool patrolling;
+    private Vector3 lerpTo;
     private float boostTimer;
     private float defaultSpeed;
 
@@ -23,7 +24,7 @@ public class TentacleMovement : MonoBehaviour {
         this.boost = false;
         this.patrolling = true;
         this.defaultSpeed = this.speed;
-        this.target = transform;
+        this.target = GameObject.Find("Default Transform").transform;
     }
 
     //TODO: What if they are both in the collider?
@@ -40,7 +41,7 @@ public class TentacleMovement : MonoBehaviour {
     {
         if (c.tag == "MainCamera" || c.tag == "Eatable")
         {
-            this.target = transform;
+            this.target = GameObject.Find("Default Transform").transform;
             this.patrolling = true;
         }
     }
@@ -52,13 +53,13 @@ public class TentacleMovement : MonoBehaviour {
 
         if (this.patrolling)
         {
-            Vector3 pos = transform.localPosition;
-            if (this.timer >= 4f)
+            if (this.timer >= 1.5f)
             {
-                pos = new Vector3(transform.localPosition.x + Random.Range(-10, 10), transform.localPosition.y + 10f, target.localPosition.z);
+                lerpTo = new Vector3(target.localPosition.x + Random.Range(-10, 10), target.localPosition.y + Random.Range(4, 10), target.localPosition.z);
                 this.timer = 0f;
             }
-            target.localPosition = Vector3.Lerp(transform.localPosition, pos, Time.deltaTime * 2f);
+
+            target.localPosition = Vector3.Lerp(target.localPosition, lerpTo, Time.deltaTime * 2f);
         }
 
         if (this.fed)
