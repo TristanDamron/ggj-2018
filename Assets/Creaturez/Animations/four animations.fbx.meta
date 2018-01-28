@@ -1,0 +1,372 @@
+fileFormatVersion: 2
+guid: 1277594361bf5a547af0985d84253a27
+timeCreated: 1517180007
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: backtoe.L
+    100002: backtoe.R
+    100004: backtoe2.L
+    100006: backtoe2.L_end
+    100008: backtoe2.R
+    100010: backtoe2.R_end
+    100012: backtoe_base.L
+    100014: backtoe_base.R
+    100016: beak lower 2
+    100018: beak lower 2_end
+    100020: beak top
+    100022: beak top 2
+    100024: beak top 2_end
+    100026: beak_lower
+    100028: bird metarig
+    100030: body
+    100032: Cube
+    100034: eye direction.R
+    100036: eye direction.R_end
+    100038: eye.L
+    100040: eye.L 1
+    100042: eye.L_end
+    100044: eye.R
+    100046: eye.R 1
+    100048: eye.R_end
+    100050: eye_direction.L
+    100052: eye_direction.L_end
+    100054: feather_1.L
+    100056: feather_1.L_end
+    100058: feather_1.R
+    100060: feather_1.R_end
+    100062: feather_2.L
+    100064: feather_2.L_end
+    100066: feather_2.R
+    100068: feather_2.R_end
+    100070: feather_3.L
+    100072: feather_3.L_end
+    100074: feather_3.R
+    100076: feather_3.R_end
+    100078: feather_4.L
+    100080: feather_4.L_end
+    100082: feather_4.R
+    100084: feather_4.R_end
+    100086: feather_5.L
+    100088: feather_5.L_end
+    100090: feather_5.R
+    100092: feather_5.R_end
+    100094: feather_6.L
+    100096: feather_6.L_end
+    100098: feather_6.R
+    100100: feather_6.R_end
+    100102: foot.L
+    100104: foot.R
+    100106: //RootNode
+    100108: head
+    100110: head feathers
+    100112: innertoe1.L
+    100114: innertoe1.R
+    100116: innertoe2.L
+    100118: innertoe2.R
+    100120: innertoe3.L
+    100122: innertoe3.L_end
+    100124: innertoe3.R
+    100126: innertoe3.R_end
+    100128: middletoe1.L
+    100130: middletoe1.R
+    100132: middletoe2.L
+    100134: middletoe2.R
+    100136: middletoe3.L
+    100138: middletoe3.L_end
+    100140: middletoe3.R
+    100142: middletoe3.R_end
+    100144: neck.001
+    100146: neck.002
+    100148: outertoe1.L
+    100150: outertoe1.R
+    100152: outertoe2.L
+    100154: outertoe2.R
+    100156: outertoe3.L
+    100158: outertoe3.L_end
+    100160: outertoe3.R
+    100162: outertoe3.R_end
+    100164: pelvis.L
+    100166: pelvis.L_end
+    100168: pelvis.R
+    100170: pelvis.R_end
+    100172: shin.L
+    100174: shin.R
+    100176: shoulder.L
+    100178: shoulder.R
+    100180: skull.006.L
+    100182: skull.006.L_end
+    100184: skull.006.R
+    100186: skull.006.R_end
+    100188: spine.001
+    100190: spine.004
+    100192: spine.005
+    100194: spine.006
+    100196: t_feather.L
+    100198: t_feather.L_end
+    100200: t_feather.R
+    100202: t_feather.R_end
+    100204: tail feather
+    100206: tail feather_end
+    100208: tail feathers
+    100210: thigh.L
+    100212: thigh.R
+    100214: toe.L
+    100216: toe.R
+    100218: toes_parent.L
+    100220: toes_parent.L.001
+    100222: toes_parent.L.001_end
+    100224: toes_parent.R
+    100226: toes_parent.R.001
+    100228: toes_parent.R.001_end
+    100230: wing set 1
+    100232: wing set 1 row 2
+    100234: wing set 2
+    100236: wing set 2 row 2
+    100238: wing set 3
+    100240: wing set 3 row 2
+    100242: Wing_1.L
+    100244: Wing_1.R
+    100246: Wing_2.L
+    100248: Wing_2.R
+    100250: Wing_3.L
+    100252: Wing_3.R
+    400000: backtoe.L
+    400002: backtoe.R
+    400004: backtoe2.L
+    400006: backtoe2.L_end
+    400008: backtoe2.R
+    400010: backtoe2.R_end
+    400012: backtoe_base.L
+    400014: backtoe_base.R
+    400016: beak lower 2
+    400018: beak lower 2_end
+    400020: beak top
+    400022: beak top 2
+    400024: beak top 2_end
+    400026: beak_lower
+    400028: bird metarig
+    400030: body
+    400032: Cube
+    400034: eye direction.R
+    400036: eye direction.R_end
+    400038: eye.L
+    400040: eye.L 1
+    400042: eye.L_end
+    400044: eye.R
+    400046: eye.R 1
+    400048: eye.R_end
+    400050: eye_direction.L
+    400052: eye_direction.L_end
+    400054: feather_1.L
+    400056: feather_1.L_end
+    400058: feather_1.R
+    400060: feather_1.R_end
+    400062: feather_2.L
+    400064: feather_2.L_end
+    400066: feather_2.R
+    400068: feather_2.R_end
+    400070: feather_3.L
+    400072: feather_3.L_end
+    400074: feather_3.R
+    400076: feather_3.R_end
+    400078: feather_4.L
+    400080: feather_4.L_end
+    400082: feather_4.R
+    400084: feather_4.R_end
+    400086: feather_5.L
+    400088: feather_5.L_end
+    400090: feather_5.R
+    400092: feather_5.R_end
+    400094: feather_6.L
+    400096: feather_6.L_end
+    400098: feather_6.R
+    400100: feather_6.R_end
+    400102: foot.L
+    400104: foot.R
+    400106: //RootNode
+    400108: head
+    400110: head feathers
+    400112: innertoe1.L
+    400114: innertoe1.R
+    400116: innertoe2.L
+    400118: innertoe2.R
+    400120: innertoe3.L
+    400122: innertoe3.L_end
+    400124: innertoe3.R
+    400126: innertoe3.R_end
+    400128: middletoe1.L
+    400130: middletoe1.R
+    400132: middletoe2.L
+    400134: middletoe2.R
+    400136: middletoe3.L
+    400138: middletoe3.L_end
+    400140: middletoe3.R
+    400142: middletoe3.R_end
+    400144: neck.001
+    400146: neck.002
+    400148: outertoe1.L
+    400150: outertoe1.R
+    400152: outertoe2.L
+    400154: outertoe2.R
+    400156: outertoe3.L
+    400158: outertoe3.L_end
+    400160: outertoe3.R
+    400162: outertoe3.R_end
+    400164: pelvis.L
+    400166: pelvis.L_end
+    400168: pelvis.R
+    400170: pelvis.R_end
+    400172: shin.L
+    400174: shin.R
+    400176: shoulder.L
+    400178: shoulder.R
+    400180: skull.006.L
+    400182: skull.006.L_end
+    400184: skull.006.R
+    400186: skull.006.R_end
+    400188: spine.001
+    400190: spine.004
+    400192: spine.005
+    400194: spine.006
+    400196: t_feather.L
+    400198: t_feather.L_end
+    400200: t_feather.R
+    400202: t_feather.R_end
+    400204: tail feather
+    400206: tail feather_end
+    400208: tail feathers
+    400210: thigh.L
+    400212: thigh.R
+    400214: toe.L
+    400216: toe.R
+    400218: toes_parent.L
+    400220: toes_parent.L.001
+    400222: toes_parent.L.001_end
+    400224: toes_parent.R
+    400226: toes_parent.R.001
+    400228: toes_parent.R.001_end
+    400230: wing set 1
+    400232: wing set 1 row 2
+    400234: wing set 2
+    400236: wing set 2 row 2
+    400238: wing set 3
+    400240: wing set 3 row 2
+    400242: Wing_1.L
+    400244: Wing_1.R
+    400246: Wing_2.L
+    400248: Wing_2.R
+    400250: Wing_3.L
+    400252: Wing_3.R
+    2100000: No Name
+    2300000: Cube
+    3300000: Cube
+    4300000: Cube
+    4300002: eye.R
+    4300004: eye.L
+    4300006: head feathers
+    4300008: tail feathers
+    4300010: wing set 1 row 2
+    4300012: wing set 2 row 2
+    4300014: wing set 3 row 2
+    4300016: wing set 3
+    4300018: wing set 2
+    4300020: wing set 1
+    4300022: body
+    7400000: bird metarig|flapping
+    7400002: bird metarig|freaking out
+    7400004: bird metarig|idle
+    7400006: bird metarig|throw
+    9500000: //RootNode
+    13700000: body
+    13700002: eye.L
+    13700004: eye.R
+    13700006: head feathers
+    13700008: tail feathers
+    13700010: wing set 1
+    13700012: wing set 1 row 2
+    13700014: wing set 2
+    13700016: wing set 2 row 2
+    13700018: wing set 3
+    13700020: wing set 3 row 2
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -10,10 +10,10 @@ public class Squawk : MonoBehaviour {
     {
         this.timer += Time.deltaTime;
 
-        if (this.timer >= 10f)
+        if (this.timer >= Random.Range(5f, 8f))
         {
             int rand = Random.Range(0, clips.Length);
-            GameObject.Find("Audio Source").GetComponent<AudioSource>().PlayOneShot(this.clips[rand], 0.25f);
+            GameObject.Find("Audio Source").GetComponent<AudioSource>().PlayOneShot(this.clips[rand], 1f);
             this.timer = 0f;
         }
     }

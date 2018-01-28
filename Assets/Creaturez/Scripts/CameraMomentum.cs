@@ -8,12 +8,12 @@ public class CameraMomentum : MonoBehaviour {
 
     public float GetMomentumX()
     {
-        return transform.position.x - last.x;
+        return transform.localPosition.x - last.x;
     }
     
     public float GetMomentumY()
     {
-        return transform.position.y - last.y;
+        return transform.localPosition.y - last.y;
     }
 
     void OnTriggerStay(Collider c)
@@ -33,7 +33,7 @@ public class CameraMomentum : MonoBehaviour {
         this.timer += Time.deltaTime;
         if (this.timer >= 1f)
         {
-            this.last = transform.position;
+            this.last = transform.localPosition;
             this.timer = 0f;
         }
     }
