@@ -63,6 +63,7 @@ public class JointScript : MonoBehaviour {
         {
             Vector3 moveLerp = Vector3.Lerp(transform.position, target, Time.deltaTime * 2f);
             this.increment += Time.deltaTime;
+            GetComponentInChildren<Animator>().SetBool("throw", true);
             if (hit)
             {
                 moveLerp.y = 0.5f * Mathf.Sin(Mathf.Clamp01(this.increment) * 5f);
@@ -74,6 +75,7 @@ public class JointScript : MonoBehaviour {
             _anchorTransform.position = moveLerp;
 
             yield return new WaitForSeconds(0);
+            GetComponentInChildren<Animator>().SetBool("throw", false);
         }
     }
 
