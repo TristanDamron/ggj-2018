@@ -6,7 +6,7 @@ public class TentacleGrab : MonoBehaviour {
     public TentacleMovement movementScript;
 
     //TODO: What does the tentacle do if it touches the player?
-    void OnTriggerStay(Collider c)
+    void OnTriggerEnter(Collider c)
     {
         if (c.tag == "Eatable")
         {
