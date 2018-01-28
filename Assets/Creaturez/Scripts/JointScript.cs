@@ -25,7 +25,9 @@ public class JointScript : MonoBehaviour {
 
     public void Grabbed()
     {
-        if(GetComponent<SpringJoint>())
+        GetComponentInChildren<Animator>().SetBool("held", true);
+        StartCoroutine(ResetAnimBool());
+        if (GetComponent<SpringJoint>())
         {
             return;
         }
@@ -57,6 +59,12 @@ public class JointScript : MonoBehaviour {
 
         _routine = UpdateY(targetPoint, hit);
         StartCoroutine(_routine);
+    }
+
+    IEnumerator ResetAnimBool()
+    {
+        yield return new WaitForSeconds(3f);
+        GetComponentInChildren<Animator>().SetBool("held", false);
     }
 
     IEnumerator UpdateY(Vector3 target, bool hit)
