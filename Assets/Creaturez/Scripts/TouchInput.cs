@@ -7,21 +7,26 @@ public class TouchInput : MonoBehaviour {
     private InFrontOfCamera _camScript;
     private Camera _cam;
     private JointScript _cacheJointScript;
-    bool hitTarget;
+    private bool hitTarget, holding;
+    private RaycastController _raycastController;
 
     [SerializeField]
     private LayerMask _layer;
 
+    [SerializeField]
+    private LayerMask _doomLayer;
 
     private void Start()
     {
         _cam = Camera.main;
         _camScript = _cam.GetComponent<InFrontOfCamera>();
+        _raycastController = new RaycastController (_cam, _doomLayer);
 
     }
     // Update is called once per frame
     void Update () {
-        
+
+
         if(Input.GetMouseButtonDown(0))
         {
             Ray ray = _cam.ScreenPointToRay(Input.mousePosition);
@@ -60,24 +65,43 @@ public class TouchInput : MonoBehaviour {
                 }
             }
 
-            if(hitTarget)
+            if(holding)
             {
                 if (SwipeManager.IsSwipingUp() || SwipeManager.IsSwipingUpLeft() || SwipeManager.IsSwipingRight())
                 {
-                    //Throw the fucking bird
+                    
+                    if(_raycastController.IsHit())
+                    {                   
+                        _cacheJointScript.Release(_raycastController.ReturnHitVectorPoint());
+                    } 
+                    else
+                    {
+                        _cacheJointScript.Release(_camScript.ReturnVectorPoint());
+                    }
+
+                    holding = false;
                 }
 
+            }
+
+            if(hitTarget)
+            {
                 if(SwipeManager.IsSwipingDown() || SwipeManager.IsSwipingDownLeft() || SwipeManager.IsSwipingDownRight())
                 {
                     _cacheJointScript.Grabbed();
                     _camScript.SetAnchorTransformTarget(_cacheJointScript.ReturnAnchorTransform());
+                    holding = true;
                 }
             }
 
             if(touch.phase == TouchPhase.Ended)
             {
                 hitTarget = false;
-                _cacheJointScript = null;
+
+                if(!holding)
+                {
+                    _cacheJointScript = null;
+                }
             }
 
         }
