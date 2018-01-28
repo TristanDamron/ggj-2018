@@ -13,6 +13,7 @@ public class TentacleGrab : MonoBehaviour {
             this.movementScript.target = c.gameObject.transform;
             this.movementScript.boost = true;
             c.gameObject.transform.position = transform.position;
+            c.GetComponent<JointScript>().DestroyJoint();
         }
     }
 }

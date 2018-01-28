@@ -34,7 +34,7 @@ public class JointScript : MonoBehaviour {
         _anchorTransform.position = targetPoint;
     }
 
-    void DestroyJoint()
+    public void DestroyJoint()
     {
         Destroy(GetComponent<SpringJoint>());
     }
