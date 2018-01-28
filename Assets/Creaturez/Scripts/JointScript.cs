@@ -10,21 +10,34 @@ public class JointScript : MonoBehaviour {
     private Transform _anchorTransform;
     private Rigidbody _rb;
     private float increment;
-    private IEnumerator _routine;
+    private IEnumerator _routine,_patrolRoutine;
+    List<Vector3> _patrolPoints;
 
     [SerializeField]
-    private BirdAnimations _animations;
-
+    private BirdAnimations _birdAnims;
 
     private void Start()
     {
         _anchorTransform = _anchor.GetComponent<Transform>();
         _rb = GetComponent<Rigidbody>();
         CreateAJoint();
+        _patrolRoutine = PatrolAround();
+        StartCoroutine(_patrolRoutine);
     }
 
     public void Grabbed()
     {
+        _birdAnims.SetAnimation("Grabbed");
+        _birdAnims.LookAtCam();
+        _birdAnims.SetPos();
+
+        CancelInvoke("InvokePatrolRoutine");
+
+        if(_patrolRoutine != null)
+        {
+            StopCoroutine(_patrolRoutine);
+        }
+
         if(GetComponent<SpringJoint>())
         {
             return;
@@ -36,19 +49,36 @@ public class JointScript : MonoBehaviour {
     public void Release(Vector3 targetPoint)
     {
         _anchorTransform.SetParent(null);
+        _birdAnims.SetAnimation("Throw");
+        _birdAnims.LookAway();
 
         if(_routine != null)
         {
             StopCoroutine(_routine);
         }
 
+        if(_patrolRoutine != null)
+        {
+            StopCoroutine(_patrolRoutine);
+        }
+
         _routine = UpdateY(targetPoint, false);
         StartCoroutine(_routine);
+
+        CancelInvoke("InvokePatrolRoutine");
+        Invoke("InvokePatrolRoutine",1f);
+    }
+
+    void InvokePatrolRoutine()
+    {
+        StartCoroutine(_patrolRoutine);
     }
 
     public void Release(Vector3 targetPoint, bool hit)
     {
         _anchorTransform.SetParent(null);
+        _birdAnims.SetAnimation("Throw");
+        _birdAnims.LookAway();
 
         if (_routine != null)
         {
@@ -59,6 +89,27 @@ public class JointScript : MonoBehaviour {
         StartCoroutine(_routine);
     }
 
+    IEnumerator PatrolAround()
+    {
+        _patrolPoints = new List<Vector3>();
+        for (int i = 0; i < 10; i++)
+        {
+            var refPos = _anchorTransform.position;
+            var randomPos = new Vector3(Random.Range(refPos.x - 1, refPos.x + 1),
+                                        Random.Range(refPos.y - 1, refPos.y + 1),
+                                        Random.Range(refPos.z - 1, refPos.z + 1));
+            _patrolPoints.Add(randomPos);
+        }
+
+        while (true)
+        {
+            _anchorTransform.position = _patrolPoints[Random.Range(0, _patrolPoints.Count)];
+            _birdAnims.LookAt(_anchorTransform);
+            var setRandomTime = Random.Range(.1f, .7f);
+            yield return new WaitForSeconds(setRandomTime);
+        }
+    }
+
     IEnumerator UpdateY(Vector3 target, bool hit)
     {
         this.increment = 0f;
@@ -67,7 +118,6 @@ public class JointScript : MonoBehaviour {
         {
             Vector3 moveLerp = Vector3.Lerp(transform.position, target, Time.deltaTime * 2f);
             this.increment += Time.deltaTime;
-            GetComponentInChildren<Animator>().SetBool("throw", true);
             if (hit)
             {
                 moveLerp.y = 0.5f * Mathf.Sin(Mathf.Clamp01(this.increment) * 5f);
@@ -79,7 +129,6 @@ public class JointScript : MonoBehaviour {
             _anchorTransform.position = moveLerp;
 
             yield return new WaitForSeconds(0);
-            GetComponentInChildren<Animator>().SetBool("throw", false);
         }
     }
 
@@ -90,6 +139,18 @@ public class JointScript : MonoBehaviour {
 
     public Transform ReturnAnchorTransform()
     {
+
+        if (_patrolRoutine != null)
+        {
+            StopCoroutine(_patrolRoutine);
+        }
+
+        if (_routine != null)
+        {
+            StopCoroutine(_routine);
+        }
+
+
         return _anchorTransform;
     }
 

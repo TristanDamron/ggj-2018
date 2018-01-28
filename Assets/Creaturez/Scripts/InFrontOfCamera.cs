@@ -10,8 +10,14 @@ public class InFrontOfCamera : MonoBehaviour {
 
     public void SetAnchorTransformTarget(Transform target)
     {
-        target.position = transform.position + transform.forward * _distance;
+        var offset = new Vector3(transform.position.x, transform.position.y - .15f, transform.position.z);
+        target.position = offset + transform.forward * _distance;
         target.SetParent(transform);
+    }
+
+    public Vector3 ReturnVectorPointInFront(float distance)
+    {
+        return transform.position + transform.forward * distance; 
     }
 
     public Vector3 ReturnVectorPoint()
