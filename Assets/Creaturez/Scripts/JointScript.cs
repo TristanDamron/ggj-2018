@@ -9,6 +9,7 @@ public class JointScript : MonoBehaviour {
     private SpringJoint _joint;
     private Transform _anchorTransform;
     private Rigidbody _rb;
+    private float increment;
 
     private void Start()
     {
@@ -30,8 +31,13 @@ public class JointScript : MonoBehaviour {
     public void Release(Vector3 targetPoint)
     {
         //_rb.constraints = RigidbodyConstraints.None;
+        Vector3 moveLerp = Vector3.Lerp(transform.position, targetPoint, Time.deltaTime * 2f);
+
+        this.increment += Time.deltaTime;
+        moveLerp.y = 0.5f * Mathf.Sin(Mathf.Clamp01(this.increment) * 2f);
+
         _anchorTransform.SetParent(null);
-        _anchorTransform.position = targetPoint;
+        _anchorTransform.position = moveLerp;
     }
 
     public void DestroyJoint()
