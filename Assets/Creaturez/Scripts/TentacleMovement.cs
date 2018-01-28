@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TentacleMovement : MonoBehaviour {
+    
     public GameObject[] bones;
     public float timer;
     public float speed;
@@ -19,8 +20,7 @@ public class TentacleMovement : MonoBehaviour {
         this.fed = false;
         this.boost = false;
         this.defaultSpeed = this.speed;
-        transform.position = Vector3.zero;
-        this.target = transform;
+        //this.target = transform;
     }
 
     //TODO: What if they are both in the collider?
