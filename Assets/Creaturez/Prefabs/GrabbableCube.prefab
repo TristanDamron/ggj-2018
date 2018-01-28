@@ -36,6 +36,7 @@ GameObject:
   - component: {fileID: 4550420231743728}
   - component: {fileID: 95713982337912864}
   - component: {fileID: 114102717479133482}
+  - component: {fileID: 114052617577211268}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Untagged
@@ -2946,7 +2947,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1349796321432136}
-  m_LocalRotation: {x: -0.36877283, y: 0.6253083, z: 0.589451, w: 0.35432142}
+  m_LocalRotation: {x: -0.36877286, y: 0.62530833, z: 0.5894511, w: 0.35432145}
   m_LocalPosition: {x: -0.008293166, y: 0.015438701, z: 0.0012585861}
   m_LocalScale: {x: 1.0000001, y: 1.0000004, z: 0.99999994}
   m_Children:
@@ -3680,7 +3681,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1391178290335174}
-  m_LocalRotation: {x: 0.36877307, y: 0.62530804, z: 0.5894509, w: -0.35432175}
+  m_LocalRotation: {x: 0.3687731, y: 0.6253081, z: 0.58945096, w: -0.35432178}
   m_LocalPosition: {x: 0.008293167, y: 0.015438701, z: 0.0012585782}
   m_LocalScale: {x: 1, y: 0.99999994, z: 0.99999994}
   m_Children:
@@ -3842,6 +3843,22 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114052617577211268
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1014620705297434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 222da9f88bb81244f9621b9e23c0f74e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: df19e9e05e006cc419a5e7ec5097b329, type: 3}
+  - {fileID: 8300000, guid: 0b31460be73e6e14d85b0d1a4e2a2c0d, type: 3}
+  - {fileID: 8300000, guid: 484138c3a59ce0f4f8c740e967d613ce, type: 3}
+  timer: 0
 --- !u!114 &114102717479133482
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3865,6 +3882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _anchor: {fileID: 54292577326161208}
+  _animations: {fileID: 0}
 --- !u!114 &114835134190418290
 MonoBehaviour:
   m_ObjectHideFlags: 1
