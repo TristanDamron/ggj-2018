@@ -117,7 +117,7 @@ public class TouchInput : MonoBehaviour {
 
                     if (_raycastController.IsHit())
                     {
-                        _cacheJointScript.Release(_raycastController.ReturnHitVectorPoint());
+                        _cacheJointScript.Release(_raycastController.ReturnHitVectorPoint(), true);
                     }
                     else
                     {

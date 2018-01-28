@@ -38,11 +38,24 @@ public class JointScript : MonoBehaviour {
             StopCoroutine(_routine);
         }
 
-        _routine = UpdateY(targetPoint);
+        _routine = UpdateY(targetPoint, false);
         StartCoroutine(_routine);
     }
 
-    IEnumerator UpdateY(Vector3 target)
+    public void Release(Vector3 targetPoint, bool hit)
+    {
+        _anchorTransform.SetParent(null);
+
+        if (_routine != null)
+        {
+            StopCoroutine(_routine);
+        }
+
+        _routine = UpdateY(targetPoint, hit);
+        StartCoroutine(_routine);
+    }
+
+    IEnumerator UpdateY(Vector3 target, bool hit)
     {
         this.increment = 0f;
 
@@ -50,7 +63,14 @@ public class JointScript : MonoBehaviour {
         {
             Vector3 moveLerp = Vector3.Lerp(transform.position, target, Time.deltaTime * 2f);
             this.increment += Time.deltaTime;
-            moveLerp.y = 0.5f * Mathf.Sin(Mathf.Clamp01(this.increment) * 5f);
+            if (hit)
+            {
+                moveLerp.y = 0.5f * Mathf.Sin(Mathf.Clamp01(this.increment) * 5f);
+            } else
+            {
+                moveLerp.y = 0.5f * Mathf.Sin(Mathf.Clamp01(this.increment / 2f) * 10f);
+            }
+
             _anchorTransform.position = moveLerp;
 
             yield return new WaitForSeconds(0);
