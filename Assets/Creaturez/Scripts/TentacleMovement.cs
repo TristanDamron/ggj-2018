@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using AlanZucconi.IK;
 
 public class TentacleMovement : MonoBehaviour {
     
@@ -20,7 +21,7 @@ public class TentacleMovement : MonoBehaviour {
         this.fed = false;
         this.boost = false;
         this.defaultSpeed = this.speed;
-        //this.target = transform;
+        this.target = transform;
     }
 
     //TODO: What if they are both in the collider?
@@ -40,36 +41,13 @@ public class TentacleMovement : MonoBehaviour {
         }
     }
 
-    private Vector3 GetControlBone()
-    {
-        return this.bones[0].transform.position;
-    }
-
-    private void SetControlBone(Vector3 pos)
-    {
-        this.bones[0].transform.position = Vector3.Lerp(GetControlBone(), pos, Time.deltaTime * this.speed);
-    }
-
-    private void SetLastBone(Vector3 pos)
-    {
-        this.bones[this.bones.Length - 2].transform.position = Vector3.Lerp(GetLastBone(), pos, Time.deltaTime * this.speed);
-    }
-
-    private Vector3 GetLastBone()
-    {
-        return this.bones[this.bones.Length - 2].transform.position;
-    }
-
     void Update()
     {
-        if (!this.fed)
+        GetComponent<InverseKinematics>().Destination = this.target;
+
+        if (this.fed)
         {
-            SetLastBone(GetControlBone());
-            SetControlBone(this.target.position + (this.target.forward * 2));
-        } else
-        {
-            SetLastBone(GetControlBone());
-            SetControlBone(this.origin.position + (this.target.forward * 2));
+            this.target = this.origin.transform;
         }
 
         if (this.boost)
