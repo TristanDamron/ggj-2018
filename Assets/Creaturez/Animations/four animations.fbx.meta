@@ -348,8 +348,8 @@ ModelImporter:
     - serializedVersion: 16
       name: bird metarig|freaking out
       takeName: bird metarig|freaking out
-      firstFrame: 2
-      lastFrame: 36
+      firstFrame: 3
+      lastFrame: 24
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

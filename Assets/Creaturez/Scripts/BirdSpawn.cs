@@ -16,7 +16,7 @@ public class BirdSpawn : MonoBehaviour {
 
         if (this.timer >= _spawnTime)
         {
-            if (_birdCount >= 5)
+            if (_birdCount >= 10)
             {
                 this.timer = 0f;
                 _spawnTime = 5;
@@ -24,11 +24,15 @@ public class BirdSpawn : MonoBehaviour {
 
             }
 
-            var spawnPos = _front.ReturnVectorPointInFront(Random.Range(2,4));
-            Instantiate(this.bird, new Vector3(spawnPos.x + Random.Range(-1f, 1f), spawnPos.y, spawnPos.z + Random.Range(-1f, 1f)), transform.rotation);
+            var spawnPos = _front.ReturnVectorPointInFront(Random.Range(2, 4));
+            Instantiate(bird, new Vector3(spawnPos.x + Random.Range(-10f, 10f), spawnPos.y, spawnPos.z + Random.Range(-10f, 10f)), transform.rotation);
+
+            //var spawnPos = _front.ReturnVectorPointInFront(Random.Range(2,4));
+            //Instantiate(this.bird, new Vector3(spawnPos.x + Random.Range(-1f, 1f), spawnPos.y, spawnPos.z + Random.Range(-1f, 1f)), transform.rotation);
+           
             this.timer = 0f;
             _birdCount++;
-            _spawnTime = Random.Range(10, 30);
+            _spawnTime = Random.Range(5, 20);
         }
     }
 }

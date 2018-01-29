@@ -10,7 +10,7 @@ public class InFrontOfCamera : MonoBehaviour {
 
     public void SetAnchorTransformTarget(Transform target)
     {
-        var offset = new Vector3(transform.position.x, transform.position.y - .15f, transform.position.z);
+        var offset = new Vector3(transform.position.x, transform.position.y - .30f, transform.position.z);
         target.position = offset + transform.forward * _distance;
         target.SetParent(transform);
     }
