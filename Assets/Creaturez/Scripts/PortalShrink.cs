@@ -20,6 +20,7 @@ public class PortalShrink : MonoBehaviour {
     }
 
 	void Update () {
+        
 	    if (this.shrink)
         {
             transform.localScale = Vector3.Lerp(transform.localScale, Vector3.zero, Time.deltaTime * 4f);

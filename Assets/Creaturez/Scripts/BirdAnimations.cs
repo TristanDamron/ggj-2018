@@ -24,6 +24,11 @@ public class BirdAnimations : MonoBehaviour
         _camTrans = Camera.main.transform;
     }
 
+    public void DisableThisGameObject()
+    {
+        gameObject.SetActive(false);
+    }
+
     public void SetAnimation(string animNam)
     {
         _anims.Play(animNam);

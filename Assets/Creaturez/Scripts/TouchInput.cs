@@ -36,9 +36,9 @@ public class TouchInput : MonoBehaviour {
             if(Physics.Raycast(ray,out hitInfo,3f,_layer))
             {
                 
-                if (hitInfo.collider.GetComponent<BirdAnimations>() != null)
+                if (hitInfo.collider.GetComponent<JointScript>() != null)
                 {
-                    _cacheJointScript = hitInfo.collider.GetComponent<BirdAnimations>().PassJoint();
+                    _cacheJointScript = hitInfo.collider.GetComponent<JointScript>();
                     hitTarget = true;
                     holding = true;
                 }
@@ -87,9 +87,9 @@ public class TouchInput : MonoBehaviour {
 
             if(Physics.Raycast(ray,out hit,3,_layer))
             {
-                if(hit.collider.GetComponent<BirdAnimations>() != null)
+                if(hit.collider.GetComponent<JointScript>() != null)
                 {
-                    _cacheJointScript = hit.collider.GetComponent<BirdAnimations>().PassJoint();
+                    _cacheJointScript = hit.collider.GetComponent<JointScript>();
                     hitTarget = true;
                     holding = true;
                 }

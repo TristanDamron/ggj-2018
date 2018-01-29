@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class JointScript : MonoBehaviour {
-    
+
+    [SerializeField]
+    ParticleSystem _particleSystem;
+
     [SerializeField]
     private Rigidbody _anchor;
     private SpringJoint _joint;
     private Transform _anchorTransform;
     private Rigidbody _rb;
     private float increment;
-    private IEnumerator _routine,_patrolRoutine;
+    private IEnumerator _routine,_patrolRoutine, _liveRoutine;
     List<Vector3> _patrolPoints;
+    bool _snatched;
 
     [SerializeField]
     private BirdAnimations _birdAnims;
@@ -23,6 +27,8 @@ public class JointScript : MonoBehaviour {
         CreateAJoint();
         _patrolRoutine = PatrolAround();
         StartCoroutine(_patrolRoutine);
+        _liveRoutine = TimeTillAlive();
+        StartCoroutine(_liveRoutine);
     }
 
     public void Grabbed()
@@ -30,6 +36,8 @@ public class JointScript : MonoBehaviour {
         _birdAnims.SetAnimation("Grabbed");
         _birdAnims.LookAtCam();
         _birdAnims.SetPos();
+
+        StopCoroutine(_liveRoutine);
 
         CancelInvoke("InvokePatrolRoutine");
 
@@ -46,11 +54,44 @@ public class JointScript : MonoBehaviour {
         CreateAJoint();
     }
 
+    public void Snatched(Transform transform)
+    {
+        StopCoroutine(_liveRoutine);
+        StopCoroutine(_patrolRoutine);
+        DestroyJoint();
+        transform.position = transform.position;
+        transform.SetParent(transform);
+        Invoke("InvokeDestroy",1f);
+    }
+
+    IEnumerator TimeTillAlive()
+    {
+        
+        float time = Random.Range(10, 60);
+        while (time > 0)
+            
+        {
+            time -= Time.deltaTime;
+            yield return new WaitForSeconds(0);
+        }
+
+            _particleSystem.Play(true);
+            _birdAnims.DisableThisGameObject();
+            Invoke("InvokeDestroy", 1.5f);
+    }
+
+    void InvokeDestroy()
+    {
+        Destroy(gameObject);
+    }
+
     public void Release(Vector3 targetPoint)
     {
         _anchorTransform.SetParent(null);
         _birdAnims.SetAnimation("Throw");
         _birdAnims.LookAway();
+
+        StartCoroutine(_liveRoutine);
 
         if(_routine != null)
         {

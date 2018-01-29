@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4664030957409594}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: toes_parent.R.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34,7 +34,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4548915512980256}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: neck.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49,7 +49,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4146719417778326}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: backtoe2.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4606727557389018}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: backtoe_base.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,7 +79,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4054391660697400}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: middletoe3.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4611661159251486}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: spine.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4879680832482334}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: innertoe2.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4645790543125740}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: beak lower 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139,7 +139,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4537016205896328}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: middletoe2.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,7 +154,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4139933073007926}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: backtoe.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4118244260306550}
   - component: {fileID: 137703423386424416}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: eye.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -185,7 +185,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4198124004581586}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: beak lower 2_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4555347064354646}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: outertoe1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -216,7 +216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4924406652209710}
   - component: {fileID: 137121289063202564}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wing set 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -232,7 +232,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4443423282324192}
   - component: {fileID: 137746118053349942}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: head feathers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,7 +247,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4929386577213158}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: toe.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,7 +262,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4012749603277132}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: toes_parent.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -278,7 +278,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4965903625287974}
   - component: {fileID: 137255147708869470}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wing set 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -293,7 +293,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4155749716953570}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: backtoe2.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -308,7 +308,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4418642558841700}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: backtoe2.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -323,7 +323,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4438227907414200}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: backtoe.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -338,7 +338,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4929668643651050}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: neck.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -353,7 +353,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4825154179259546}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: eye_direction.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -368,7 +368,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4372680859724446}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: feather_3.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -383,7 +383,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4868482483017152}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: feather_2.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -398,7 +398,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4577023433475514}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: feather_6.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -413,7 +413,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4213643687543408}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: outertoe2.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -428,7 +428,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4860571825122690}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: middletoe2.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -443,7 +443,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4631389154033682}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: feather_3.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -458,7 +458,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4818241606133602}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: spine.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -473,7 +473,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4063092112802406}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: eye.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -488,7 +488,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4114868678855746}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: bird metarig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -503,7 +503,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4441894811376162}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: tail feather_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -518,7 +518,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4848827981017024}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: outertoe3.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -533,7 +533,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4512445842830294}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: feather_2.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -549,7 +549,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4316329162983694}
   - component: {fileID: 137182463328517004}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wing set 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -564,7 +564,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4199599795449490}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: beak_lower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -579,7 +579,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4987706725364878}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: spine.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -594,7 +594,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4253933275398048}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: innertoe3.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -609,7 +609,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4408551937559812}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: skull.006.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -624,7 +624,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4263268232859216}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: feather_3.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -639,7 +639,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4078655278166416}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: beak top 2_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -654,7 +654,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4234689299307702}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: spine.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -669,7 +669,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4210009428997946}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: innertoe3.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -684,7 +684,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4595968959201476}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: thigh.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -699,7 +699,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4774073525330590}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: backtoe_base.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -714,7 +714,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4856043362399062}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: feather_6.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -745,7 +745,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4540150483076742}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: t_feather.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -760,7 +760,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4162471008909976}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: middletoe1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -775,7 +775,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4502456368514100}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: middletoe3.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -790,7 +790,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4882983083915604}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: eye_direction.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -805,7 +805,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4243471578035154}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: outertoe1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -820,7 +820,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4919304417731040}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: t_feather.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -835,7 +835,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4080411282309208}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: feather_6.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -850,7 +850,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4296014093302588}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: outertoe3.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -865,7 +865,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4974963016017852}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: skull.006.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -881,7 +881,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4650089390433786}
   - component: {fileID: 137622364969383632}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: eye.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -896,7 +896,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4878301898243790}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Wing_1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -911,7 +911,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4332938337296422}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: toes_parent.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -926,7 +926,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4498995477679446}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: toe.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -942,7 +942,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4570737752046544}
   - component: {fileID: 137545063202810140}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wing set 3 row 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -957,7 +957,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4970985430285570}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: skull.006.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -972,7 +972,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4899711173156434}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: toes_parent.L.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -987,7 +987,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4178481210013094}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: feather_1.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1002,7 +1002,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4026058283813402}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: foot.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1017,7 +1017,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4958425217486424}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: middletoe1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1032,7 +1032,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4012538610333966}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: thigh.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1047,7 +1047,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4600079234199900}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: pelvis.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1062,7 +1062,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4838239860578546}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: feather_1.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1077,7 +1077,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4333424378010184}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: feather_5.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1092,7 +1092,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4505331811470944}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Wing_2.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1107,7 +1107,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4411301640778658}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: feather_2.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1122,7 +1122,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4664557795317702}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: outertoe2.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1137,7 +1137,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4121756273083214}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: feather_5.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1152,7 +1152,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4879162113115374}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: feather_1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1167,7 +1167,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4528299711575154}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: skull.006.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1182,7 +1182,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4915154916377770}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Wing_2.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1197,7 +1197,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4995455789610828}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: foot.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1212,7 +1212,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4653868508466602}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: innertoe1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1227,7 +1227,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4341410399855002}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: outertoe3.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1242,7 +1242,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4446898957220572}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: feather_5.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1257,7 +1257,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4204556427906958}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: toes_parent.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1272,7 +1272,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4262725921965138}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: middletoe3.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1287,7 +1287,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4226884169733568}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: beak top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1302,7 +1302,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4471688101431724}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: pelvis.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1318,7 +1318,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4582652523968864}
   - component: {fileID: 137587933354997854}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wing set 2 row 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1333,7 +1333,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4268254163886034}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: shin.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1365,7 +1365,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4712227230600528}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: feather_5.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1380,7 +1380,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4678879132258546}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: beak top 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1412,7 +1412,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4845032465282526}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: eye.L 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1427,7 +1427,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4085350736863450}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: backtoe2.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1442,7 +1442,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4351890323381884}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: feather_4.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1457,7 +1457,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4640073027858168}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1489,7 +1489,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4205700084083842}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: innertoe3.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1505,7 +1505,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4294311626517640}
   - component: {fileID: 137426500973620952}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: wing set 1 row 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1520,7 +1520,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4172816445693362}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: feather_3.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1535,7 +1535,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4392372946270056}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: shoulder.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1550,7 +1550,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4110138154224426}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: pelvis.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1565,7 +1565,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4583173584435494}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: eye.R 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1580,7 +1580,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4048311449279246}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: middletoe3.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1595,7 +1595,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4430199296784290}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: feather_4.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1611,7 +1611,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4624900434302368}
   - component: {fileID: 137413931844323526}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1626,7 +1626,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4079894753903456}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Wing_1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1641,7 +1641,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4710232231062132}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Wing_3.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1656,7 +1656,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4992827787179202}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: pelvis.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1671,7 +1671,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4787970707168538}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: t_feather.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1686,7 +1686,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4507263437768166}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: feather_1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1701,7 +1701,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4411024390265616}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: t_feather.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1716,7 +1716,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4055828295543296}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: innertoe3.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1746,7 +1746,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4680820694623850}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: shin.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1782,7 +1782,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4097003796689882}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: tail feather
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1798,7 +1798,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4389891473181734}
   - component: {fileID: 137566926593861520}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: tail feathers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1813,7 +1813,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4969606042149316}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: feather_4.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1828,7 +1828,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4663247562108024}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: feather_2.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1843,7 +1843,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4231544129828896}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: innertoe1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1858,7 +1858,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4837707562647032}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: toes_parent.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1873,7 +1873,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4072008997915382}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: eye direction.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1888,7 +1888,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4841712217932854}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: feather_6.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1903,7 +1903,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4044598078093832}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: innertoe2.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1918,7 +1918,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4016448213613834}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: eye.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1935,8 +1935,7 @@ GameObject:
   - component: {fileID: 4105591396919904}
   - component: {fileID: 95468315127191986}
   - component: {fileID: 114135035494914652}
-  - component: {fileID: 65865542220900226}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Bird
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1951,7 +1950,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4934551582849142}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: shoulder.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1966,7 +1965,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4188593393588190}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: eye direction.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1981,7 +1980,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4570288913977018}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: feather_4.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1996,7 +1995,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4269736106180404}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Wing_3.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2011,7 +2010,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4771803538858186}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: outertoe3.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3114,7 +3113,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1752014979498030}
-  m_LocalRotation: {x: 0.36877307, y: 0.62530804, z: 0.5894509, w: -0.35432175}
+  m_LocalRotation: {x: 0.3687731, y: 0.6253081, z: 0.58945096, w: -0.35432178}
   m_LocalPosition: {x: 0.008293167, y: 0.015438701, z: 0.0012585782}
   m_LocalScale: {x: 1, y: 0.99999994, z: 0.99999994}
   m_Children:
@@ -3511,7 +3510,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1685306571485268}
-  m_LocalRotation: {x: -0.36877283, y: 0.6253083, z: 0.589451, w: 0.35432142}
+  m_LocalRotation: {x: -0.36877286, y: 0.62530833, z: 0.5894511, w: 0.35432145}
   m_LocalPosition: {x: -0.008293166, y: 0.015438701, z: 0.0012585861}
   m_LocalScale: {x: 1.0000001, y: 1.0000004, z: 0.99999994}
   m_Children:
@@ -3944,22 +3943,10 @@ BoxCollider:
   m_GameObject: {fileID: 1860584979594192}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1.51, y: 1.32, z: 1.48}
-  m_Center: {x: -0, y: 0, z: 0}
---- !u!65 &65865542220900226
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1975270329597914}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 20, y: 20, z: 20}
-  m_Center: {x: 0, y: 6.17, z: 0}
+  m_Size: {x: 1.5, y: 1.5, z: 1.5}
+  m_Center: {x: -0, y: 0, z: 0}
 --- !u!95 &95468315127191986
 Animator:
   serializedVersion: 3
@@ -4002,6 +3989,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e31f1498db34972aaa9ab7cf260228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _particleSystem: {fileID: 198635654642504126}
   _anchor: {fileID: 54573313704914758}
   _birdAnims: {fileID: 114135035494914652}
 --- !u!114 &114684543398514830
