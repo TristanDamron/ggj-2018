@@ -10,7 +10,6 @@ public class BirdSpawn : MonoBehaviour {
     public static int _birdCount;
     float _spawnTime;
 
-
     void Update()
     {
         this.timer += Time.deltaTime;

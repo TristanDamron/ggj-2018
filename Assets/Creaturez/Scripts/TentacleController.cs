@@ -14,10 +14,12 @@ public class TentacleController : MonoBehaviour
     List<Vector3> _rotPoints;
     IEnumerator _routine;
 
+    [SerializeField]
+    TentaclePortalController _portalController;
 
     private void Start()
     {
-        _movement.speed = 1f;
+        _movement.speed = 2f;
         _routine = RandomRots();
         Invoke("InvokeRoutine", 1f);
     }
@@ -52,11 +54,17 @@ public class TentacleController : MonoBehaviour
     public void BirdySnatch()
     {
         _movement.speed = .5f;
+
         if(_routine != null)
         {
             StopCoroutine(_routine);
         }
 
-        _targetRotationTransform.localEulerAngles = new Vector3(0, -20, -8);
+        _targetRotationTransform.localEulerAngles = new Vector3(-8.48f, -78.14f, -1.65f);
+
+        if(_portalController != null)
+        {
+            _portalController.Fed();
+        }
     }
 }
