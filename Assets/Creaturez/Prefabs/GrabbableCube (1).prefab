@@ -1767,6 +1767,7 @@ GameObject:
   - component: {fileID: 23318516511070772}
   - component: {fileID: 54439825676587178}
   - component: {fileID: 114684543398514830}
+  - component: {fileID: 114660533097785650}
   m_Layer: 8
   m_Name: GrabbableCube (1)
   m_TagString: Eatable
@@ -3975,9 +3976,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96d5785f9b9dfa543b1cd35639f00a5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _jointScript: {fileID: 114454858180522678}
-  _anchorTransform: {fileID: 4863680567010164}
-  _rotateAround: {fileID: 4725000105994780}
+  _jointScript: {fileID: 0}
+  _anchorTransform: {fileID: 0}
+  _rotateAround: {fileID: 0}
 --- !u!114 &114454858180522678
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3989,9 +3990,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e31f1498db34972aaa9ab7cf260228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleSystem: {fileID: 198635654642504126}
+  _particleSystem: {fileID: 0}
   _anchor: {fileID: 54573313704914758}
-  _birdAnims: {fileID: 114135035494914652}
+  _birdAnims: {fileID: 0}
+--- !u!114 &114660533097785650
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1860584979594192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e4218ebbe5e6c44ea13bf3ae9fb9a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: df19e9e05e006cc419a5e7ec5097b329, type: 3}
+  - {fileID: 8300000, guid: 0b31460be73e6e14d85b0d1a4e2a2c0d, type: 3}
+  - {fileID: 8300000, guid: 484138c3a59ce0f4f8c740e967d613ce, type: 3}
+  timer: 0
 --- !u!114 &114684543398514830
 MonoBehaviour:
   m_ObjectHideFlags: 1
