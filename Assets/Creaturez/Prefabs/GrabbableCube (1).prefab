@@ -3114,7 +3114,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1752014979498030}
-  m_LocalRotation: {x: 0.36877307, y: 0.62530804, z: 0.5894509, w: -0.35432175}
+  m_LocalRotation: {x: 0.3687731, y: 0.6253081, z: 0.58945096, w: -0.35432178}
   m_LocalPosition: {x: 0.008293167, y: 0.015438701, z: 0.0012585782}
   m_LocalScale: {x: 1, y: 0.99999994, z: 0.99999994}
   m_Children:
@@ -3511,7 +3511,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1685306571485268}
-  m_LocalRotation: {x: -0.36877283, y: 0.6253083, z: 0.589451, w: 0.35432142}
+  m_LocalRotation: {x: -0.36877286, y: 0.62530833, z: 0.5894511, w: 0.35432145}
   m_LocalPosition: {x: -0.008293166, y: 0.015438701, z: 0.0012585861}
   m_LocalScale: {x: 1.0000001, y: 1.0000004, z: 0.99999994}
   m_Children:
@@ -3990,9 +3990,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57e31f1498db34972aaa9ab7cf260228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _particleSystem: {fileID: 0}
+  _particleSystem: {fileID: 198635654642504126}
   _anchor: {fileID: 54573313704914758}
-  _birdAnims: {fileID: 0}
+  _birdAnims: {fileID: 114135035494914652}
 --- !u!114 &114660533097785650
 MonoBehaviour:
   m_ObjectHideFlags: 1
