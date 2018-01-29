@@ -33,6 +33,11 @@ public class JointScript : MonoBehaviour {
 
     public void Grabbed()
     {
+<<<<<<< HEAD
+        GetComponentInChildren<Animator>().SetBool("held", true);
+        StartCoroutine(ResetAnimBool());
+        if (GetComponent<SpringJoint>())
+=======
         _birdAnims.SetAnimation("Grabbed");
         _birdAnims.LookAtCam();
         _birdAnims.SetPos();
@@ -47,6 +52,7 @@ public class JointScript : MonoBehaviour {
         }
 
         if(GetComponent<SpringJoint>())
+>>>>>>> 725ead00f37c376b4e57e7c23903c84d85a8cf3c
         {
             return;
         }
@@ -130,6 +136,12 @@ public class JointScript : MonoBehaviour {
         StartCoroutine(_routine);
     }
 
+<<<<<<< HEAD
+    IEnumerator ResetAnimBool()
+    {
+        yield return new WaitForSeconds(3f);
+        GetComponentInChildren<Animator>().SetBool("held", false);
+=======
     IEnumerator PatrolAround()
     {
         _patrolPoints = new List<Vector3>();
@@ -149,6 +161,7 @@ public class JointScript : MonoBehaviour {
             var setRandomTime = Random.Range(.1f, .7f);
             yield return new WaitForSeconds(setRandomTime);
         }
+>>>>>>> 725ead00f37c376b4e57e7c23903c84d85a8cf3c
     }
 
     IEnumerator UpdateY(Vector3 target, bool hit)
