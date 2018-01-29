@@ -3,17 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TentacleGrab : MonoBehaviour {
-    public TentacleMovement movementScript;
+    
+    public TentacleController _controller;
 
     //TODO: What does the tentacle do if it touches the player?
     void OnTriggerEnter(Collider c)
     {
         if (c.tag == "Eatable")
         {
-            this.movementScript.target = c.gameObject.transform;
-            this.movementScript.boost = true;
+            
             c.gameObject.transform.position = transform.position;
-            c.GetComponent<JointScript>().DestroyJoint();
+            _controller.BirdySnatch();
+
+            if(c.GetComponent<JointScript>() != null)
+            {
+                c.GetComponent<JointScript>().Snatched(transform);
+
+            }
         }
     }
 }

@@ -5,12 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Creaturez/Bumper.unity
     guid: 0cd21129bba4a9248848b4304ceb769f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Creaturez/TitleScreen.unity
     guid: aa61d1659ce95904abe286066555bbb1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Creaturez/CreaturezMainScene.unity
     guid: ed2ff76236b4341ea9b7b480987c7d30
+  - enabled: 1
+    path: Assets/Creaturez/CreaturezSavingMainScene.unity
+    guid: 52b4dd8ab0f4140ce8d73660ca5fe813

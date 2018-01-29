@@ -5,11 +5,28 @@ using UnityEngine;
 public class BirdAnimations : MonoBehaviour 
 {
 
+    public JointScript _jointScript;
+
+    [SerializeField]
+    Transform _anchorTransform;
+
+    [SerializeField]
+    Transform _rotateAround;
+
+    Transform _camTrans;
+    bool _neveDoThis, _andThis;
+
     Animator _anims;
 
     void Start()
     {
         _anims = GetComponent<Animator>();
+        _camTrans = Camera.main.transform;
+    }
+
+    public void DisableThisGameObject()
+    {
+        gameObject.SetActive(false);
     }
 
     public void SetAnimation(string animNam)
@@ -17,18 +34,40 @@ public class BirdAnimations : MonoBehaviour
         _anims.Play(animNam);
     }
 
-    private float timer;
-	void Update () {
-        
-        this.timer += Time.deltaTime;
+    public void LookAtCam()
+    {
+        _neveDoThis = true;
+    }
 
-        if (this.timer >= 5f)
+    public void LookAway()
+    {
+        _neveDoThis = false;
+        transform.rotation = _camTrans.rotation;
+    }
+
+    public void SetPos()
+    {
+        transform.position = _jointScript.GetComponent<Transform>().position;
+    }
+
+    public JointScript PassJoint()
+    {
+        return _jointScript;
+    }
+
+    public void LookAt(Transform transformPoint)
+    {
+        transform.LookAt(transformPoint);
+    }
+
+    private void Update()
+    {
+         //var axis = new Vector3(0, -1f, 0);
+         //transform.RotateAround(_rotateAround.position, axis, 100 * Time.deltaTime);
+
+        if (_neveDoThis)
         {
-            bool flapping = GetComponent<Animator>().GetBool("flapping");
-            GetComponent<Animator>().SetBool("flapping", !flapping);
-            this.timer = 0f;
+            transform.LookAt(_camTrans);
         }
-	}
-
-  
+    }
 }
