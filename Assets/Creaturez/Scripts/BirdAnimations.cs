@@ -7,12 +7,6 @@ public class BirdAnimations : MonoBehaviour
 
     public JointScript _jointScript;
 
-    [SerializeField]
-    Transform _anchorTransform;
-
-    [SerializeField]
-    Transform _rotateAround;
-
     Transform _camTrans;
     bool _neveDoThis, _andThis;
 
