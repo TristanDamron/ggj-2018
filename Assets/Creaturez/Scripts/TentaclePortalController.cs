@@ -16,11 +16,13 @@ public class TentaclePortalController : MonoBehaviour
     public void EnableTentacleHolder()
     {
         _tentacleHolder.SetActive(true);
+        Tips.current = Tips.Events.PickedUpBird;
     }
 
     public void Fed()
     {
         Invoke("InvokeDestroy", 2f);
+        Tips.current = Tips.Events.Patrolling;
     }
 
     void InvokeDestroy()

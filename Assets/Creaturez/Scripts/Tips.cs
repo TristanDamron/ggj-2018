@@ -11,7 +11,7 @@ public class Tips : MonoBehaviour {
 		FightingMonster
 	}
 
-	public Events current;
+	public static Events current;
 	[SerializeField]
 	private Image _img;
 
