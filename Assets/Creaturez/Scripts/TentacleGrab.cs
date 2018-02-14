@@ -25,6 +25,9 @@ public class TentacleGrab : MonoBehaviour {
                 c.GetComponent<JointScript>().Snatched(transform);
                 eaten = true;
             }
+        } else if (c.tag == "Player") {            
+            Manager.playerHP -= 1;
+            Manager.flash = true;
         }
-    }
+    } 
 }

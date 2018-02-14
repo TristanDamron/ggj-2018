@@ -7,16 +7,29 @@ public class TentaclePortalController : MonoBehaviour
 
     [SerializeField]
     GameObject _tentacleHolder;
+    [SerializeField]
+    GameObject _headHolder;
 
     private void Start()
     {
-        Invoke("EnableTentacleHolder", 2f);
+        if (Manager.tentaclesFed >= 3) {
+            Manager.tentaclesFed = 0;
+            Invoke("EnableHeadHolder", 2f);
+        } else {
+            Invoke("EnableTentacleHolder", 2f);
+        }
     }
 
     public void EnableTentacleHolder()
     {
         _tentacleHolder.SetActive(true);
         Tips.current = Tips.Events.PickedUpBird;
+    }
+
+    public void EnableHeadHolder()
+    {
+        _headHolder.SetActive(true);
+        Tips.current = Tips.Events.FightingMonster;
     }
 
     public void Fed()
