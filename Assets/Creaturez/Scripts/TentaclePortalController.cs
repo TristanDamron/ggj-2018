@@ -13,6 +13,10 @@ public class TentaclePortalController : MonoBehaviour
 
     private void Start()
     {
+        if (Manager.creaturezHP <= 0) {
+            Destroy(gameObject);
+        }
+
         if (Manager.tentaclesFed >= 3) {
             Manager.tentaclesFed = 0;
             Invoke("EnableHeadHolder", 2f);
