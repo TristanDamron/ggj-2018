@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class TentaclePortalController : MonoBehaviour
 {
-
     [SerializeField]
     GameObject _tentacleHolder;
     [SerializeField]
     GameObject _headHolder;
+    [SerializeField]
+    GameObject _featherParticles;
 
     private void Start()
     {
@@ -35,6 +36,7 @@ public class TentaclePortalController : MonoBehaviour
     public void Fed()
     {
         Invoke("InvokeDestroy", 2f);
+        Instantiate(_featherParticles, transform.localPosition, transform.localRotation);
         Tips.current = Tips.Events.Patrolling;
     }
 
