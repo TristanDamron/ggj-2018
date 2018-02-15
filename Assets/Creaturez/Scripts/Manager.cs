@@ -8,7 +8,7 @@ public class Manager : MonoBehaviour {
 	public static int tentaclesFed;
 	public static float playerHP;
 	public static float creaturezHP;
-	public static bool flash;
+	public static bool flash, won;
 
 	[SerializeField]
 	private Slider _creaturezSlider;
@@ -23,6 +23,12 @@ public class Manager : MonoBehaviour {
 	private ParticleSystem _particles; 
 	[SerializeField]
 	private GameObject _gameOver;
+	[SerializeField]
+	private ParticleSystem _confetti;
+	[SerializeField]
+	private AudioClip _victory;
+	[SerializeField]
+	private AudioSource _src;
 
 	void Start() {
 		playerHP = 10;
@@ -41,7 +47,19 @@ public class Manager : MonoBehaviour {
 		if (playerHP <= 0) {
 			_gameOver.SetActive(true);
 		}
+
+		if (creaturezHP <= 0 && !won) {
+			won = true;
+			_src.clip = _victory;
+			_src.loop = false;
+			_src.Play();
+			Invoke("StartConfetti", 4.3f);
+		}
 	} 
+
+	public void StartConfetti() {
+		_confetti.Play();
+	}
 
 	public void Flash() {
 		Color c = _flash.color;
