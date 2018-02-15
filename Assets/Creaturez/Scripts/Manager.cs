@@ -11,9 +11,6 @@ public class Manager : MonoBehaviour {
 	public static bool flash;
 
 	[SerializeField]
-	private bool takeDamage;
-
-	[SerializeField]
 	private Slider _creaturezSlider;
 
 	[SerializeField]
@@ -24,6 +21,8 @@ public class Manager : MonoBehaviour {
 	
 	[SerializeField]
 	private ParticleSystem _particles; 
+	[SerializeField]
+	private GameObject _gameOver;
 
 	void Start() {
 		playerHP = 10;
@@ -40,8 +39,7 @@ public class Manager : MonoBehaviour {
 		}
 
 		if (playerHP <= 0) {
-			//TODO: Will show a Game Over screen. For now, just restart.			
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+			_gameOver.SetActive(true);
 		}
 	} 
 
@@ -58,5 +56,9 @@ public class Manager : MonoBehaviour {
 		c.a = 0f; 
 		_flash.color = c;		
 		_particles.Stop();
+	}
+
+	public void RestartGame() {
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
 }
