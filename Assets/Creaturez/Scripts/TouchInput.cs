@@ -7,7 +7,7 @@ public class TouchInput : MonoBehaviour {
     private InFrontOfCamera _camScript;
     private Camera _cam;
     private JointScript _cacheJointScript;
-    private bool hitTarget, holding;
+    private bool hitTarget, holding, hitHead;
     private RaycastController _raycastController;
 
     [SerializeField]
@@ -92,6 +92,8 @@ public class TouchInput : MonoBehaviour {
                     _cacheJointScript = hit.collider.GetComponent<JointScript>();
                     hitTarget = true;
                     holding = true;
+                } else if (hit.transform.gameObject.name.Contains("Head")) {
+                    hitHead = true;
                 }
             }
 
@@ -102,11 +104,17 @@ public class TouchInput : MonoBehaviour {
                     _cacheJointScript.Grabbed();
                     _camScript.SetAnchorTransformTarget(_cacheJointScript.ReturnAnchorTransform());
                 }
+            } else if (hitHead) {
+                if(SwipeManager.IsSwipingDown() || SwipeManager.IsSwipingDownLeft() || SwipeManager.IsSwipingDownRight())
+                {
+                    Manager.creaturezHP -= 1;
+                }                
             }
 
             if(touch.phase == TouchPhase.Ended)
             {
                 hitTarget = false;
+                hitHead = false;
             }
 
             if (holding)
@@ -129,8 +137,6 @@ public class TouchInput : MonoBehaviour {
                 }
 
             }
-
-
         }
 	}
 }
