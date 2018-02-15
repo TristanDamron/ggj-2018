@@ -11,6 +11,9 @@ public class Manager : MonoBehaviour {
 	public static bool flash;
 
 	[SerializeField]
+	private bool takeDamage;
+
+	[SerializeField]
 	private Slider _creaturezSlider;
 
 	[SerializeField]
@@ -18,6 +21,9 @@ public class Manager : MonoBehaviour {
 	
 	[SerializeField]
 	private RawImage _flash;
+	
+	[SerializeField]
+	private ParticleSystem _particles; 
 
 	void Start() {
 		playerHP = 10;
@@ -43,6 +49,7 @@ public class Manager : MonoBehaviour {
 		Color c = _flash.color;
 		c.a = 0.25f; 
 		_flash.color = c;
+		_particles.Play();
 		Invoke("ResetAlpha", 1f);
 	}
 
@@ -50,5 +57,6 @@ public class Manager : MonoBehaviour {
 		Color c = _flash.color;
 		c.a = 0f; 
 		_flash.color = c;		
+		_particles.Stop();
 	}
 }

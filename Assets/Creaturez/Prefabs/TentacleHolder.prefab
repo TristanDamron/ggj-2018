@@ -2222,6 +2222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _movement: {fileID: 114659864821668950}
   _targetRotationTransform: {fileID: 4242009413692390}
+  _portalController: {fileID: 0}
 --- !u!114 &114162796939406754
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2984,7 +2985,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 5.31
+  m_Radius: 2.3
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!137 &137540568034656102
 SkinnedMeshRenderer:
