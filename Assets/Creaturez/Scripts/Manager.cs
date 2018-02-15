@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Manager : MonoBehaviour {
@@ -30,6 +31,11 @@ public class Manager : MonoBehaviour {
 		if (flash) {
 			flash = false;
 			Flash();
+		}
+
+		if (playerHP <= 0) {
+			//TODO: Will show a Game Over screen. For now, just restart.			
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 		}
 	} 
 
