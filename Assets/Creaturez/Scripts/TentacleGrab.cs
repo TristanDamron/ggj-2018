@@ -7,7 +7,6 @@ public class TentacleGrab : MonoBehaviour {
     public TentacleController _controller;
     bool eaten;
 
-    //TODO: What does the tentacle do if it touches the player?
     void OnTriggerEnter(Collider c)
     {
         if (c.tag == "Eatable")
