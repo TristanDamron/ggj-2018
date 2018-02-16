@@ -24,6 +24,8 @@ public class Manager : MonoBehaviour {
 	[SerializeField]
 	private GameObject _gameOver;
 	[SerializeField]
+	private GameObject _credits;
+	[SerializeField]
 	private ParticleSystem _confetti;
 	[SerializeField]
 	private AudioClip _victory;
@@ -54,11 +56,16 @@ public class Manager : MonoBehaviour {
 			_src.loop = false;
 			_src.Play();
 			Invoke("StartConfetti", 4.3f);
+			Invoke("ActivateCredits", 10f);
 		}
 	} 
 
 	public void StartConfetti() {
 		_confetti.Play();
+	}
+
+	public void ActivateCredits() {
+		_credits.SetActive(true);
 	}
 
 	public void Flash() {
