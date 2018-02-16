@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class Manager : MonoBehaviour {
 	public static int tentaclesFed;
-	public static float playerHP;
-	public static float creaturezHP;
+	public static int playerHP;
+	public static int creaturezHP;
 	public static bool flash, won;
 
 	[SerializeField]

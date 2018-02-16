@@ -2318,7 +2318,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _tentacleHolder: {fileID: 1189898588135068}
-  _headHolder: {fileID: 0}
+  _headHolder: {fileID: 1028440985752208, guid: 22ba3da64f6ce3d45b9a9d1487cee9b2,
+    type: 2}
   _featherParticles: {fileID: 1715795386904746, guid: 87a5ff590bdc80d469c5107f446524f5,
     type: 2}
 --- !u!114 &114081222787464974
