@@ -35,17 +35,19 @@ public class TentaclePortalController : MonoBehaviour
     {
         _headHolder.SetActive(true);
         Tips.current = Tips.Events.FightingMonster;
+        Invoke("InvokeDestroy", 10f);
     }
 
     public void Fed()
     {
         Invoke("InvokeDestroy", 2f);
         Instantiate(_featherParticles, transform.localPosition, transform.localRotation);
-        Tips.current = Tips.Events.Patrolling;
+        Manager.tentaclesFed += 1;
     }
 
     void InvokeDestroy()
     {
+        Tips.current = Tips.Events.Patrolling;        
         Destroy(gameObject);
     }
 }

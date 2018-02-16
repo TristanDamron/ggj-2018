@@ -92,7 +92,7 @@ public class TouchInput : MonoBehaviour {
                     _cacheJointScript = hit.collider.GetComponent<JointScript>();
                     hitTarget = true;
                     holding = true;
-                } else if (hit.transform.gameObject.name.Contains("Head")) {
+                } else if (hit.collider.gameObject.tag == "Head") {
                     hitHead = true;
                 }
             }
@@ -104,11 +104,10 @@ public class TouchInput : MonoBehaviour {
                     _cacheJointScript.Grabbed();
                     _camScript.SetAnchorTransformTarget(_cacheJointScript.ReturnAnchorTransform());
                 }
-            } else if (hitHead) {
-                if(SwipeManager.IsSwipingDown() || SwipeManager.IsSwipingDownLeft() || SwipeManager.IsSwipingDownRight())
-                {
-                    Manager.creaturezHP -= 1;
-                }                
+            } 
+            
+            if (hitHead) {
+                Manager.creaturezHP -= 1;
             }
 
             if(touch.phase == TouchPhase.Ended)

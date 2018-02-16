@@ -16,7 +16,7 @@ public class BirdSpawn : MonoBehaviour {
 
         if (this.timer >= _spawnTime)
         {
-            if (_birdCount >= 10)
+            if (_birdCount >= 100)
             {
                 this.timer = 0f;
                 _spawnTime = 5;

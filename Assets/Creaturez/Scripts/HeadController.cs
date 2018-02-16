@@ -8,7 +8,6 @@ public class HeadController : MonoBehaviour {
 
 	void Start() {
 		InvokeRepeating("CheckHP", 0f, 0.1f);
-		Invoke("InvokeDestroy", 10f);		
 	}
 
 	void Update () {	

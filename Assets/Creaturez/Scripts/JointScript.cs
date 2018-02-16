@@ -77,7 +77,8 @@ public class JointScript : MonoBehaviour {
 
             _particleSystem.Play(true);
             _birdAnims.DisableThisGameObject();
-            Invoke("InvokeDestroy", 1.5f);
+            //TODO: Should birds live longer that 1.5 seconds?
+            Invoke("InvokeDestroy", 10f);
     }
 
     void InvokeDestroy()

@@ -8,6 +8,7 @@ TagManager:
   - Interactive
   - Eatable
   - Tentacle
+  - Head
   layers:
   - Default
   - TransparentFX
