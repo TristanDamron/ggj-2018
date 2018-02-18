@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.iOS;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -85,8 +86,9 @@ public class Manager : MonoBehaviour {
 		_particles.Stop();
 	}
 
-	//@TODO: Tentacles don't instantiate on previously tracked planes after the scene resets
 	public void RestartGame() {
+		ARKitWorldTrackingSessionConfiguration sessionConfig = new ARKitWorldTrackingSessionConfiguration ( UnityARAlignment.UnityARAlignmentGravity, UnityARPlaneDetection.Horizontal);
+        UnityARSessionNativeInterface.GetARSessionNativeInterface().RunWithConfigAndOptions(sessionConfig, UnityARSessionRunOption.ARSessionRunOptionRemoveExistingAnchors | UnityARSessionRunOption.ARSessionRunOptionResetTracking);		
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
 }
