@@ -9,6 +9,7 @@ public class TentacleGrab : MonoBehaviour {
 
     void OnTriggerEnter(Collider c)
     {
+        //@TODO: Probably should fix this semantics issue...
         if (c.tag == "Eatable")
         {
             if(eaten)

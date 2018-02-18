@@ -1,11 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Video;
 using UnityEngine.SceneManagement;
 
 public class LoadScene : MonoBehaviour {
     public bool autoLoad;
     private float timer;
+
+    [SerializeField]
+    private VideoPlayer _player;
+
+    void Start () {
+        _player = GetComponent<VideoPlayer>();
+    }
 
     public void LoadNextScene()
     {
@@ -18,7 +26,7 @@ public class LoadScene : MonoBehaviour {
         {
             this.timer += Time.deltaTime;
 
-            if (this.timer >= 8f)
+            if (this.timer >= _player.clip.length)
             {
                 LoadNextScene();
             }

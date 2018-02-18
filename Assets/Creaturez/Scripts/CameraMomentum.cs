@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//@TODO: Do we really need this functionality??
 public class CameraMomentum : MonoBehaviour {
     public Vector3 last;
-    private float timer;
+    private float _timer;
 
     public float GetMomentumX()
     {
@@ -21,20 +21,21 @@ public class CameraMomentum : MonoBehaviour {
         if (c.gameObject.tag == "Eatable")
         {
             Debug.Log("Player enter");
-            if (GetMomentumX() > 1f || GetMomentumY() > 1f)
+            //@Test: Is this too low of a delta?
+            if (GetMomentumX() > 3f || GetMomentumY() > 3f)
             {
-                Destroy(c.gameObject);
+                c.GetComponent<JointScript>().Snatched(c.transform);
             }
         }
     }
 
     void Update()
     {
-        this.timer += Time.deltaTime;
-        if (this.timer >= 1f)
+        this._timer += Time.deltaTime;
+        if (this._timer >= 1f)
         {
             this.last = transform.position;
-            this.timer = 0f;
+            this._timer = 0f;
         }
     }
 }

@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 8}
   - component: {fileID: 14}
   - component: {fileID: 19}
+  - component: {fileID: 22}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -281,7 +282,7 @@ SphereCollider:
   m_GameObject: {fileID: 7}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -326,6 +327,18 @@ MonoBehaviour:
   _mainPortal: {fileID: 1523238128208292, guid: a8f762eff33804a568ec08ee74c1356a,
     type: 2}
   _front: {fileID: 15}
+--- !u!114 &22
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 7}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 137d7fc174572504a91700a0502feae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  last: {x: 0, y: 0, z: 0}
 --- !u!108 &29
 Light:
   m_ObjectHideFlags: 0
@@ -1864,7 +1877,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1797537516
+  randomSeed: 1747790139
   InitialModule:
     serializedVersion: 3
     enabled: 1
