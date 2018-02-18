@@ -85,6 +85,7 @@ public class Manager : MonoBehaviour {
 		_particles.Stop();
 	}
 
+	//@TODO: Tentacles don't instantiate on previously tracked planes after the scene resets
 	public void RestartGame() {
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}

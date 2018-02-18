@@ -82,7 +82,7 @@ public class TouchInput : MonoBehaviour {
         {
             var touch = Input.GetTouch(0);
 
-            Ray ray = _cam.ScreenPointToRay(Input.GetTouch(0).position);
+            Ray ray = _cam.ScreenPointToRay(Input.GetTouch(0).position);            
             RaycastHit hit;
 
             if(Physics.Raycast(ray,out hit,10,_layer))
@@ -107,7 +107,10 @@ public class TouchInput : MonoBehaviour {
             } 
             
             if (hitHead) {
-                Manager.creaturezHP -= 1;
+                //@Purpose: Keeps it so the player can't kill the monster by just holding their finger on it.
+                if (Input.GetTouch(0).phase == TouchPhase.Began) {
+                    Manager.creaturezHP -= 1;
+                }
             }
 
             if(touch.phase == TouchPhase.Ended)
@@ -138,4 +141,8 @@ public class TouchInput : MonoBehaviour {
             }
         }
 	}
+
+    public void ResetHitHead() {
+        hitHead = false;
+    }
 }
