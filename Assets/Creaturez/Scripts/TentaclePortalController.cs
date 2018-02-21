@@ -5,14 +5,21 @@ using UnityEngine;
 public class TentaclePortalController : MonoBehaviour
 {
     [SerializeField]
-    GameObject _tentacleHolder;
+    private Sprite[] _crackAnim;
     [SerializeField]
-    GameObject _headHolder;
+    private GameObject _tentacleHolder;
     [SerializeField]
-    GameObject _featherParticles;
+    private GameObject _headHolder;
+    [SerializeField]
+    private GameObject _featherParticles;
+    [SerializeField]
+    private int _index;
+    [SerializeField]
+    private SpriteRenderer _renderer;
 
     private void Start()
     {
+        _renderer = GetComponent<SpriteRenderer>();
         if (Manager.creaturezHP <= 0) {
             Destroy(gameObject);
         }
@@ -21,8 +28,21 @@ public class TentaclePortalController : MonoBehaviour
             Manager.tentaclesFed = 0;
             Invoke("EnableHeadHolder", 2f);
         } else {
-            Invoke("EnableTentacleHolder", 2f);
+            _renderer.sprite = _crackAnim[_index];
+            Invoke("CrackAnimation", 0.25f);
         }
+    }
+
+    public void CrackAnimation() {
+        InvokeRepeating("IncreaseFrameIndex", 0f, 0.25f);
+        Invoke("EnableTentacleHolder", 0.25f * _crackAnim.Length);
+    }
+
+    public void IncreaseFrameIndex() {
+        if (_index <= _crackAnim.Length)
+            _index++;
+        
+        _renderer.sprite = _crackAnim[_index];
     }
 
     public void EnableTentacleHolder()
