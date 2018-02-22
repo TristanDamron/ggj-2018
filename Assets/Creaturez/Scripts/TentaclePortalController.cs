@@ -15,34 +15,45 @@ public class TentaclePortalController : MonoBehaviour
     [SerializeField]
     private int _index;
     [SerializeField]
-    private SpriteRenderer _renderer;
+    private SpriteMask _mask;
 
     private void Start()
-    {
-        _renderer = GetComponent<SpriteRenderer>();
+    {        
         if (Manager.creaturezHP <= 0) {
             Destroy(gameObject);
         }
 
         if (Manager.tentaclesFed >= 3) {
             Manager.tentaclesFed = 0;
-            Invoke("EnableHeadHolder", 2f);
+            Invoke("CrackAnimation", 0.1f);            
+            Invoke("EnableHeadHolder", 0.1f * _crackAnim.Length);
         } else {
-            _renderer.sprite = _crackAnim[_index];
-            Invoke("CrackAnimation", 0.25f);
+            _mask.sprite = _crackAnim[_index];
+            Invoke("CrackAnimation", 0.1f);
+            Invoke("EnableTentacleHolder", 0.1f * _crackAnim.Length);        
         }
     }
 
     public void CrackAnimation() {
-        InvokeRepeating("IncreaseFrameIndex", 0f, 0.25f);
-        Invoke("EnableTentacleHolder", 0.25f * _crackAnim.Length);
+        InvokeRepeating("IncreaseFrameIndex", 0f, 0.1f);
+    }
+    
+    public void CloseAnimation() {
+        InvokeRepeating("DecreaseFrameIndex", 0f, 0.1f);
     }
 
     public void IncreaseFrameIndex() {
         if (_index <= _crackAnim.Length)
             _index++;
         
-        _renderer.sprite = _crackAnim[_index];
+        _mask.sprite = _crackAnim[_index];
+    }
+
+    public void DecreaseFrameIndex() {
+        if (_index >= 0)
+            _index--;
+
+        _mask.sprite = _crackAnim[_index];        
     }
 
     public void EnableTentacleHolder()
@@ -53,7 +64,7 @@ public class TentaclePortalController : MonoBehaviour
 
     public void EnableHeadHolder()
     {
-        _headHolder.SetActive(true);
+        _headHolder.SetActive(true);        
         Tips.current = Tips.Events.FightingMonster;
         Invoke("InvokeDestroy", 10f);
     }
@@ -61,12 +72,13 @@ public class TentaclePortalController : MonoBehaviour
     public void Fed()
     {
         Invoke("InvokeDestroy", 2f);
+        CloseAnimation();
         Instantiate(_featherParticles, transform.localPosition, transform.localRotation);
         Manager.tentaclesFed += 1;
     }
 
     void InvokeDestroy()
-    {
+    {        
         Tips.current = Tips.Events.Patrolling;        
         Destroy(gameObject);
     }
