@@ -7,7 +7,7 @@ public class HeadController : MonoBehaviour {
 	[SerializeField]
 	private int _lastHP;
 	[SerializeField]
-	private AudioClip hit;	
+	private AudioClip _hit;	
 
 	void Start() {
 		InvokeRepeating("CheckHP", 0f, 0.1f);
@@ -15,7 +15,7 @@ public class HeadController : MonoBehaviour {
 
 	void Update () {	
 		if (Manager.creaturezHP != _lastHP) {
-			GameObject.Find("Audio Source").GetComponent<AudioSource>().PlayOneShot(hit);										
+			GameObject.Find("Audio Source").GetComponent<AudioSource>().PlayOneShot(_hit, 0.2f);										
 		}		
 	}
 
