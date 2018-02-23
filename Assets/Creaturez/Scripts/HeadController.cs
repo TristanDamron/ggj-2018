@@ -6,6 +6,8 @@ using UnityEngine.XR.iOS;
 public class HeadController : MonoBehaviour {
 	[SerializeField]
 	private int _lastHP;
+	[SerializeField]
+	private AudioClip hit;	
 
 	void Start() {
 		InvokeRepeating("CheckHP", 0f, 0.1f);
@@ -13,7 +15,7 @@ public class HeadController : MonoBehaviour {
 
 	void Update () {	
 		if (Manager.creaturezHP != _lastHP) {
-			//TODO: Trigger animations and SFX on hit
+			GameObject.Find("Audio Source").GetComponent<AudioSource>().PlayOneShot(hit);										
 		}		
 	}
 

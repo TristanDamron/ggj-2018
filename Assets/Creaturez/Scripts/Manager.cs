@@ -31,6 +31,8 @@ public class Manager : MonoBehaviour {
 	[SerializeField]
 	private AudioClip _victory;
 	[SerializeField]
+	private AudioClip _death;
+	[SerializeField]
 	private AudioSource _src;
 
 	void Start() {
@@ -55,6 +57,7 @@ public class Manager : MonoBehaviour {
 
 		if (creaturezHP <= 0 && !won) {
 			won = true;
+			_src.PlayOneShot(_death);
 			_src.clip = _victory;
 			_src.loop = false;
 			_src.Play();
