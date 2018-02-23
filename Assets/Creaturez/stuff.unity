@@ -1098,6 +1098,7 @@ MonoBehaviour:
   _display: {fileID: 1594230022}
   _screenShotPanel: {fileID: 1921516677}
   _messagePanel: {fileID: 1091705929}
+  _masterPath: 
 --- !u!1 &447540705
 GameObject:
   m_ObjectHideFlags: 0
@@ -1274,7 +1275,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0.666}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 1, g: 0, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
@@ -5877,7 +5878,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0.666}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 1, g: 0, b: 0, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
@@ -6408,7 +6409,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 177.65, y: -6.9}
+  m_AnchoredPosition: {x: 145.6, y: -6.9}
   m_SizeDelta: {x: 44.7, y: 44.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1523860743
@@ -10393,7 +10394,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -177.65, y: -6.899994}
+  m_AnchoredPosition: {x: -148.8, y: -6.899994}
   m_SizeDelta: {x: 44.7, y: 44.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1860342589

@@ -32,7 +32,9 @@ public class ScreenShot : MonoBehaviour {
 		} else {
 			_masterPath = Application.persistentDataPath;
 		}
-		
+
+		Debug.Log(_masterPath);
+
 		StartCoroutine(PopulateList());		
 	}
 
