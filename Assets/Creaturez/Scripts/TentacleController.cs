@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -36,10 +37,11 @@ public class TentacleController : MonoBehaviour
 
         for (int i = 0; i < 10; i++)
         {
-            var refPos = _targetRotationTransform.localEulerAngles;
-            var randomPos = new Vector3(Random.Range(refPos.x - 20, refPos.x + 20),
+            //@TODO: The tentacle keeps rotating behind the portal parent. Restrict random vector to be in front of the portal parent     
+            var refPos = _targetRotationTransform.localEulerAngles;            
+            var randomPos = new Vector3(Random.Range(refPos.x - 20, refPos.x - 1),
                                         Random.Range(refPos.y - 1, refPos.y + 1),
-                                        Random.Range(refPos.z - 20, refPos.z + 20));
+                                        Random.Range(refPos.z - 20, refPos.z - 1));
             _rotPoints.Add(randomPos);
         }
 

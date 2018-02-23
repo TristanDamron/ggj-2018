@@ -38,9 +38,9 @@ public class PlacePortalsOnWalls : MonoBehaviour {
     }
 
 
-    private void Update()
+    void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.P))
         {
             var portal = Instantiate(_portalParent, transform.position, transform.rotation);
             portal.transform.localScale = new Vector3(.1f, .1f, .1f);

@@ -72,6 +72,7 @@ public class TentacleMovement : MonoBehaviour
 
         if (this.spawning)
         {
+
             //Quaternion rot = Quaternion.Euler(this.joints[0].transform.localPosition.x + Random.Range(-90f, 90f), 0f, this.joints[0].transform.localPosition.z);
             Quaternion rot = Quaternion.Euler(target.localEulerAngles.x, target.localEulerAngles.y, target.localEulerAngles.z);
             for (int i = 0; i < this.joints.Length; i++)
