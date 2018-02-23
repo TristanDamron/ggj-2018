@@ -18,14 +18,27 @@ public class ScreenShot : MonoBehaviour {
 	private GameObject _screenShotPanel;
 	[SerializeField]
 	private GameObject _messagePanel;
+	[SerializeField]
+	private string _masterPath;
 
 	void Start() {
+        if (Application.platform == RuntimePlatform.IPhonePlayer) {
+			
+			if (!File.Exists(Application.persistentDataPath + "/images")) {
+                Directory.CreateDirectory(@Application.persistentDataPath + "/images");
+			}
+
+		    _masterPath = Application.persistentDataPath + "/images";
+		} else {
+			_masterPath = Application.persistentDataPath;
+		}
+		
 		StartCoroutine(PopulateList());		
 	}
 
 	public void TakeScreenShot() {
 		DisplayMessage();
-		ScreenCapture.CaptureScreenshot(Application.persistentDataPath + "/image" + Random.Range(100000f, 1000000f) + ".png");
+		ScreenCapture.CaptureScreenshot(_masterPath + "/image" + Random.Range(100000f, 1000000f) + ".png");
 		StartCoroutine(PopulateList());
 	}
 
@@ -42,7 +55,7 @@ public class ScreenShot : MonoBehaviour {
 		//Ensure that the lists are empty
 		_images.Clear();
 		_paths.Clear();
-		string[] files = Directory.GetFiles(@Application.persistentDataPath, "*.png");			
+		string[] files = Directory.GetFiles(@_masterPath, "*.png");			
 		foreach (string f in files) {
 			WWW www = new WWW(f);
 			yield return www;		
