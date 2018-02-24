@@ -2878,7 +2878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _lastHP: 0
-  hit: {fileID: 8300000, guid: 5544b46a9d6c3c943a8d456b0cb0076b, type: 3}
+  _hit: {fileID: 8300000, guid: 5544b46a9d6c3c943a8d456b0cb0076b, type: 3}
 --- !u!114 &114547279668702988
 MonoBehaviour:
   m_ObjectHideFlags: 1
