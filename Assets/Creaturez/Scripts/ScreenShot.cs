@@ -20,6 +20,8 @@ public class ScreenShot : MonoBehaviour {
 	private GameObject _messagePanel;
 	[SerializeField]
 	private string _masterPath;
+	[SerializeField]
+	private Sprite _defaultSprite;
 
 	void Start() {
         if (Application.platform == RuntimePlatform.IPhonePlayer) {
@@ -34,6 +36,7 @@ public class ScreenShot : MonoBehaviour {
 		}
 
 		Debug.Log(_masterPath);
+
 
 		StartCoroutine(PopulateList());		
 	}
@@ -63,7 +66,7 @@ public class ScreenShot : MonoBehaviour {
 			yield return www;		
 			_paths.Add(f);
 			_images.Add(www.texture);
-		}
+		}		
 	}
 
 	public void OpenScreenShotPanel() {
@@ -88,13 +91,17 @@ public class ScreenShot : MonoBehaviour {
 	}
 
 	public void DisplayImage() {
-		Sprite tmp = Sprite.Create(_images[_index], new Rect(0f, 0f, _images[_index].width, _images[_index].height), new Vector2(0.5f, 0.5f), 100f);
+		Sprite tmp;
+		if (_images.Count == 0) 
+			tmp = _defaultSprite;
+		else
+			tmp = Sprite.Create(_images[_index], new Rect(0f, 0f, _images[_index].width, _images[_index].height), new Vector2(0.5f, 0.5f), 100f);
+		
 		_display.sprite = tmp;	
 	}
 
 	public void DeleteImage() {
 		File.Delete(_paths[_index]);		
-		GetPrev();
-		StartCoroutine(PopulateList());
+		StartCoroutine(PopulateList());	
 	}
 }

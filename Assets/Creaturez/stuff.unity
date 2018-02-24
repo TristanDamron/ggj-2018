@@ -1099,6 +1099,7 @@ MonoBehaviour:
   _screenShotPanel: {fileID: 1921516677}
   _messagePanel: {fileID: 1091705929}
   _masterPath: 
+  _defaultSprite: {fileID: 21300000, guid: 7421f7b1ecc81204390e0effd54e26d8, type: 3}
 --- !u!1 &447540705
 GameObject:
   m_ObjectHideFlags: 0
