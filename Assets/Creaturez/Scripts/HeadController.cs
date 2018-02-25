@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.iOS;
@@ -8,6 +9,8 @@ public class HeadController : MonoBehaviour {
 	private int _lastHP;
 	[SerializeField]
 	private AudioClip _hit;	
+	[SerializeField]
+	private Animator _animator;
 
 	void Start() {
 		InvokeRepeating("CheckHP", 0f, 0.1f);
@@ -15,13 +18,16 @@ public class HeadController : MonoBehaviour {
 
 	void Update () {	
 		if (Manager.creaturezHP != _lastHP) {
-			GameObject.Find("Audio Source").GetComponent<AudioSource>().PlayOneShot(_hit, 0.2f);										
+			GameObject.Find("Audio Source").GetComponent<AudioSource>().PlayOneShot(_hit, 0.2f);													
+			_animator.Play("Hit");
 			Shrink();
 		}		
 	}
 
 	private void CheckHP() {
 		_lastHP = Manager.creaturezHP;
+		if (_lastHP >= 0) 
+			_animator.Play("Death");
 	} 
 
 	private void InvokeDestroy() {

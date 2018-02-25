@@ -25,6 +25,7 @@ public class BirdAnimations : MonoBehaviour
 
     public void SetAnimation(string animNam)
     {
+        
         _anims.Play(animNam);
     }
 
@@ -53,6 +54,7 @@ public class BirdAnimations : MonoBehaviour
     {
         transform.LookAt(transformPoint);
     }
+
 
     private void Update()
     {
