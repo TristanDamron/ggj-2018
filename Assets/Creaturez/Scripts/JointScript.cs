@@ -131,6 +131,7 @@ public class JointScript : MonoBehaviour {
         StartCoroutine(_routine);
     }
 
+    //@TODO: When you throw a bird, the reference position should change to the vector that the bird was thrown to.
     IEnumerator PatrolAround()
     {
         _patrolPoints = new List<Vector3>();
@@ -152,6 +153,7 @@ public class JointScript : MonoBehaviour {
         }
     }
 
+    //@TODO: The birds should move farther in the direction that they are thrown
     IEnumerator UpdateY(Vector3 target, bool hit)
     {
         this.increment = 0f;
@@ -167,9 +169,8 @@ public class JointScript : MonoBehaviour {
             {
                 moveLerp.y = 0.5f * Mathf.Sin(Mathf.Clamp01(this.increment / 2f) * 10f);
             }
-
+            
             _anchorTransform.position = moveLerp;
-
             yield return new WaitForSeconds(0);
         }
     }

@@ -16,7 +16,7 @@ public class TentaclePortalController : MonoBehaviour
     private int _index;
     [SerializeField]
     private SpriteMask _mask;
-
+    
     private void Start()
     {        
         if (Manager.creaturezHP <= 0) {
