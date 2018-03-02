@@ -77,7 +77,6 @@ public class JointScript : MonoBehaviour {
 
             _particleSystem.Play(true);
             _birdAnims.DisableThisGameObject();
-            //TODO: Should birds live longer that 1.5 seconds?
             Invoke("InvokeDestroy", 10f);
     }
 
@@ -87,7 +86,7 @@ public class JointScript : MonoBehaviour {
     }
 
     public void Release(Vector3 targetPoint)
-    {
+    {        
         _anchorTransform.SetParent(null);
         _birdAnims.SetAnimation("Throw");
         _birdAnims.LookAway();
@@ -131,21 +130,20 @@ public class JointScript : MonoBehaviour {
         StartCoroutine(_routine);
     }
 
-    //@TODO: When you throw a bird, the reference position should change to the vector that the bird was thrown to.
     IEnumerator PatrolAround()
-    {
-        _patrolPoints = new List<Vector3>();
-        for (int i = 0; i < 10; i++)
-        {
-            var refPos = _anchorTransform.position;
-            var randomPos = new Vector3(Random.Range(refPos.x - 1, refPos.x + 1),
-                                        Random.Range(refPos.y - 1, refPos.y + 1),
-                                        Random.Range(refPos.z - 1, refPos.z + 1));
-            _patrolPoints.Add(randomPos);
-        }
-
+    {        
         while (true)
         {
+            _patrolPoints = new List<Vector3>();        
+            for (int i = 0; i < 10; i++)
+            {
+                var refPos = _anchorTransform.position;
+                var randomPos = new Vector3(Random.Range(refPos.x, refPos.x),
+                                        Random.Range(refPos.y, refPos.y),
+                                        Random.Range(refPos.z, refPos.z));
+                _patrolPoints.Add(randomPos);
+            }
+            
             _anchorTransform.position = _patrolPoints[Random.Range(0, _patrolPoints.Count)];
             _birdAnims.LookAt(_anchorTransform);
             var setRandomTime = Random.Range(.1f, .7f);
@@ -169,8 +167,7 @@ public class JointScript : MonoBehaviour {
             {
                 moveLerp.y = 0.5f * Mathf.Sin(Mathf.Clamp01(this.increment / 2f) * 10f);
             }
-            
-            _anchorTransform.position = moveLerp;
+            _anchorTransform.position = moveLerp;            
             yield return new WaitForSeconds(0);
         }
     }
@@ -217,7 +214,6 @@ public class JointScript : MonoBehaviour {
         _joint.enablePreprocessing = true;
         _rb.constraints = RigidbodyConstraints.FreezeRotation;
         _anchor.transform.SetParent(null);
-
     }
 
     public void AttachNewJoint(Rigidbody newAnchor)
