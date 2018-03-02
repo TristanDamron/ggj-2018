@@ -20,7 +20,6 @@ public class CameraMomentum : MonoBehaviour {
     {
         if (c.gameObject.tag == "Eatable")
         {
-            Debug.Log("Player enter");
             //@Test: Is this too low of a delta?
             if (GetMomentumX() > 3f || GetMomentumY() > 3f)
             {

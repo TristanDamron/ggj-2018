@@ -5,12 +5,9 @@ using UnityEngine;
 
 public class TentacleController : MonoBehaviour
 {
-    
+    public Transform targetRotationTransform;
     [SerializeField]
     TentacleMovement _movement;
-
-    [SerializeField]
-    Transform _targetRotationTransform;
 
     List<Vector3> _rotPoints;
     IEnumerator _routine;
@@ -38,7 +35,7 @@ public class TentacleController : MonoBehaviour
         for (int i = 0; i < 10; i++)
         {
             //@TODO: The tentacle keeps rotating behind the portal parent. Restrict random vector to be in front of the portal parent     
-            var refPos = _targetRotationTransform.localEulerAngles;            
+            var refPos = targetRotationTransform.localEulerAngles;            
             var randomPos = new Vector3(Random.Range(refPos.x - 20, refPos.x - 1),
                                         Random.Range(refPos.y - 1, refPos.y + 1),
                                         Random.Range(refPos.z - 20, refPos.z - 1));
@@ -47,11 +44,11 @@ public class TentacleController : MonoBehaviour
 
         while(true)
         {
-            _targetRotationTransform.localEulerAngles = _rotPoints[Random.Range(0, _rotPoints.Count)];
+            targetRotationTransform.localEulerAngles = _rotPoints[Random.Range(0, _rotPoints.Count)];
             var time = Random.Range(1, 5);
             yield return new WaitForSeconds(time);
         }
-    }
+    }    
 
     public void BirdySnatch()
     {
@@ -62,7 +59,7 @@ public class TentacleController : MonoBehaviour
             StopCoroutine(_routine);
         }
 
-        _targetRotationTransform.localEulerAngles = new Vector3(-8.48f, -78.14f, -1.65f);
+        targetRotationTransform.localEulerAngles = new Vector3(-8.48f, -78.14f, -1.65f);
 
         if(_portalController != null)
         {

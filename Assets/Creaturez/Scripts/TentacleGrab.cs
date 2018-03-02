@@ -17,7 +17,7 @@ public class TentacleGrab : MonoBehaviour {
                 return;
             }
 
-            c.gameObject.transform.position = transform.position;
+            //c.gameObject.transform.position = transform.position;
             _controller.BirdySnatch();
 
             if(c.GetComponent<JointScript>() != null)
@@ -26,6 +26,7 @@ public class TentacleGrab : MonoBehaviour {
                 eaten = true;
             }
         } else if (c.tag == "Player") {            
+            _controller.targetRotationTransform.localEulerAngles = new Vector3(-8.48f, -78.14f, -1.65f);
             Manager.playerHP -= 1;
             Manager.flash = true;
         }

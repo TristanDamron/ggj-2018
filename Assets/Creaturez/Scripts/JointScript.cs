@@ -138,9 +138,9 @@ public class JointScript : MonoBehaviour {
             for (int i = 0; i < 10; i++)
             {
                 var refPos = _anchorTransform.position;
-                var randomPos = new Vector3(Random.Range(refPos.x, refPos.x),
-                                        Random.Range(refPos.y, refPos.y),
-                                        Random.Range(refPos.z, refPos.z));
+                var randomPos = new Vector3(Random.Range(refPos.x - 1, refPos.x + 1),
+                                        Random.Range(refPos.y - 1, refPos.y + 1),
+                                        Random.Range(refPos.z - 1, refPos.z + 1));
                 _patrolPoints.Add(randomPos);
             }
             
