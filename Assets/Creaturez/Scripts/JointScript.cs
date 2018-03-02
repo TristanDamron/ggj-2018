@@ -54,14 +54,13 @@ public class JointScript : MonoBehaviour {
         CreateAJoint();
     }
 
-    public void Snatched(Transform transform)
+    public void Snatched(Transform t)
     {
         StopCoroutine(_liveRoutine);
         StopCoroutine(_patrolRoutine);
         DestroyJoint();
-        transform.position = transform.position;
-        transform.SetParent(transform);
-        Invoke("InvokeDestroy",1f);
+        transform.position = t.position;
+        transform.SetParent(t);
     }
 
     IEnumerator TimeTillAlive()

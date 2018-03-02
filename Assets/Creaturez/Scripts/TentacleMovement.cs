@@ -47,16 +47,16 @@ public class TentacleMovement : MonoBehaviour
 
     }
 
-    // void OnTriggerEnter(Collider c)
-    // {    
-    //     //@TODO: Tentacle does not go to the target
-    //     if (c.tag == "Eatable" || c.tag == "Player")
-    //     {
-    //         this.target = c.gameObject.transform;
-    //         this.patrolling = false;
-    //     }
-    // }
-
+    /* void OnTriggerEnter(Collider c)
+    {    
+        //@TODO: Tentacle does not go to the
+        if (c.tag == "Eatable" || c.tag == "Player")
+        {
+            this.target = c.gameObject.transform;
+            this.patrolling = false;
+        }
+    }
+ */
 
     //void OnTriggerExit (Collider c)
     //{
