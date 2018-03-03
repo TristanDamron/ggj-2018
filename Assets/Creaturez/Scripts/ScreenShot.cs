@@ -44,15 +44,24 @@ public class ScreenShot : MonoBehaviour {
 	}
 
 	public void TakeScreenShot() {
-		HideCanvas();		
-		ScreenCapture.CaptureScreenshot(_masterPath + "/image" + Random.Range(100000f, 1000000f) + ".png");
+		HideCanvas();	
+		var name = "/image" + Random.Range(100000f, 1000000f) + ".png";
+		ScreenCapture.CaptureScreenshot(_masterPath + name);
 		Invoke("ShowCanvas", 0.01f);
-		DisplayMessage();
 		StartCoroutine(PopulateList());
+		StartCoroutine(DisplayMessage(name));		
 	}
 
-	public void DisplayMessage() {
-		_messagePanel.SetActive(true);
+	public IEnumerator DisplayMessage(string name) {
+		yield return new WaitForSeconds(0.5f);		
+		_messagePanel.SetActive(true);	
+		if (File.Exists(_masterPath + name)) {
+			_messagePanel.GetComponent<Image>().color = Color.green;
+			_messagePanel.GetComponentInChildren<Text>().text = "Screenshot saved successfully into gallery";
+		} else {
+			_messagePanel.GetComponent<Image>().color = Color.red;			
+			_messagePanel.GetComponentInChildren<Text>().text = "Screenshot failed to save";
+		}
 		Invoke("DisableMessage", 3f);
 	}
 
