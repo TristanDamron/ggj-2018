@@ -150,7 +150,6 @@ public class JointScript : MonoBehaviour {
         }
     }
 
-    //@TODO: The birds should move farther in the direction that they are thrown
     IEnumerator UpdateY(Vector3 target, bool hit)
     {
         this.increment = 0f;

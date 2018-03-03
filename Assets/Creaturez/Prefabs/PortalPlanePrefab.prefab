@@ -723,7 +723,6 @@ GameObject:
   - component: {fileID: 33801426722267664}
   - component: {fileID: 23829133805648832}
   - component: {fileID: 114549187322947102}
-  - component: {fileID: 65962995639525098}
   m_Layer: 0
   m_Name: Tentacle
   m_TagString: Untagged
@@ -4619,7 +4618,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1247339378898024}
-  m_LocalRotation: {x: 0.34309182, y: 0.7137443, z: 0.6062439, w: 0.07297518}
+  m_LocalRotation: {x: 0.34309185, y: 0.71374434, z: 0.60624397, w: 0.07297519}
   m_LocalPosition: {x: -0.47563052, y: 0.2634971, z: 0.1967206}
   m_LocalScale: {x: 0.99999994, y: 1, z: 1}
   m_Children: []
@@ -5194,7 +5193,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1240347095593060}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.26, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children:
   - {fileID: 4809067259983644}
@@ -6561,7 +6560,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1239064052202310}
-  m_LocalRotation: {x: 0.6285645, y: 0.66175014, z: 0.29607436, w: -0.28166184}
+  m_LocalRotation: {x: 0.62856454, y: 0.6617502, z: 0.2960744, w: -0.28166187}
   m_LocalPosition: {x: -0.029416677, y: 0.28124058, z: 0.42847323}
   m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000005}
   m_Children: []
@@ -7545,18 +7544,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.2116499, y: 0.99999994, z: 1.916541}
   m_Center: {x: 0.10582499, y: 0, z: -0.45827}
---- !u!65 &65962995639525098
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1240347095593060}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10, y: 10, z: 10}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &95010262890686690
 Animator:
   serializedVersion: 3
