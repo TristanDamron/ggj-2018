@@ -22,6 +22,8 @@ public class ScreenShot : MonoBehaviour {
 	private string _masterPath;
 	[SerializeField]
 	private Sprite _defaultSprite;
+	[SerializeField]
+	private Canvas _canvas;
 
 	void Start() {
         if (Application.platform == RuntimePlatform.IPhonePlayer) {
@@ -42,8 +44,10 @@ public class ScreenShot : MonoBehaviour {
 	}
 
 	public void TakeScreenShot() {
-		DisplayMessage();
+		HideCanvas();		
 		ScreenCapture.CaptureScreenshot(_masterPath + "/image" + Random.Range(100000f, 1000000f) + ".png");
+		Invoke("ShowCanvas", 0.01f);
+		DisplayMessage();
 		StartCoroutine(PopulateList());
 	}
 
@@ -54,6 +58,14 @@ public class ScreenShot : MonoBehaviour {
 
 	public void DisableMessage() {
 		_messagePanel.SetActive(false);
+	}
+
+	public void HideCanvas() {
+		_canvas.enabled = false;
+	}
+
+	public void ShowCanvas() {
+		_canvas.enabled = true;
 	}
 
 	public IEnumerator PopulateList() {
