@@ -206,10 +206,10 @@ public class JointScript : MonoBehaviour {
         gameObject.AddComponent<SpringJoint>();
         _joint = GetComponent<SpringJoint>();
         _joint.connectedBody = _anchor;
-        _joint.spring = 75f;
+        _joint.spring = 40f;
         _joint.damper = 0.3f;
         _joint.tolerance = 0f;
-        _joint.enablePreprocessing = true;
+        _joint.enablePreprocessing = true;        
         _rb.constraints = RigidbodyConstraints.FreezeRotation;
         _anchor.transform.SetParent(null);
     }
