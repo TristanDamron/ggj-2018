@@ -14,6 +14,7 @@ public class HeadController : MonoBehaviour {
 
 	void Start() {
 		InvokeRepeating("CheckHP", 0f, 0.1f);
+		_animator.Play("Idle");			
 	}
 
 	void Update () {	
@@ -44,5 +45,6 @@ public class HeadController : MonoBehaviour {
 
 	private void Grow() {
 		transform.localScale = Vector3.Lerp(transform.localScale, new Vector3(1f, 1f, 1f), Time.deltaTime * 5f);
+		_animator.Play("Idle");
 	}	
 }
