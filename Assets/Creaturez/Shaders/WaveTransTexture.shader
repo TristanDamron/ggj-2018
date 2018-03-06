@@ -5,7 +5,7 @@ Shader "Unlit/WaveTransTexture"
     Properties
     {
         _MainTex("Color (RGB) Alpha (A)", 2D) = "white" {}
-        _Color("Color", Color) = (1, 1, 1, 1)
+        _Color("Color", Color) = (1, 1, 1, 1)     
         _WaveSpeedX ("X Axis WaveSpeed", Range(0, 100)) = 20
         _FrequencyX ("X Axis Frequency", Range(0, 100)) = 10
         _AmplitudeX ("X Axis Amplitude", Range(0, 100)) = 0.02
@@ -68,6 +68,7 @@ Shader "Unlit/WaveTransTexture"
                 col.r = _Color.r;
                 col.g = _Color.g;
                 col.b = _Color.b;
+                col.a = _Color.a;
                 return col;
             }
             ENDCG

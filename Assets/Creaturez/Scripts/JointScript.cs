@@ -13,7 +13,7 @@ public class JointScript : MonoBehaviour {
     private Transform _anchorTransform;
     private Rigidbody _rb;
     private float increment;
-    private IEnumerator _routine,_patrolRoutine, _liveRoutine;
+    private IEnumerator _routine,_patrolRoutine, _liveRoutine, _scaleDown;
     List<Vector3> _patrolPoints;
     bool _snatched;
 
@@ -29,6 +29,7 @@ public class JointScript : MonoBehaviour {
         StartCoroutine(_patrolRoutine);
         _liveRoutine = TimeTillAlive();
         StartCoroutine(_liveRoutine);
+        _scaleDown = ScaleDown();
     }
 
     public void Grabbed()
@@ -58,9 +59,17 @@ public class JointScript : MonoBehaviour {
     {
         StopCoroutine(_liveRoutine);
         StopCoroutine(_patrolRoutine);
+        StartCoroutine(_scaleDown);
         DestroyJoint();
         transform.position = t.position;
         transform.SetParent(t);
+    }
+
+    IEnumerator ScaleDown() {
+        while (true) {
+            transform.localScale = Vector3.Lerp(transform.localScale, Vector3.zero, Time.deltaTime);            
+            yield return new WaitForSeconds(0f);                        
+        }
     }
 
     IEnumerator TimeTillAlive()

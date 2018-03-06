@@ -53,7 +53,7 @@ Shader "Custom/StandardCullOff"
 
 		SubShader
 	{
-		Tags{ "RenderType" = "Opaque" "PerformanceChecks" = "False" }
+		Tags{ "Queue" = "Geometry-2" "RenderType" = "Opaque" "PerformanceChecks" = "False" }
 		LOD 300
 
 		Cull Off
@@ -68,7 +68,8 @@ Shader "Custom/StandardCullOff"
 		Tags{ "LightMode" = "ForwardBase" }
 
 		Blend[_SrcBlend][_DstBlend]
-		ZWrite[_ZWrite]
+		ZWrite Off
+		ZTest Greater
 
 		CGPROGRAM
 #pragma target 3.0
@@ -106,7 +107,7 @@ Shader "Custom/StandardCullOff"
 		Blend[_SrcBlend] One
 		Fog{ Color(0,0,0,0) } // in additive pass fog should be black
 		ZWrite Off
-		ZTest LEqual
+		ZTest Greater
 
 		CGPROGRAM
 #pragma target 3.0
@@ -139,7 +140,8 @@ Shader "Custom/StandardCullOff"
 		Name "ShadowCaster"
 		Tags{ "LightMode" = "ShadowCaster" }
 
-		ZWrite On ZTest LEqual
+		ZWrite Off
+		ZTest Greater
 
 		CGPROGRAM
 #pragma target 3.0
@@ -227,7 +229,8 @@ Shader "Custom/StandardCullOff"
 		LOD 150
 
 		Cull Off
-
+		ZWrite Off
+		ZTest Greater
 		// ------------------------------------------------------------------
 		//  Base forward pass (directional light, emission, lightmaps, ...)
 		Pass
@@ -236,7 +239,8 @@ Shader "Custom/StandardCullOff"
 		Tags{ "LightMode" = "ForwardBase" }
 
 		Blend[_SrcBlend][_DstBlend]
-		ZWrite[_ZWrite]
+		ZWrite Off
+		ZTest Greater
 
 		CGPROGRAM
 #pragma target 2.0
@@ -271,7 +275,7 @@ Shader "Custom/StandardCullOff"
 		Blend[_SrcBlend] One
 		Fog{ Color(0,0,0,0) } // in additive pass fog should be black
 		ZWrite Off
-		ZTest LEqual
+		ZTest Greater
 
 		CGPROGRAM
 #pragma target 2.0
@@ -321,7 +325,8 @@ Shader "Custom/StandardCullOff"
 		Name "ShadowCaster"
 		Tags{ "LightMode" = "ShadowCaster" }
 
-		ZWrite On ZTest LEqual
+		ZWrite Off
+		ZTest Greater
 
 		CGPROGRAM
 #pragma target 2.0
@@ -347,7 +352,9 @@ Shader "Custom/StandardCullOff"
 		Name "META"
 		Tags{ "LightMode" = "Meta" }
 
-		Cull Off
+		Cull Back
+		ZWrite Off
+		ZTest Greater
 
 		CGPROGRAM
 #pragma vertex vert_meta

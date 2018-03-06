@@ -4,7 +4,7 @@ Shader "Unlit/Portal"
 {
     Properties
     {
-        _MainTex("Color (RGB) Alpha (A)", 2D) = "white" {}		
+        _MainTex("Color (RGB) Alpha (A)", 2D) = "white" {}		        
         _WaveSpeedX ("X Axis WaveSpeed", Range(0, 100)) = 20
         _FrequencyX ("X Axis Frequency", Range(0, 100)) = 10
         _AmplitudeX ("X Axis Amplitude", Range(0, 100)) = 0.02
@@ -17,7 +17,10 @@ Shader "Unlit/Portal"
         Tags{ "Queue" = "Transparent" "RenderType" = "Transparent" }
         Blend SrcAlpha OneMinusSrcAlpha
         LOD 100
- 
+        Cull Back
+        ZWrite Off
+        
+
         Pass
         {
             CGPROGRAM
