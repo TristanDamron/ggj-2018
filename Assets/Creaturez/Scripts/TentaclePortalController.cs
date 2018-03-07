@@ -39,7 +39,7 @@ public class TentaclePortalController : MonoBehaviour
     }
     
     public void CloseAnimation() {
-        InvokeRepeating("DecreaseFrameIndex", 0f, 0.1f);
+        //InvokeRepeating("DecreaseFrameIndex", 0f, 0.1f);
     }
 
     public void IncreaseFrameIndex() {
@@ -72,7 +72,7 @@ public class TentaclePortalController : MonoBehaviour
     public void Fed()
     {
         Invoke("InvokeDestroy", 2f);
-        CloseAnimation();
+        //CloseAnimation();
         Instantiate(_featherParticles, transform.localPosition, transform.localRotation);
         Manager.tentaclesFed += 1;
     }

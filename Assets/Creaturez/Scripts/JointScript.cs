@@ -57,12 +57,22 @@ public class JointScript : MonoBehaviour {
 
     public void Snatched(Transform t)
     {
+        SwitchToDepthShader();
         StopCoroutine(_liveRoutine);
         StopCoroutine(_patrolRoutine);
         StartCoroutine(_scaleDown);
         DestroyJoint();
         transform.position = t.position;
         transform.SetParent(t);
+    }
+
+    public void SwitchToDepthShader() {
+        var shader = Shader.Find("Unlit/UnlitDepth");
+        Renderer[] renderers = GetComponentsInChildren<Renderer>();
+        
+        foreach (Renderer rend in renderers) {
+            rend.material.shader = shader;            
+        }
     }
 
     IEnumerator ScaleDown() {
