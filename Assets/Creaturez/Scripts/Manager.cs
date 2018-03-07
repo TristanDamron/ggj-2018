@@ -38,7 +38,7 @@ public class Manager : MonoBehaviour {
 	void Start() {
 		playerHP = 10;
 		creaturezHP = 50;			
-		tentaclesFed = 3;
+		tentaclesFed = 0;
 		Tips.current = Tips.Events.Patrolling;
 	}
 
