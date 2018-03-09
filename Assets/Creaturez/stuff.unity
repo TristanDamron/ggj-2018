@@ -2192,6 +2192,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_HitTransform: {fileID: 1286139108}
+  maxRayDistance: 30
+  collisionLayer:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!1 &1056533225
 GameObject:
   m_ObjectHideFlags: 0
@@ -5770,8 +5774,10 @@ MonoBehaviour:
   m_camera: {fileID: 10}
   startAlignment: 0
   planeDetection: 2
+  detectionImages: {fileID: 0}
   getPointCloud: 1
   enableLightEstimation: 1
+  enableAutoFocus: 1
 --- !u!4 &1121666033
 Transform:
   m_ObjectHideFlags: 0
